@@ -54,16 +54,17 @@
   .hotel-detail {
     width: 59%;
     height: 45%;
-    text-align: center;
     // background-color: rgb(24, 100, 7);
     .hotel-name {
       color: $main-color;
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-top: 28px;
+      text-align: left;
     }
     .hotel-paragraph {
-      font-size: 1rem;
-      margin-top: 28px;
+      font-size: 1.2rem;
+      margin-top: 32px;
+      margin-left: 0;
     }
   }
   .hotel-modal {

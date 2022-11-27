@@ -497,16 +497,17 @@ footer .footer-info .footer-info-right .ul-flex a {
 .hotel-intro .hotel-detail {
   width: 59%;
   height: 45%;
-  text-align: center;
 }
 .hotel-intro .hotel-detail .hotel-name {
   color: #165e83;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 28px;
+  text-align: left;
 }
 .hotel-intro .hotel-detail .hotel-paragraph {
-  font-size: 1rem;
-  margin-top: 28px;
+  font-size: 1.2rem;
+  margin-top: 32px;
+  margin-left: 0;
 }
 .hotel-intro .hotel-modal {
   border-radius: 20px;
