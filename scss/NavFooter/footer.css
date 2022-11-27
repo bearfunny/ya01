@@ -1,0 +1,59 @@
+footer .copyright {
+  background-color: #165e83;
+  color: #fff;
+  text-align: center;
+  padding: 4px 0;
+}
+footer .footer-info {
+  overflow: hidden;
+  padding: 20px;
+  padding-left: 100px;
+  background-color: #ebf6f7;
+  letter-spacing: 0.2rem;
+}
+footer .footer-info .footer-info-left {
+  width: 550px;
+  float: left;
+  padding-bottom: 20px;
+}
+footer .footer-info .footer-info-left p {
+  margin-left: 150px;
+}
+footer .footer-info .footer-info-left__logo {
+  float: left;
+  width: 120px;
+  overflow: hidden;
+}
+footer .footer-info .footer-info-left__logo img {
+  width: 100%;
+}
+footer .footer-info .footer-info-left__hotel-info {
+  display: flex;
+  float: left;
+  overflow: hidden;
+}
+footer .footer-info .footer-info-left .hotel-info {
+  margin-top: 35px;
+}
+footer .footer-info .footer-info-left .hotel-info:first-child {
+  margin-top: 0;
+}
+footer .footer-info .footer-info-right {
+  width: 450px;
+  float: right;
+  margin-left: auto;
+}
+footer .footer-info .footer-info-right .ul-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 90px;
+}
+footer .footer-info .footer-info-right .ul-flex li {
+  margin-bottom: 8px;
+}
+footer .footer-info .footer-info-right .ul-flex li:last-child {
+  margin-bottom: 0;
+}
+footer .footer-info .footer-info-right .ul-flex a {
+  color: #000;
+}/*# sourceMappingURL=footer.css.map */

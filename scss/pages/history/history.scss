@@ -1,0 +1,76 @@
+@import "../../NavFooter/nav.scss";
+@import "../../NavFooter/footer.scss";
+@import "../../components/components.scss";
+@import "../../utili/utili.scss";
+@import "../../media/media.scss";
+
+// Welcome Picture
+
+.welcome:before {
+  @include welcome-setting("../../../pages/history/pic/welcome.jpg", 0.7);
+  background-position: 50% 80%;
+}
+
+.welcome {
+  &__title {
+    color: $white;
+    @include welcome-title-position(40%, 80%);
+  }
+}
+
+@media (min-width: 840px) {
+  .welcome {
+    &__title {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(30%, 80%);
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(25%, 80%);
+    }
+  }
+
+  @include section-button-flex(33.33%, 70%, 10px);
+}
+
+@media (max-width: 840px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(30%, 80%);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(20%, 80%);
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .welcome {
+    &__title {
+      font-size: 1.6rem;
+      @include welcome-title-position(0%, 80%);
+    }
+  }
+}

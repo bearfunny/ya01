@@ -1,0 +1,502 @@
+@import "../../NavFooter/nav.scss";
+@import "../../NavFooter/footer.scss";
+@import "../../NavFooter/footer.scss";
+@import "../../components/components.scss";
+@import "../../utili/utili.scss";
+@import "../../media/media.scss";
+
+// Welcome Picture
+
+.welcome:before {
+  @include welcome-setting("../../../pages/cuisine/pic/welcome.jpg", 0.7);
+}
+
+.welcome {
+  &__title {
+    color: $white;
+    @include welcome-title-position(24%, 70%);
+  }
+}
+
+// 點選向下滑動選單
+
+// Onclick Scroll Button Section
+.scroll-background {
+  width: 100%;
+
+  background-color: $secondary-white-blue;
+}
+
+.scroll-section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.foreword {
+  margin-bottom: 60px;
+}
+
+// Hr Line Builder
+
+.hr-line::before {
+  content: " ";
+  border: 1.5px solid $main-color;
+  background-color: $main-color;
+  margin: auto;
+  margin-bottom: 60px;
+  display: block;
+  width: 55%;
+}
+
+// The Card of Open Time
+.open-time {
+  width: 70%;
+  height: 100%;
+  background-color: $secondary-white-blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 120px;
+  border-radius: 10px;
+
+  &__img {
+    width: 55%;
+    border-radius: 20px;
+    background: url(../../../pages/cuisine/pic/opening.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    border-radius: 10px 0 0 10px;
+  }
+
+  &__text {
+    width: 42%;
+    border-radius: 0 10px 10px 0;
+
+    .text-info-wrapper {
+      margin: 0 30px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .text-info-title {
+      width: 100%;
+      font-size: 1.5rem;
+      color: $main-color;
+      letter-spacing: 10px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+    .text-info {
+      width: 100%;
+      .text-info-sub {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      .text-info-detail {
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
+
+      .text-info-time {
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: $secondary-lighter-blue;
+        padding: 10px 5px;
+        margin-bottom: 30px;
+
+        span {
+          font-weight: 400;
+          margin-left: 18px;
+        }
+      }
+    }
+  }
+}
+
+.meal-intro-wrapper {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  background-color: $secondary-white-blue;
+  margin-bottom: 120px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.meal-intro-box {
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .meal-intro-img {
+    width: 35%;
+    height: 600px;
+    // background-color: rgb(23, 107, 107);
+    border-radius: 10px;
+    background-size: cover !important;
+  }
+  .meal-intro-detail {
+    text-align: center;
+    width: 60%;
+    z-index: 10;
+
+    .meal-title {
+      font-size: 1.6rem;
+      color: $main-color;
+      padding-top: 60px;
+      margin: 25px;
+    }
+
+    .meal-detail {
+      font-size: 1.2rem;
+      line-height: 35px;
+    }
+
+    .meal-line {
+      direction: rtl;
+    }
+    .meal-line::after {
+      content: "";
+      border: 0.1px solid $main-color;
+      background-color: $main-color;
+      margin: auto;
+      margin-bottom: 15px;
+      display: block;
+      text-align: right;
+      width: 120%;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.meal-list {
+  .meal-intro-wrapper:nth-child(2) {
+    .meal-line {
+      direction: ltr;
+    }
+    .meal-intro-img {
+      order: 1;
+    }
+  }
+}
+
+.meal-list {
+  .meal-intro-wrapper:nth-child(3) {
+    height: 100%;
+
+    .meal-intro-img {
+      width: 100%;
+      height: 400px;
+    }
+    .meal-intro-detail {
+      .meal-title {
+        padding: 0;
+      }
+      .meal-line::after {
+        width: 50%;
+      }
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.set-wrapper {
+  width: 70%;
+  margin: auto;
+  // background-color: rgb(86, 24, 62);
+  .title {
+    font-size: 1.8rem;
+    color: $main-color;
+    text-align: center;
+  }
+
+  .set-line::before {
+    content: "";
+    border: 1px solid $black;
+    background-color: $main-color;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: block;
+    text-align: right;
+    width: 50%;
+    margin-bottom: 48px;
+  }
+
+  .set-box {
+    font-size: 1.5rem;
+    display: block;
+    flex-direction: column;
+    width: 50%;
+    // max-height: 0px;
+    // height: 0;
+    margin: auto;
+    margin-bottom: 60px;
+    overflow-y: hidden;
+    .set-group {
+      display: flex;
+      flex-direction: column;
+      .set-name {
+        text-align: left;
+        margin-bottom: 30px;
+      }
+      .set-content-list {
+        margin-left: 50px;
+        margin-bottom: 30px;
+        .set-content {
+          margin-bottom: 20px;
+        }
+      }
+      .set-price {
+        text-align: right;
+      }
+    }
+  }
+
+
+  #set-box-one{
+    display: block;
+  }
+
+  #set-box-two{
+    display: block;
+    
+  }
+}
+
+
+.set-one-title {
+  position: relative;
+  #set-icon-one {
+    position: absolute;
+    top: 3px;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+  }
+}
+
+.set-two-title {
+  position: relative;
+  #set-icon-two {
+    position: absolute;
+    top: 3px;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+  }
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+#breakfast-img {
+  background: url("../../../pages/cuisine/pic/breakfast.jpg") left bottom;
+}
+
+#lunch-img {
+  background: url("../../../pages/cuisine/pic/lunch.jpg") center center;
+}
+
+#dinner-img {
+  background: url("../../../pages/cuisine/pic/dinner.jpg") center center;
+}
+
+@media (min-width: 840px) {
+  .welcome {
+    &__title {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .open-time {
+    width: 80%;
+  }
+
+  .meal-intro-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .open-time {
+    width: 90%;
+  }
+
+  .meal-intro-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 998px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(20%, 70%);
+    }
+  }
+
+  .open-time {
+    height: 100%;
+    &__img {
+      width: 100%;
+      height: 350px;
+      border-radius: 10px 10px 0 0;
+    }
+    &__text {
+      width: 100%;
+      height: 45%;
+    }
+  }
+
+  .meal-intro-box {
+    .meal-intro-img {
+      width: 100%;
+      height: 300px;
+    }
+    .meal-intro-detail {
+      width: 100%;
+      .meal-title {
+        padding-top: 0px;
+      }
+      .meal-line::after {
+        width: 60%;
+        margin-bottom: 48px;
+      }
+    }
+  }
+
+  .meal-list {
+    .meal-intro-wrapper:nth-child(2) {
+      .meal-line {
+        direction: ltr;
+      }
+      .meal-intro-img {
+        order: 0;
+      }
+    }
+  }
+
+  .text-info-wrapper {
+    .text-info-title {
+      width: 100%;
+    }
+  }
+
+  .set-wrapper {
+    width: 80%;
+    .set-line::before {
+      width: 65%;
+    }
+    .set-box {
+      width: 65%;
+    }
+  }
+
+  @include section-button-flex(33.33%, 70%, 10px);
+}
+
+@media (max-width: 840px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(30%, 55%);
+    }
+  }
+
+  .set-wrapper {
+    width: 80%;
+    .set-line::before {
+      width: 75%;
+    }
+    .set-box {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(20%, 50%);
+    }
+  }
+
+  .scroll-section {
+    height: 100%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  .set-wrapper {
+    width: 100%;
+    .set-line::before {
+      width: 75%;
+    }
+    .set-box {
+      width: 75%;
+    }
+  }
+
+  @include section-button-flex(100%, 60%, 16px);
+}
+
+@media (max-width: 500px) {
+  @include section-button-flex(100%, 60%, 16px);
+}
+
+@media (max-width: 420px) {
+  .welcome {
+    &__title {
+      font-size: 1.6rem;
+      @include welcome-title-position(0%, 50%);
+    }
+  }
+
+  .open-time {
+    width: 100%;
+    border-radius: 0;
+    &__img {
+      border-radius: 0;
+    }
+    &__text {
+      .text-info {
+        .text-info-time {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .meal-intro-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+    border-radius: 0;
+  }
+  .meal-intro-box {
+    padding: 0px;
+    .meal-intro-img {
+      border-radius: 0;
+    }
+  }
+
+  .set-wrapper {
+    width: 100%;
+    .set-line::before {
+      width: 90%;
+    }
+    .set-box {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.foreword {
+  width: 80%;
+  margin: auto;
+  margin-top: 56px;
+  margin-bottom: 72px;
+  text-align: center;
+}
+.foreword__paragraph {
+  margin-top: 20px;
+}
+.foreword__paragraph:last-of-type {
+  margin-bottom: 28px;
+}
+.foreword .button-div {
+  text-align: center;
+}
+.foreword .button-div .page-button {
+  margin-top: 20px;
+}
+
+.page-button {
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  background-color: #00a3af;
+  border: 0;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #555;
+}
+
+@media (max-width: 998px) {
+  .welcome__title {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=utili.css.map */

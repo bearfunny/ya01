@@ -1,0 +1,110 @@
+.welcome {
+    height: 40vh;
+    // background: url(../../index/pic/welcome.jpg) no-repeat center center/ cover;
+    // background-color: antiquewhite;
+    position: relative;
+    &__title {
+        width: 100%;
+        font-size: 1.8rem;
+        color: $main-color;
+        text-align: center;
+        line-height: 72px;
+        transition: all 0.5s;
+        position: absolute;
+        inset: 25% 0;
+        margin: 0 auto;
+    }
+}
+
+.welcome:before {
+    content: "";
+    background: url(../../index/pic/welcome.jpg) no-repeat center center/ cover;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.page-button {
+    display: inline-block;
+    text-align: center;
+    color: $white;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    background-color: $secondary-dark-blue;
+    border: 0;
+}
+
+.scroll-section {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    height: 160px;
+    margin: auto;
+    margin-bottom: 120px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+
+        li {
+            width: 24%;
+        }
+        a {
+            color: $white;
+            display: inline-block;
+            width: 80%;
+            gap: 10px;
+            padding: 8px 0;
+            border-radius: 10px;
+            background-color: $main-color;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome {
+        &__title {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@mixin welcome-setting($picutre, $opacity) {
+    content: "";
+    background: url($picutre) no-repeat center center/ cover;
+    // background-attachment: fixed;
+    opacity: $opacity;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+@mixin welcome-title-position($left, $top) {
+    left: $left;
+    top: $top;
+}
+
+@mixin section-button-flex($li-percentage, $button-length, $button-distance) {
+    .scroll-section {
+        ul {
+            li {
+                width: $li-percentage;
+            }
+
+            a {
+                width: $button-length;
+                margin: $button-distance;
+            }
+        }
+    }
+}
