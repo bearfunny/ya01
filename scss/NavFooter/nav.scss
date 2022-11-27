@@ -88,7 +88,7 @@ main {
 
   &__menu {
       text-align: center;
-      font-size: 60px;
+      font-size: 50px;
       letter-spacing: 1.5rem;
       text-indent: 1.5rem;
       margin: 4.5rem;
@@ -113,6 +113,10 @@ main {
   &__nav-item {
       margin-top: 60px;
   }
+
+  &__nav-item:last-child {
+    margin-bottom: 60px;
+}
 }
 
 footer {
@@ -233,9 +237,11 @@ footer {
   .mobile-nav {
       &__menu {
           text-align: center;
-          font-size: 50px;
+          font-size: 40px;
           letter-spacing: 1.5rem;
-          margin: 4.5rem;
+          text-indent: 0.9rem;
+          margin: auto;
+          margin-top: 4.5rem;
           margin-bottom: 0rem;
       }
 
