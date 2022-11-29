@@ -1,5 +1,5 @@
 @import "../color/colors.scss";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
 
 // @font-face {
 //   font-family: "NotoSerif";
@@ -7,251 +7,257 @@
 // font-display: swap;
 // }
 
+@font-face {
+    font-family: "MyFont";
+    src: url(../../../fonts/NotoSerifTC-Regular.otf);
+    font-display: swap;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Noto Serif TC", serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "MyFont", serif;
 }
 
 html {
-  max-width: 1920px;
-  margin: auto;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+    max-width: 1920px;
+    margin: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 header {
-  width: 100%;
-  max-width: 1920px;
-  height: 60px;
-  display: flex;
-  background-color: $main-color;
-  position: fixed;
-  top: 0px;
-  z-index: 100;
-  .header-logo {
-      padding-left: 44px;
-      padding-right: 44px;
-      // background-color: $white;
-      img {
-          height: 100%;
-          width: 100%;
-      }
-  }
-  .pc-nav {
-      display: flex;
-      flex: auto;
-      justify-content: flex-end;
-      align-items: center;
-      li {
-          display: inline-block;
-          margin-right: 40px;
-      }
-      li:last-child {
-          margin-right: 40px;
-      }
-      a {
-          color: $white;
-      }
-  }
+    width: 100%;
+    max-width: 1920px;
+    height: 60px;
+    display: flex;
+    background-color: $main-color;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    .header-logo {
+        padding-left: 44px;
+        padding-right: 44px;
+        // background-color: $white;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .pc-nav {
+        display: flex;
+        flex: auto;
+        justify-content: flex-end;
+        align-items: center;
+        li {
+            display: inline-block;
+            margin-right: 40px;
+        }
+        li:last-child {
+            margin-right: 40px;
+        }
+        a {
+            color: $white;
+        }
+    }
 }
 
 main {
-  margin-top: 60px;
+    margin-top: 60px;
 }
 
 .visually-hidden {
-  display: none;
+    display: none;
 }
 
 .mobile-nav {
-  display: none;
-  opacity: 0;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 100vw; /* viewport width */
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background-color: $mobile-nav-dark-blue;
-  color: $white;
-  transition: all 0.5s ease-out;
-  z-index: 9999;
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw; /* viewport width */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: $mobile-nav-dark-blue;
+    color: $white;
+    transition: all 0.5s ease-out;
+    z-index: 9999;
 
-  &__menu {
-      text-align: center;
-      font-size: 50px;
-      letter-spacing: 1.5rem;
-      text-indent: 1.5rem;
-      margin: 4.5rem;
-      margin-bottom: 0rem;
-  }
+    &__menu {
+        text-align: center;
+        font-size: 50px;
+        letter-spacing: 1.5rem;
+        text-indent: 1.5rem;
+        margin: 4.5rem;
+        margin-bottom: 0rem;
+    }
 
-  &__navbar {
-      display: inline-block;
-      width: 50%;
-      margin-left: 25%;
-      margin-right: 25%;
-      text-align: center;
+    &__navbar {
+        display: inline-block;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        text-align: center;
 
-      a {
-          color: $white;
-          font-size: 2rem;
-          letter-spacing: 1rem;
-          text-indent: 1rem;
-      }
-  }
+        a {
+            color: $white;
+            font-size: 2rem;
+            letter-spacing: 1rem;
+            text-indent: 1rem;
+        }
+    }
 
-  &__nav-item {
-      margin-top: 60px;
-  }
+    &__nav-item {
+        margin-top: 60px;
+    }
 
-  &__nav-item:last-child {
-    margin-bottom: 60px;
-}
+    &__nav-item:last-child {
+        margin-bottom: 60px;
+    }
 }
 
 footer {
-  .copyright {
-      background-color: $main-color;
-      color: $white;
-      text-align: center;
-      padding: 4px 0;
-  }
-  .footer-info {
-      overflow: hidden;
-      padding: 20px;
-      padding-left: 100px;
-      background-color: $secondary-white-blue;
-      letter-spacing: 0.2rem;
-      .footer-info-left {
-          width: 550px;
-          float: left;
-          padding-bottom: 20px;
+    .copyright {
+        background-color: $main-color;
+        color: $white;
+        text-align: center;
+        padding: 4px 0;
+    }
+    .footer-info {
+        overflow: hidden;
+        padding: 20px;
+        padding-left: 100px;
+        background-color: $secondary-white-blue;
+        letter-spacing: 0.2rem;
+        .footer-info-left {
+            width: 550px;
+            float: left;
+            padding-bottom: 20px;
 
-          p {
-              margin-left: 150px;
-          }
+            p {
+                margin-left: 150px;
+            }
 
-          &__logo {
-              float: left;
-              width: 120px;
-              overflow: hidden;
+            &__logo {
+                float: left;
+                width: 120px;
+                overflow: hidden;
 
-              img {
-                  width: 100%;
-              }
-          }
+                img {
+                    width: 100%;
+                }
+            }
 
-          &__hotel-info {
-              display: flex;
-              float: left;
-              overflow: hidden;
-          }
+            &__hotel-info {
+                display: flex;
+                float: left;
+                overflow: hidden;
+            }
 
-          .hotel-info {
-              margin-top: 35px;
-          }
-          .hotel-info:first-child {
-              margin-top: 0;
-          }
-      }
-      .footer-info-right {
-          width: 450px;
-          float: right;
-          margin-left: auto;
+            .hotel-info {
+                margin-top: 35px;
+            }
+            .hotel-info:first-child {
+                margin-top: 0;
+            }
+        }
+        .footer-info-right {
+            width: 450px;
+            float: right;
+            margin-left: auto;
 
-          .ul-flex {
-              display: flex;
-              justify-content: space-between;
-              margin-right: 90px;
+            .ul-flex {
+                display: flex;
+                justify-content: space-between;
+                margin-right: 90px;
 
-              li {
-                  margin-bottom: 8px;
-              }
+                li {
+                    margin-bottom: 8px;
+                }
 
-              li:last-child {
-                  margin-bottom: 0;
-              }
+                li:last-child {
+                    margin-bottom: 0;
+                }
 
-              a {
-                  color: $black;
-              }
-          }
-      }
-  }
+                a {
+                    color: $black;
+                }
+            }
+        }
+    }
 }
 
 .hamburger {
-  display: none;
-  padding: 16px 20px;
-  .bar {
-      width: 35px;
-      height: 2px;
-      background-color: $white;
-      transition: 0.4s;
-      // transform-origin: 13.3px;
-  }
-  .bar2 {
-      margin: 6px 0;
-  }
+    display: none;
+    padding: 16px 20px;
+    .bar {
+        width: 35px;
+        height: 2px;
+        background-color: $white;
+        transition: 0.4s;
+        // transform-origin: 13.3px;
+    }
+    .bar2 {
+        margin: 6px 0;
+    }
 
-  &:hover {
-      cursor: pointer;
-  }
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 // To Make A FadeIn FadeOut Transition for Mobile Nav
 .active {
-  opacity: 1;
-  transition: all 0.5s ease-out;
+    opacity: 1;
+    transition: all 0.5s ease-out;
 }
 //CSS to Prevent Body From Scroll While Mobile Nav is Displayed
 .fixed-body {
-  overflow: hidden;
-  height: 100%;
+    overflow: hidden;
+    height: 100%;
 }
 
 // Hambuger Closed
 .change {
-  .bar1 {
-      transform: translate(0, 8px) rotate(-45deg);
-  }
-  .bar2 {
-      opacity: 0;
-  }
-  .bar3 {
-      transform: translate(0, -8px) rotate(45deg);
-  }
+    .bar1 {
+        transform: translate(0, 8px) rotate(-45deg);
+    }
+    .bar2 {
+        opacity: 0;
+    }
+    .bar3 {
+        transform: translate(0, -8px) rotate(45deg);
+    }
 }
 
 @media (max-width: 500px) {
-  .mobile-nav {
-      &__menu {
-          text-align: center;
-          font-size: 40px;
-          letter-spacing: 1.5rem;
-          text-indent: 0.9rem;
-          margin: auto;
-          margin-top: 4.5rem;
-          margin-bottom: 0rem;
-      }
+    .mobile-nav {
+        &__menu {
+            text-align: center;
+            font-size: 40px;
+            letter-spacing: 1.5rem;
+            text-indent: 0.9rem;
+            margin: auto;
+            margin-top: 4.5rem;
+            margin-bottom: 0rem;
+        }
 
-      &__navbar {
-          a {
-              color: $white;
-              font-size: 28px;
-              letter-spacing: 0.5rem;
-              text-indent: 0.5rem;
-          }
-      }
-  }
+        &__navbar {
+            a {
+                color: $white;
+                font-size: 28px;
+                letter-spacing: 0.5rem;
+                text-indent: 0.5rem;
+            }
+        }
+    }
 }

@@ -7,7 +7,7 @@
 // Welcome Picture
 
 .welcome:before {
-  @include welcome-setting("../../../pages/spring/pic/welcome.jpg", 1);
+  @include welcome-setting("../../../pages/spring/pic/spring2.jpg", 0.6);
   background-position: 50% 80%;
 }
 
@@ -16,6 +16,133 @@
     color: $white;
     @include welcome-title-position(40%, 80%);
   }
+}
+
+.spring {
+  // background-color: rgba(33, 117, 12, 0.589);
+  width: 85%;
+  margin: auto;
+  margin-bottom: 60px;
+
+  &__title {
+    color: $main-color;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 60px;
+    text-indent: 60px;
+    margin-bottom: 20px;
+  }
+
+  &__img-div {
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 10px;
+    vertical-align: bottom;
+  }
+
+
+  &__sub-title {
+    font-size: 1.2rem;
+    text-align: center;
+    color: $white;
+    background-color: $main-color;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: $secondary-dark-blue;
+    margin-bottom: 10px;
+    border-radius: 0 0 15px 0;
+  }
+
+  &__intro:last-child {
+    margin-bottom: 0px;
+  }
+
+  &__intro-title {
+    padding: 0 36px;
+    color: $white;
+  }
+
+  &__intro-detail {
+    width: auto;
+    flex: 1;
+    background-color: $secondary-white-blue;
+  }
+
+
+
+  .intro-radius-adjust{
+    border-radius: 0 0 15px 10px;
+  }
+
+  .intro-radius {
+    border-radius: 0 0 10px 0;
+  }
+
+  .img-radius{
+    border-radius: 10px 10px 0 0;
+  }
+
+  .dot {
+    li {
+      margin: 15px 5px 15px 5px;
+    }
+
+    li:last-child {
+      margin-bottom: 15px;
+    }
+  }
+
+  .dot {
+    li {
+      margin: 15px 5px 15px 5px;
+    }
+  }
+}
+
+.phone-group {
+  // background-color: bisque;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding: 15px 0;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border-top: 2px solid $main-color;
+  border-bottom: 2px solid $main-color;
+
+  &__title {
+    color: $main-color;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  &__number {
+    font-size: 1.2rem;
+    padding: 35px 0;
+    color: $main-color;
+    background-color: $secondary-white-blue;
+  }
+
+  &__img {
+    width: 1rem;
+    margin-right: 5px;
+    fill: currentColor;
+  }
+}
+
+.adjust {
+  height: 700px;
 }
 
 @media (min-width: 840px) {
@@ -45,6 +172,28 @@
     }
   }
 
+  .spring {
+    &__sub-title {
+      padding: 10px 0;
+    }
+    &__intro-title {
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .intro-radius-adjust{
+      border-radius: 0 0 15px 15px;
+    }
+    .intro-radius{
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  .ul-center {
+    text-align: center;
+  }
+
   @include section-button-flex(33.33%, 70%, 10px);
 }
 
@@ -64,6 +213,17 @@
       @include welcome-title-position(20%, 80%);
     }
   }
+}
+
+@media (max-width: 470px) {
+  .spring {
+    width: 90%;
+    &__title{
+      letter-spacing: 40px;
+      text-indent: 40px;
+    }
+  }
+
 }
 
 @media (max-width: 420px) {

@@ -10,7 +10,6 @@
   @include welcome-setting("../../../pages/rooms/pic/welcome.jpg", 0.6);
 }
 
-
 .welcome {
   &__title {
     color: $white;
@@ -79,7 +78,6 @@
 }
 
 .hotel-modal-paragraph-group {
-
   background-color: $secondary-white-blue;
   margin-top: 24px;
   .hotel-modal-paragraph {

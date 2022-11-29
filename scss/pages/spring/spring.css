@@ -1,11 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+@font-face {
+  font-family: "MyFont";
+  src: url(../../../fonts/NotoSerifTC-Regular.otf);
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "Noto Serif TC", serif;
+  font-family: "MyFont", serif;
 }
 
 html {
@@ -455,8 +459,8 @@ footer .footer-info .footer-info-right .ul-flex a {
 }
 .welcome:before {
   content: "";
-  background: url("../../../pages/spring/pic/welcome.jpg") no-repeat center center/cover;
-  opacity: 1;
+  background: url("../../../pages/spring/pic/spring2.jpg") no-repeat center center/cover;
+  opacity: 0.6;
   top: 0;
   left: 0;
   bottom: 0;
@@ -470,6 +474,107 @@ footer .footer-info .footer-info-right .ul-flex a {
   color: #fff;
   left: 40%;
   top: 80%;
+}
+
+.spring {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+.spring__title {
+  color: #165e83;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 60px;
+  text-indent: 60px;
+  margin-bottom: 20px;
+}
+.spring__img-div {
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.spring__img {
+  width: 100%;
+  border-radius: 10px;
+  vertical-align: bottom;
+}
+.spring__sub-title {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  background-color: #165e83;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.spring__intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #00a3af;
+  margin-bottom: 10px;
+  border-radius: 0 0 15px 0;
+}
+.spring__intro:last-child {
+  margin-bottom: 0px;
+}
+.spring__intro-title {
+  padding: 0 36px;
+  color: #fff;
+}
+.spring__intro-detail {
+  width: auto;
+  flex: 1;
+  background-color: #ebf6f7;
+}
+.spring .intro-radius-adjust {
+  border-radius: 0 0 15px 10px;
+}
+.spring .intro-radius {
+  border-radius: 0 0 10px 0;
+}
+.spring .img-radius {
+  border-radius: 10px 10px 0 0;
+}
+.spring .dot li {
+  margin: 15px 5px 15px 5px;
+}
+.spring .dot li:last-child {
+  margin-bottom: 15px;
+}
+.spring .dot li {
+  margin: 15px 5px 15px 5px;
+}
+
+.phone-group {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding: 15px 0;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border-top: 2px solid #165e83;
+  border-bottom: 2px solid #165e83;
+}
+.phone-group__title {
+  color: #165e83;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.phone-group__number {
+  font-size: 1.2rem;
+  padding: 35px 0;
+  color: #165e83;
+  background-color: #ebf6f7;
+}
+.phone-group__img {
+  width: 1rem;
+  margin-right: 5px;
+  fill: currentColor;
+}
+
+.adjust {
+  height: 700px;
 }
 
 @media (min-width: 840px) {
@@ -489,6 +594,23 @@ footer .footer-info .footer-info-right .ul-flex a {
     font-size: 1.8rem;
     left: 25%;
     top: 80%;
+  }
+  .spring__sub-title {
+    padding: 10px 0;
+  }
+  .spring__intro-title {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .spring .intro-radius-adjust {
+    border-radius: 0 0 15px 15px;
+  }
+  .spring .intro-radius {
+    border-radius: 0 0 10px 10px;
+  }
+  .ul-center {
+    text-align: center;
   }
   .scroll-section ul li {
     width: 33.33%;
@@ -510,6 +632,15 @@ footer .footer-info .footer-info-right .ul-flex a {
     font-size: 1.8rem;
     left: 20%;
     top: 80%;
+  }
+}
+@media (max-width: 470px) {
+  .spring {
+    width: 90%;
+  }
+  .spring__title {
+    letter-spacing: 40px;
+    text-indent: 40px;
   }
 }
 @media (max-width: 420px) {

@@ -1,11 +1,16 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "MyFont";
+  src: url(../../../fonts/NotoSerifTC-Regular.otf);
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "標楷體";
+  font-family: "MyFont", serif;
 }
 
 html {
@@ -21,6 +26,7 @@ body {
 
 header {
   width: 100%;
+  max-width: 1920px;
   height: 60px;
   display: flex;
   background-color: #165e83;
@@ -31,7 +37,6 @@ header {
 header .header-logo {
   padding-left: 44px;
   padding-right: 44px;
-  background-color: #fff;
 }
 header .header-logo img {
   height: 100%;
@@ -79,8 +84,9 @@ main {
 }
 .mobile-nav__menu {
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   letter-spacing: 1.5rem;
+  text-indent: 1.5rem;
   margin: 4.5rem;
   margin-bottom: 0rem;
 }
@@ -99,6 +105,9 @@ main {
 }
 .mobile-nav__nav-item {
   margin-top: 60px;
+}
+.mobile-nav__nav-item:last-child {
+  margin-bottom: 60px;
 }
 
 footer .copyright {
@@ -201,9 +210,11 @@ footer .footer-info .footer-info-right .ul-flex a {
 @media (max-width: 500px) {
   .mobile-nav__menu {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 1.5rem;
-    margin: 4.5rem;
+    text-indent: 0.9rem;
+    margin: auto;
+    margin-top: 4.5rem;
     margin-bottom: 0rem;
   }
   .mobile-nav__navbar a {
