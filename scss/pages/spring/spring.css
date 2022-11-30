@@ -459,15 +459,15 @@ footer .footer-info .footer-info-right .ul-flex a {
 }
 .welcome:before {
   content: "";
-  background: url("../../../pages/spring/pic/spring2.jpg") no-repeat center center/cover;
-  opacity: 0.6;
+  background: url("../../../pages/spring/pic/welcome.jpg") no-repeat center center/cover;
+  opacity: 0.7;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1;
-  background-position: 50% 80%;
+  background-position: center center;
 }
 
 .welcome__title {

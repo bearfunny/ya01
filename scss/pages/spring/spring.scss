@@ -7,8 +7,9 @@
 // Welcome Picture
 
 .welcome:before {
-  @include welcome-setting("../../../pages/spring/pic/spring2.jpg", 0.6);
-  background-position: 50% 80%;
+  @include welcome-setting("../../../pages/spring/pic/welcome.jpg", 0.7);
+  // background-position: 50% 80%;
+  background-position: center center;
 }
 
 .welcome {
@@ -44,7 +45,6 @@
     vertical-align: bottom;
   }
 
-
   &__sub-title {
     font-size: 1.2rem;
     text-align: center;
@@ -78,9 +78,7 @@
     background-color: $secondary-white-blue;
   }
 
-
-
-  .intro-radius-adjust{
+  .intro-radius-adjust {
     border-radius: 0 0 15px 10px;
   }
 
@@ -88,7 +86,7 @@
     border-radius: 0 0 10px 0;
   }
 
-  .img-radius{
+  .img-radius {
     border-radius: 10px 10px 0 0;
   }
 
@@ -182,10 +180,10 @@
       text-align: center;
     }
 
-    .intro-radius-adjust{
+    .intro-radius-adjust {
       border-radius: 0 0 15px 15px;
     }
-    .intro-radius{
+    .intro-radius {
       border-radius: 0 0 10px 10px;
     }
   }
@@ -218,12 +216,11 @@
 @media (max-width: 470px) {
   .spring {
     width: 90%;
-    &__title{
+    &__title {
       letter-spacing: 40px;
       text-indent: 40px;
     }
   }
-
 }
 
 @media (max-width: 420px) {
