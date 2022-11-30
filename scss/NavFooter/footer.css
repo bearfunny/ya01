@@ -1,3 +1,6 @@
+footer {
+  background-color: #ebf6f7;
+}
 footer .copyright {
   background-color: #165e83;
   color: #fff;
@@ -5,10 +8,10 @@ footer .copyright {
   padding: 4px 0;
 }
 footer .footer-info {
+  border: 1px solid red;
   overflow: hidden;
   padding: 20px;
   padding-left: 100px;
-  background-color: #ebf6f7;
   letter-spacing: 0.2rem;
 }
 footer .footer-info .footer-info-left {
@@ -44,8 +47,8 @@ footer .footer-info .footer-info-right {
   margin-left: auto;
 }
 footer .footer-info .footer-info-right .ul-flex {
-  /* display: flex; */
-  /* justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
   margin-right: 90px;
 }
 footer .footer-info .footer-info-right .ul-flex li {

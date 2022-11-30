@@ -1,4 +1,6 @@
+@import "../color/colors.scss";
 footer {
+    background-color: $secondary-white-blue;
     .copyright {
         background-color: $main-color;
         color: $white;
@@ -6,10 +8,10 @@ footer {
         padding: 4px 0;
     }
     .footer-info {
+        border: 1px solid red;
         overflow: hidden;
         padding: 20px;
         padding-left: 100px;
-        background-color: $secondary-white-blue;
         letter-spacing: 0.2rem;
         .footer-info-left {
             width: 550px;
