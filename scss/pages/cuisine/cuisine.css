@@ -269,8 +269,6 @@ footer .footer-info .footer-info-right {
   margin-left: auto;
 }
 footer .footer-info .footer-info-right .ul-flex {
-  display: flex;
-  justify-content: space-between;
   margin-right: 90px;
 }
 footer .footer-info .footer-info-right .ul-flex li {
@@ -329,8 +327,6 @@ footer .footer-info .footer-info-right {
   margin-left: auto;
 }
 footer .footer-info .footer-info-right .ul-flex {
-  display: flex;
-  justify-content: space-between;
   margin-right: 90px;
 }
 footer .footer-info .footer-info-right .ul-flex li {
