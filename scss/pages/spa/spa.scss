@@ -22,7 +22,7 @@
   width: 85%;
   margin: auto;
   margin-bottom: 100px;
-  background-color: antiquewhite;
+  // background-color: antiquewhite;
 
   &__title {
     color: $main-color;
@@ -371,6 +371,15 @@
   .caution {
     li {
       margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .sales-group {
+    &__title {
+      letter-spacing: 40px;
+      text-indent: 40px;
     }
   }
 }

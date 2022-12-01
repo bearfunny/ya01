@@ -18,6 +18,147 @@
   }
 }
 
+.history {
+  // background-color: rgb(199, 120, 24);
+  width: 80%;
+  margin: auto;
+  padding-bottom: 30px;
+  .history-line::after {
+    content: " ";
+    border: 1px solid $main-color;
+    background-color: $main-color;
+    margin: auto;
+    margin-bottom: 30px;
+    display: block;
+    width: 80%;
+  }
+  &__title {
+    color: $main-color;
+    font-size: 1.5rem;
+    // background-color: aquamarine;
+    text-align: center;
+    letter-spacing: 60px;
+    text-indent: 60px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  &__intro-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid $main-color;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__intro {
+    width: 50%;
+    height: 400px;
+
+    // background-color: antiquewhite;
+  }
+
+  &__intro:nth-child(1) {
+    border-radius: 8.5px 0px 0 0;
+  }
+
+  &__intro:nth-child(4) {
+    border-radius: 0px 0px 8.5px 0;
+  }
+  // &__intro:nth-child(even) {
+  //   background-color: aqua;
+  // }
+
+  .history-intro-text {
+    margin: 60px 45px 20px;
+    &__title {
+      color: $main-color;
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 30px;
+    }
+    &__detail {
+      line-height: 30px;
+    }
+  }
+
+  #history-intro-one {
+    background-image: url(../../../pages/history/pic/history1.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #history-intro-four {
+    background-image: url(../../../pages/history/pic/history2.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+.gallery {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+  // background-color: antiquewhite;
+  &__title {
+    color: $main-color;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 60px;
+    text-indent: 60px;
+    margin: 30px;
+  }
+}
+
+.gallery-card {
+  width: 60%;
+  // background-color: rgb(30, 99, 99);
+  margin: auto;
+  &__title {
+    color: $white;
+    background-color: $main-color;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.pics {
+  height: 300px;
+  margin-bottom: 10px;
+  background-color: aqua;
+}
+
+.garden-one {
+  width: 100%;
+  background: url(../../../pages/history/pic/garden1.jpg);
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.garden-two {
+  width: 49.5%;
+  background: url(../../../pages/history/pic/garden2.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0 0 0 10px;
+}
+
+.garden-three {
+  width: 49.5%;
+  background: url(../../../pages/history/pic/garden3.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0 0 10px 0;
+}
+
+.col{
+  flex-direction: column;
+}
+
 @media (min-width: 840px) {
   .welcome {
     &__title {
@@ -37,12 +178,46 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .gallery-card {
+    width: 70%;
+  }
+}
+
 @media (max-width: 998px) {
   .welcome {
     &__title {
       font-size: 1.8rem;
       @include welcome-title-position(25%, 80%);
     }
+  }
+
+  .history {
+    &__title {
+      width: 100%;
+    }
+
+    &__intro-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      border: none;
+      margin-bottom: 30px;
+    }
+
+    &__intro {
+      min-height: 400px;
+      height: 100%;
+      width: 100%;
+      border-radius: 10px !important;
+    }
+
+    &__intro:nth-child(3) {
+      order: 3;
+    }
+  }
+
+  .gallery-card {
+    width: 85%;
   }
 
   @include section-button-flex(33.33%, 70%, 10px);
@@ -55,6 +230,15 @@
       @include welcome-title-position(30%, 80%);
     }
   }
+  .gallery-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  .gallery-card {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -64,6 +248,20 @@
       @include welcome-title-position(20%, 80%);
     }
   }
+
+  .garden-one {
+    border-radius: 10px;
+  }
+
+  .garden-two {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .garden-three {
+    width: 100%;
+    border-radius: 10px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -71,6 +269,19 @@
     &__title {
       font-size: 1.6rem;
       @include welcome-title-position(0%, 80%);
+    }
+  }
+
+  .history {
+    width: 90%;
+    &__intro {
+      background-position-x: -200px !important;
+    }
+  }
+
+  .history {
+    .history-intro-text {
+      margin: 40px 25px 20px;
     }
   }
 }

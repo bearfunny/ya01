@@ -350,6 +350,43 @@ footer .footer-info .footer-info-right .ul-flex a {
   background-color: #165e83;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-49 {
+  width: 49%;
+}
+
+.w-48 {
+  width: 48%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
 @media (max-width: 576px) {
   .welcome__title {
     font-size: 1.6rem;
@@ -476,6 +513,131 @@ footer .footer-info .footer-info-right .ul-flex a {
   top: 80%;
 }
 
+.history {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.history .history-line::after {
+  content: " ";
+  border: 1px solid #165e83;
+  background-color: #165e83;
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+  width: 80%;
+}
+.history__title {
+  color: #165e83;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 60px;
+  text-indent: 60px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.history__intro-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #165e83;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.history__intro {
+  width: 50%;
+  height: 400px;
+}
+.history__intro:nth-child(1) {
+  border-radius: 8.5px 0px 0 0;
+}
+.history__intro:nth-child(4) {
+  border-radius: 0px 0px 8.5px 0;
+}
+.history .history-intro-text {
+  margin: 60px 45px 20px;
+}
+.history .history-intro-text__title {
+  color: #165e83;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 30px;
+}
+.history .history-intro-text__detail {
+  line-height: 30px;
+}
+.history #history-intro-one {
+  background-image: url(../../../pages/history/pic/history1.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.history #history-intro-four {
+  background-image: url(../../../pages/history/pic/history2.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.gallery {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.gallery__title {
+  color: #165e83;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 60px;
+  text-indent: 60px;
+  margin: 30px;
+}
+
+.gallery-card {
+  width: 60%;
+  margin: auto;
+}
+.gallery-card__title {
+  color: #fff;
+  background-color: #165e83;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.pics {
+  height: 300px;
+  margin-bottom: 10px;
+  background-color: aqua;
+}
+
+.garden-one {
+  width: 100%;
+  background: url(../../../pages/history/pic/garden1.jpg);
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.garden-two {
+  width: 49.5%;
+  background: url(../../../pages/history/pic/garden2.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0 0 0 10px;
+}
+
+.garden-three {
+  width: 49.5%;
+  background: url(../../../pages/history/pic/garden3.jpg);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 0 0 10px 0;
+}
+
+.col {
+  flex-direction: column;
+}
+
 @media (min-width: 840px) {
   .welcome__title br {
     display: none;
@@ -488,11 +650,37 @@ footer .footer-info .footer-info-right .ul-flex a {
     top: 80%;
   }
 }
+@media (max-width: 1200px) {
+  .gallery-card {
+    width: 70%;
+  }
+}
 @media (max-width: 998px) {
   .welcome__title {
     font-size: 1.8rem;
     left: 25%;
     top: 80%;
+  }
+  .history__title {
+    width: 100%;
+  }
+  .history__intro-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    margin-bottom: 30px;
+  }
+  .history__intro {
+    min-height: 400px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px !important;
+  }
+  .history__intro:nth-child(3) {
+    order: 3;
+  }
+  .gallery-card {
+    width: 85%;
   }
   .scroll-section ul li {
     width: 33.33%;
@@ -508,6 +696,14 @@ footer .footer-info .footer-info-right .ul-flex a {
     left: 30%;
     top: 80%;
   }
+  .gallery-card {
+    width: 90%;
+  }
+}
+@media (max-width: 750px) {
+  .gallery-card {
+    width: 100%;
+  }
 }
 @media (max-width: 575px) {
   .welcome__title {
@@ -515,11 +711,31 @@ footer .footer-info .footer-info-right .ul-flex a {
     left: 20%;
     top: 80%;
   }
+  .garden-one {
+    border-radius: 10px;
+  }
+  .garden-two {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .garden-three {
+    width: 100%;
+    border-radius: 10px;
+  }
 }
 @media (max-width: 420px) {
   .welcome__title {
     font-size: 1.6rem;
     left: 0%;
     top: 80%;
+  }
+  .history {
+    width: 90%;
+  }
+  .history__intro {
+    background-position-x: -200px !important;
+  }
+  .history .history-intro-text {
+    margin: 40px 25px 20px;
   }
 }/*# sourceMappingURL=history.css.map */
