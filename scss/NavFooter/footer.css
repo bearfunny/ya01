@@ -4,19 +4,21 @@ footer {
   overflow: hidden;
 }
 footer .footer-info {
-  border: 1px solid red;
   width: 1578px;
   height: 76px;
   background-color: #fff;
+  color: #165e83;
+  border-radius: 10px;
   margin-top: 40px;
   margin-left: 139px;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 footer .footer-info .footer-info-left {
-  width: 550px;
+  overflow: hidden;
   display: flex;
-  padding: 10px;
-  padding-left: 74px;
+  padding-top: 10px;
 }
 footer .footer-info .footer-info-left p {
   margin-left: 22px;
@@ -30,22 +32,18 @@ footer .footer-info .footer-info-left__logo img {
   width: 100%;
 }
 footer .footer-info .footer-info-right {
-  width: 450px;
-  margin-left: auto;
+  margin-top: 25px;
 }
 footer .footer-info .footer-info-right .ul-flex {
   display: flex;
-  justify-content: space-between;
+}
+footer .footer-info .footer-info-right .ul-flex .hotel-address {
+  margin-right: 38px;
 }
 footer .footer-info .footer-info-right .ul-flex img {
+  margin: 4px;
   width: 16px;
   height: 100%;
-}
-footer .footer-info .footer-info-right .ul-flex li {
-  margin-bottom: 8px;
-}
-footer .footer-info .footer-info-right .ul-flex p {
-  margin-bottom: 0;
 }
 footer .copyright {
   background-color: #165e83;

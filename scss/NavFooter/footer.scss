@@ -4,21 +4,22 @@ footer {
     height: 197px;
     overflow: hidden;
     .footer-info {
-        border: 1px solid red;
         width: 1578px;
         height: 76px;
         background-color: $white;
+        color: $main-color;
+        border-radius: 10px;
         margin-top: 40px;
         margin-left: 139px;
-        // overflow: hidden;
-        // padding: 20px;
-        // padding-left: 100px;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.1rem;
+        display: flex;
+        justify-content: space-evenly;
         .footer-info-left {
-            width: 550px;
+            overflow: hidden;
+            // width: 550px;
             display: flex;
-            padding: 10px;
-            padding-left: 74px;
+            padding-top: 10px;
+            // padding-left: 74px;
 
             p {
                 margin-left: 22px;
@@ -26,7 +27,6 @@ footer {
             }
 
             &__logo {
-                // float: left;
                 width: 68px;
                 overflow: hidden;
 
@@ -36,27 +36,18 @@ footer {
             }
         }
         .footer-info-right {
-            width: 450px;
-            // float: right;
-            margin-left: auto;
+            margin-top: 25px;
 
             .ul-flex {
                 display: flex;
-                justify-content: space-between;
-                // margin-right: 90px;
+                .hotel-address{
+                    margin-right: 38px;
+                }
                 img{
+                    margin: 4px;
                     width: 16px;
                     height: 100%;
                 }
-
-                li {
-                    margin-bottom: 8px;
-                }
-
-                p {
-                    margin-bottom: 0;
-                }
-
             }
         }
     }
