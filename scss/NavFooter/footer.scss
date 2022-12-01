@@ -4,34 +4,39 @@ footer {
     height: 197px;
     overflow: hidden;
     .footer-info {
-        width: 1578px;
+        // Relative + LeftTop  +Translate 讓白色區域置中
+        // 因物件對齊點為左上角，故須進行 X、Y 軸負向偏移 50% 讓對齊點為物件中心
+        position: relative;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 85%;
         height: 76px;
         background-color: $white;
         color: $main-color;
         border-radius: 10px;
-        margin-top: 40px;
-        margin-left: 139px;
         letter-spacing: 0.1rem;
         display: flex;
         justify-content: space-evenly;
+
         .footer-info-left {
             overflow: hidden;
-            // width: 550px;
             display: flex;
-            padding-top: 10px;
-            // padding-left: 74px;
+            align-items: center;
+            // padding-top: 10px;
 
             p {
-                margin-left: 22px;
-                margin-top: 15px;
+                margin-left: 4px;
             }
 
             &__logo {
                 width: 68px;
-                overflow: hidden;
+                // margin-top: 5px;
+                // overflow: hidden;
 
                 img {
                     width: 100%;
+                    vertical-align: bottom;
                 }
             }
         }
@@ -40,12 +45,14 @@ footer {
 
             .ul-flex {
                 display: flex;
+                .phone{
+                    display: flex;
+                }
                 .hotel-address{
                     margin-right: 38px;
                 }
                 img{
-                    filter: invert(26%) sepia(17%) saturate(4775%) hue-rotate(171deg) brightness(97%) contrast(83%);
-                    margin: 4px;
+                    margin: 1px 4px 0 0;
                     width: 16px;
                     height: 100%;
                 }
@@ -57,7 +64,7 @@ footer {
         color: $white;
         text-align: center;
         padding: 4px 0;
-        margin-top: 49px;
+        margin-top: 89px;
         height: 32px;
     }
 }
