@@ -1,72 +1,71 @@
 @import "../color/colors.scss";
 footer {
     background-color: $secondary-white-blue;
-    .copyright {
-        background-color: $main-color;
-        color: $white;
-        text-align: center;
-        padding: 4px 0;
-    }
+    height: 197px;
+    overflow: hidden;
     .footer-info {
         border: 1px solid red;
-        overflow: hidden;
-        padding: 20px;
-        padding-left: 100px;
+        width: 1578px;
+        height: 76px;
+        background-color: $white;
+        margin-top: 40px;
+        margin-left: 139px;
+        // overflow: hidden;
+        // padding: 20px;
+        // padding-left: 100px;
         letter-spacing: 0.2rem;
         .footer-info-left {
             width: 550px;
-            float: left;
-            padding-bottom: 20px;
+            display: flex;
+            padding: 10px;
+            padding-left: 74px;
 
             p {
-                margin-left: 150px;
+                margin-left: 22px;
+                margin-top: 15px;
             }
 
             &__logo {
-                float: left;
-                width: 120px;
+                // float: left;
+                width: 68px;
                 overflow: hidden;
 
                 img {
                     width: 100%;
                 }
             }
-
-            &__hotel-info {
-                display: flex;
-                float: left;
-                overflow: hidden;
-            }
-
-            .hotel-info {
-                margin-top: 35px;
-            }
-            .hotel-info:first-child {
-                margin-top: 0;
-            }
         }
         .footer-info-right {
             width: 450px;
-            float: right;
+            // float: right;
             margin-left: auto;
 
             .ul-flex {
                 display: flex;
                 justify-content: space-between;
-                margin-right: 90px;
+                // margin-right: 90px;
+                img{
+                    width: 16px;
+                    height: 100%;
+                }
 
                 li {
                     margin-bottom: 8px;
                 }
 
-                li:last-child {
+                p {
                     margin-bottom: 0;
                 }
 
-                a {
-                    color: $black;
-                }
             }
         }
+    }
+    .copyright {
+        background-color: $main-color;
+        color: $white;
+        text-align: center;
+        padding: 4px 0;
+        margin-top: 49px;
+        height: 32px;
     }
 }
