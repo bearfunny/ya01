@@ -1,22 +1,3 @@
-@media (max-width: 1200px) {
-  footer .footer-info {
-    padding: 40px 100px;
-  }
-  footer .footer-info .footer-info-left {
-    float: none;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  footer .footer-info .footer-info-right {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    margin-left: 20px;
-  }
-  footer .footer-info .footer-info-right .ul-flex {
-    margin: 30px;
-  }
-}
 @media (max-width: 992px) {
   .hamburger {
     display: inline-block;
@@ -25,30 +6,41 @@
     display: none;
   }
 }
-@media (max-width: 768px) {
-  footer .footer-info {
-    padding: 30px 10px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  footer .footer-info .footer-info-left {
-    margin-bottom: 10px;
-  }
-  footer .footer-info .footer-info-left__logo {
-    float: none;
-    margin: auto;
+@media (max-width: 819px) {
+  footer .footer-info .footer-info-left .footer-info-left__hotel__info {
+    margin: 23px 0 0 4px;
   }
   footer .footer-info .footer-info-left__hotel__info .hotel-info {
     margin: auto;
     text-align: center;
-    margin-top: 30px;
-  }
-  footer .footer-info .footer-info-left__hotel__info .hotel-info:first-child {
-    margin-top: 30px;
-    font-size: 1.5rem;
   }
   footer .footer-info .footer-info-right {
+    margin: 15px 0 0 0;
+  }
+  footer .footer-info .footer-info-right .ul-flex {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  footer .footer-info .footer-info-right .ul-flex .hotel-address {
+    margin-right: 0px;
+  }
+  footer .footer-info .footer-info-right .phone img {
+    margin-top: 4px;
+  }
+}
+@media (max-width: 588px) {
+  footer .footer-info {
+    width: 100%;
+    border-radius: 0;
+  }
+  footer .footer-info .footer-info-left {
     display: none;
+  }
+  footer .footer-info .ul-flex {
+    flex-direction: column-reverse;
+  }
+  footer .footer-info .ul-flex .phone {
+    align-self: center;
   }
 }
 @media (min-width: 993px) {

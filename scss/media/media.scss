@@ -1,26 +1,3 @@
-@media (max-width: 1200px) {
-    footer {
-        .footer-info {
-            padding: 40px 100px;
-            .footer-info-left {
-                float: none;
-                width: 100%;
-                margin-bottom: 30px;
-            }
-            .footer-info-right {
-                float: none;
-                width: 100%;
-                margin-right: 0;
-                margin-left: 20px;
-
-                .ul-flex {
-                    margin: 30px;
-                }
-            }
-        }
-    }
-}
-
 @media (max-width: 992px) {
     .hamburger {
         display: inline-block;
@@ -35,36 +12,56 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 819px) {
     footer {
         .footer-info {
-            padding: 30px 10px;
-            margin-bottom: 0;
-            padding-bottom: 0;
-
             .footer-info-left {
-                margin-bottom: 10px;
-                &__logo {
-                    float: none;
-                    margin: auto;
+                .footer-info-left__hotel__info {
+                    margin: 23px 0 0 4px;
                 }
 
                 &__hotel__info {
                     .hotel-info {
                         margin: auto;
                         text-align: center;
-                        margin-top: 30px;
-                    }
-
-                    .hotel-info:first-child {
-                        margin-top: 30px;
-                        font-size: 1.5rem;
+                        // margin-top: 30px;
                     }
                 }
             }
 
             .footer-info-right {
-                display: none;
+                margin: 15px 0 0 0;
+
+                .ul-flex {
+                    flex-direction: column-reverse;
+                    align-items: flex-end;
+                }
+
+                .ul-flex .hotel-address {
+                    margin-right: 0px;
+                }
+
+                .phone img {
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:588px) {
+    footer .footer-info {
+        width: 100%;
+        border-radius: 0;
+
+        .footer-info-left {
+            display: none;
+        }
+
+        .ul-flex {
+            flex-direction: column-reverse;
+            .phone {
+                align-self: center;
             }
         }
     }

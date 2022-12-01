@@ -1,70 +1,70 @@
+@import "../color/colors.scss";
 footer {
+    background-color: $secondary-white-blue;
+    height: 197px;
+    overflow: hidden;
+    .footer-info {
+        // Relative + LeftTop  +Translate 讓白色區域置中
+        // 因物件對齊點為左上角，故須進行 X、Y 軸負向偏移 50% 讓對齊點為物件中心
+        position: relative;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 85%;
+        height: 76px;
+        background-color: $white;
+        color: $main-color;
+        border-radius: 10px;
+        letter-spacing: 0.1rem;
+        display: flex;
+        justify-content: space-evenly;
+
+        .footer-info-left {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            // padding-top: 10px;
+
+            p {
+                margin-left: 4px;
+            }
+
+            &__logo {
+                width: 68px;
+                // margin-top: 5px;
+                // overflow: hidden;
+
+                img {
+                    width: 100%;
+                    vertical-align: bottom;
+                }
+            }
+        }
+        .footer-info-right {
+            margin-top: 25px;
+
+            .ul-flex {
+                display: flex;
+                .phone{
+                    display: flex;
+                }
+                .hotel-address{
+                    margin-right: 38px;
+                }
+                img{
+                    margin: 1px 4px 0 0;
+                    width: 16px;
+                    height: 100%;
+                }
+            }
+        }
+    }
     .copyright {
         background-color: $main-color;
         color: $white;
         text-align: center;
         padding: 4px 0;
-    }
-    .footer-info {
-        overflow: hidden;
-        padding: 20px;
-        padding-left: 100px;
-        background-color: $secondary-white-blue;
-        letter-spacing: 0.2rem;
-        .footer-info-left {
-            width: 550px;
-            float: left;
-            padding-bottom: 20px;
-
-            p {
-                margin-left: 150px;
-            }
-
-            &__logo {
-                float: left;
-                width: 120px;
-                overflow: hidden;
-
-                img {
-                    width: 100%;
-                }
-            }
-
-            &__hotel-info {
-                display: flex;
-                float: left;
-                overflow: hidden;
-            }
-
-            .hotel-info {
-                margin-top: 35px;
-            }
-            .hotel-info:first-child {
-                margin-top: 0;
-            }
-        }
-        .footer-info-right {
-            width: 450px;
-            float: right;
-            margin-left: auto;
-
-            .ul-flex {
-                display: flex;
-                justify-content: space-between;
-                margin-right: 90px;
-
-                li {
-                    margin-bottom: 8px;
-                }
-
-                li:last-child {
-                    margin-bottom: 0;
-                }
-
-                a {
-                    color: $black;
-                }
-            }
-        }
+        margin-top: 89px;
+        height: 32px;
     }
 }
