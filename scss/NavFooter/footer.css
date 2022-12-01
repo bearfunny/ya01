@@ -41,6 +41,7 @@ footer .footer-info .footer-info-right .ul-flex .hotel-address {
   margin-right: 38px;
 }
 footer .footer-info .footer-info-right .ul-flex img {
+  filter: invert(26%) sepia(17%) saturate(4775%) hue-rotate(171deg) brightness(97%) contrast(83%);
   margin: 4px;
   width: 16px;
   height: 100%;
