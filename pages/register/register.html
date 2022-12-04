@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" id="body-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>雫ノ泉 京都｜和風ホテル【公式】</title>
+    <link rel="stylesheet" href="../../scss/pages/register/register.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="../../index.html">
+          <img id="logo" src="../../NavFooterPic/logo-dark.png" alt="Logo" />
+        </a>
+      </div>
+      <nav class="pc-nav">
+        <ul class="nav-item">
+          <li><a href="../history/history.html">歷史</a></li>
+          <li><a href="../cuisine/cuisine.html">佳餚美饌</a></li>
+          <li><a href="../rooms/rooms.html">房型</a></li>
+          <li><a href="../spring/spring.html">溫泉</a></li>
+          <li><a href="../spa/spa.html">SPA</a></li>
+          <li><a href="../access/access.html">觀光交通</a></li>
+          <li><a href="">訂房專區</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-nav-toggle" class="hamburger">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+    </header>
+
+    <div class="mobile-nav">
+      <h2 class="mobile-nav__menu">MENU</h2>
+      <ul class="mobile-nav__navbar">
+        <li class="mobile-nav__nav-item">
+          <a href="../history/history.html">歷史</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="../cuisine/cuisine.html">佳餚美饌</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="../rooms/rooms.html">房型</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="../spring/spring.html">溫泉</a>
+        </li>
+        <li class="mobile-nav__nav-item"><a href="../spa/spa.html">SPA</a></li>
+        <li class="mobile-nav__nav-item">
+          <a href="../access/access.html">觀光交通</a>
+        </li>
+        <li class="mobile-nav__nav-item"><a href="">訂房專區</a></li>
+        <!-- <li class="mobile-nav__nav-item"><a href="#">常見問題</a></li>
+        <li class="mobile-nav__nav-item"><a href="#">電郵詢問</a></li>
+        <li class="mobile-nav__nav-item"><a href="#">隱私權政策</a></li> -->
+        <li class="mobile-nav__nav-item">
+          <a href="#" id="mobile-nav-previous">回上頁</a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <form class="form-menu" action="javascript:void(0)">
+        <div class="form-menu__wrapper">
+          <h3 class="form-menu__title">電子信箱</h3>
+
+          <div class="form-menu__input-box">
+            <label class="form-menu__label" for="email">電子信箱</label>
+            <input
+              class="form-menu__input"
+              type="email"
+              required="required"
+              name="email"
+              id="email"
+              placeholder="example@example.com"
+            />
+          </div>
+          <div class="form-menu__input-box">
+            <label class="form-menu__label" for="password">密碼</label>
+            <input
+              class="form-menu__input"
+              type="password"
+              required="required"
+              name="password"
+              placeholder="請輸入密碼"
+            />
+          </div>
+          <div class="form-menu__input-box">
+            <label class="form-menu__label" for="password">確認密碼</label>
+            <input
+              class="form-menu__input"
+              type="password"
+              placeholder="請再次輸入密碼"
+              required="required"
+            />
+          </div>
+
+          <p class="form-menu__line"></p>
+          <div class="form-menu__input-box flex flex-between">
+            <label class="form-menu__label w-100" for="password">姓名</label>
+            <input
+              class="form-menu__input w-48-5"
+              type="text"
+              required="required"
+              placeholder="姓氏"
+              name="surname"
+            />
+            <input
+              class="form-menu__input w-48-5"
+              type="text"
+              placeholder="名字"
+              required="required"
+            />
+          </div>
+          <div class="div">
+            <label class="form-menu__label">性別</label>
+            <div class="form-menu__input-box flex gender-gap">
+              <div class="form-menu__checkbox flex justify-content-center align-item-center gap-10">
+                <input
+                  class="form-menu__checkbox__input"
+                  type="checkbox"
+                  id="male"
+                  name="gender"
+                  checked
+                  onclick="selectOnlyThis(this.id)"
+                />
+                <label for="male" class="form-menu__checkbox__label">男性</label>
+              </div>
+              <div class="form-menu__checkbox flex justify-content-center align-item-center gap-10">
+                <input
+                  class="form-menu__checkbox__input"
+                  type="checkbox"
+                  id="female"
+                  name="gender"
+                  onclick="selectOnlyThis(this.id)"
+                />
+                <label for="female" class="form-menu__checkbox__label">女性</label>
+              </div>
+            </div>
+          </div>
+          <button class="form-menu__submit" type="submit">登入</button>
+
+          <div class="form-menu__helper">
+            <small class="form-menu__helper__icon"
+              ><a href="">註冊會員</a></small
+            >
+            <small class="form-menu__helper__icon"
+              ><a href="">忘記密碼？</a></small
+            >
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <div class="footer-info-left">
+          <div class="footer-info-left__logo">
+            <img src="../../NavFooterPic/footer.jpg" alt="footer-logo" />
+          </div>
+
+          <div class="footer-info-left__hotel__info">
+            <p class="hotel-name hotel-info">雫ノ泉&ensp;京都</p>
+          </div>
+        </div>
+        <div class="footer-info-right">
+          <div class="ul-flex">
+            <p class="hotel-address hotel-info">
+              〒620-0967 京都府福知山市畑中2番2号
+            </p>
+            <div class="phone">
+              <img src="../../NavFooterPic/phone-call.svg" alt="" />
+              <p class="hotel-number hotel-info">0570-8754-56</p>
+            </div>
+
+            <!-- <ul class="ul-menu">
+                <li class="li-menu"><a href="#">歷史</a></li>
+                <li class="li-menu"><a href="#">佳餚美饌</a></li>
+                <li class="li-menu"><a href="#">房型</a></li>
+                <li class="li-menu"><a href="#">設備</a></li>
+                <li class="li-menu"><a href="#">觀光交通</a></li>
+              </ul>
+              <ul class="ul-menu">
+                <li class="li-menu"><a href="#">繁體中文</a></li>
+                <li class="li-menu"><a href="#">简体中文</a></li>
+                <li class="li-menu"><a href="#">日本語</a></li>
+                <li class="li-menu"><a href="#">English</a></li>
+              </ul>
+              <ul class="ul-menu">
+                <li class="li-menu"><a href="#">常見問題</a></li>
+                <li class="li-menu"><a href="#">電郵詢問</a></li>
+                <li class="li-menu"><a href="#">隱私權政策</a></li>
+              </ul> -->
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy;&ensp;雫ノ泉&ensp; SHIZUKU NO ITSUMI</p>
+    </footer>
+
+    <script src="../../js/nav.js"></script>
+    <script src="./register.js"></script>
+  </body>
+</html>

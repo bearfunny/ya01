@@ -1,110 +1,250 @@
+@import "../color/colors.scss";
+
 .welcome {
-    height: 40vh;
-    // background: url(../../index/pic/welcome.jpg) no-repeat center center/ cover;
-    // background-color: antiquewhite;
-    position: relative;
-    &__title {
-        width: 100%;
-        font-size: 1.8rem;
-        color: $main-color;
-        text-align: center;
-        line-height: 72px;
-        transition: all 0.5s;
-        position: absolute;
-        inset: 25% 0;
-        margin: 0 auto;
-    }
-}
-
-.welcome:before {
-    content: "";
-    background: url(../../index/pic/welcome.jpg) no-repeat center center/ cover;
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-}
-
-.page-button {
-    display: inline-block;
+  height: 40vh;
+  // background: url(../../index/pic/welcome.jpg) no-repeat center center/ cover;
+  // background-color: antiquewhite;
+  position: relative;
+  &__title {
+    width: 100%;
+    font-size: 1.8rem;
+    color: $main-color;
     text-align: center;
-    color: $white;
-    padding: 0.8rem 1.2rem;
-    font-size: 1.2rem;
-    border-radius: 50px;
-    background-color: $secondary-dark-blue;
-    border: 0;
+    line-height: 72px;
+    transition: all 0.5s;
+    position: absolute;
+    inset: 25% 0;
+    margin: 0 auto;
+  }
 }
+
+// .welcome:before {
+//     content: "";
+//     background: url(../../index/pic/welcome.jpg) no-repeat center center/ cover;
+//     opacity: 0.3;
+//     top: 0;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     position: absolute;
+//     z-index: -1;
+// }
+
+// .page-button {
+//     display: inline-block;
+//     text-align: center;
+//     color: $white;
+//     padding: 0.8rem 1.2rem;
+//     font-size: 1.2rem;
+//     border-radius: 50px;
+//     background-color: $secondary-dark-blue;
+//     border: 0;
+// }
 
 .scroll-section {
-    width: 85%;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  height: 160px;
+  margin: auto;
+  margin-bottom: 120px;
+  ul {
     display: flex;
-    align-items: center;
-    height: 160px;
-    margin: auto;
-    margin-bottom: 120px;
-    ul {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        text-align: center;
-        width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
 
-        li {
-            width: 24%;
-        }
-        a {
-            color: $white;
-            display: inline-block;
-            width: 80%;
-            gap: 10px;
-            padding: 8px 0;
-            border-radius: 10px;
-            background-color: $main-color;
-        }
+    li {
+      width: 24%;
     }
+    a {
+      color: $white;
+      display: inline-block;
+      width: 80%;
+      gap: 10px;
+      padding: 8px 0;
+      border-radius: 10px;
+      background-color: $main-color;
+    }
+  }
+}
+
+.form-menu {
+  width: 500px;
+  // height: 600px;
+
+  background-color: $white;
+
+  box-shadow: 1px 1px 8px 1px $secondary-lighter-blue;
+  border-radius: 10px;
+
+  &__wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  &__title {
+    color: $main-color;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  &__api {
+    color: $main-color;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    margin-top: 25px;
+    border: 2px solid $secondary-lighter-blue;
+    border-radius: 12px;
+    margin-bottom: 25px;
+  }
+
+  &__pic {
+    width: 30px;
+    vertical-align: bottom;
+  }
+
+  &__input-box {
+    margin-bottom: 12px;
+  }
+
+  &__label {
+    display: inline-block;
+    color: $main-color;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  &__line {
+    margin-bottom: 20px;
+  }
+
+  &__line::before {
+    content: " ";
+    border: 1px solid $secondary-lighter-blue;
+    background-color: $secondary-lighter-blue;
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
+
+  &__input {
+    color: $secondary-dark-blue;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid $secondary-lighter-blue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__input::placeholder {
+    color: $secondary-dark-blue;
+  }
+
+  &__input:focus {
+    outline: none;
+    background-color: $secondary-white-blue;
+  }
+
+  &__submit {
+    width: 100%;
+    color: $white;
+    font-size: 1.2rem;
+    padding: 12px;
+    border: 1px;
+    border-radius: 15px;
+    background: linear-gradient($secondary-dark-blue, $main-color);
+    margin-bottom: 15px;
+    cursor: pointer;
+  }
+
+  &__checkbox{
+    color: $main-color;
+    accent-color: $secondary-lighter-blue;
+    background-color: $white;
+    font-weight: 700;
+
+    &__input{
+      width: 20px;
+      height: 20px;
+      border-color: $secondary-lighter-blue;
+      border-radius: 0;
+      border: 2px solid $secondary-lighter-blue;
+      outline: none;
+      
+    }
+  }
+
+  &__helper {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 60px;
+    a {
+      color: $main-color;
+    }
+
+    a:visited,
+    a:hover,
+    a:focus {
+      color: $main-color;
+    }
+  }
 }
 
 @media (max-width: 576px) {
-    .welcome {
-        &__title {
-            font-size: 1.6rem;
-        }
+  .welcome {
+    &__title {
+      font-size: 1.6rem;
     }
+  }
 }
 
+
+@media (max-width: 500px) {
+  .form-menu{
+    width: 90%;
+  }
+}
+
+
 @mixin welcome-setting($picutre, $opacity) {
-    content: "";
-    background: url($picutre) no-repeat center center/ cover;
-    // background-attachment: fixed;
-    opacity: $opacity;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
+  content: "";
+  background: linear-gradient(transparent 70%, $white),
+    url($picutre) no-repeat center center/ cover;
+  // background-attachment: fixed;
+  opacity: $opacity;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 @mixin welcome-title-position($left, $top) {
-    left: $left;
-    top: $top;
+  left: $left;
+  top: $top;
 }
 
 @mixin section-button-flex($li-percentage, $button-length, $button-distance) {
-    .scroll-section {
-        ul {
-            li {
-                width: $li-percentage;
-            }
+  .scroll-section {
+    ul {
+      li {
+        width: $li-percentage;
+      }
 
-            a {
-                width: $button-length;
-                margin: $button-distance;
-            }
-        }
+      a {
+        width: $button-length;
+        margin: $button-distance;
+      }
     }
+  }
 }

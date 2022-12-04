@@ -1,0 +1,123 @@
+@import "../../NavFooter/nav.scss";
+@import "../../NavFooter/footer.scss";
+@import "../../components/components.scss";
+@import "../../utili/utili.scss";
+@import "../../media/media.scss";
+
+header {
+  background-color: $white;
+  box-shadow: 10px 0px 100px 1px $secondary-lighter-blue;
+  .nav-item {
+    a {
+      color: $main-color;
+    }
+  }
+}
+
+.hamburger {
+  .bar {
+    background-color: $main-color;
+  }
+}
+
+// .login-wrapper {
+//   position: relative;
+
+//   width: 100vw;
+//   min-height: calc(100vh - 60px);
+//   // border-bottom: 1px solid $white;
+//   background-color: $secondary-white-blue;
+// }
+
+main {
+  background-color: $secondary-white-blue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-menu{
+  &__title{
+    margin-bottom: 30px;
+  }
+
+  &__line{
+    margin-bottom: 30px;
+  }
+
+}
+
+.gender-gap{
+  gap: 50px;
+}
+
+@media (min-width: 840px) {
+  .welcome {
+    &__title {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(30%, 80%);
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(25%, 80%);
+    }
+  }
+
+  @include section-button-flex(33.33%, 70%, 10px);
+}
+
+@media (max-width: 840px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(30%, 80%);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(20%, 80%);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .login-menu{
+    width: 90%;
+  }
+}
+
+@media (max-width: 420px) {
+  .welcome {
+    &__title {
+      font-size: 1.6rem;
+      @include welcome-title-position(0%, 80%);
+    }
+  }
+}
+
+
+@media (max-height: 850px) {
+  main{
+    padding-top: 150px;
+  }
+}

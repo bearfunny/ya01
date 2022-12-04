@@ -6,7 +6,7 @@
 @import "../../media/media.scss";
 
 .welcome:before {
-  @include welcome-setting("../../../pages/index/pic/welcome.jpg", 0.35);
+  @include welcome-setting("../../../pages/index/pic/welcome.jpg", 0.9);
 }
 
 // 所有的單元介紹
@@ -16,7 +16,8 @@
   &__title {
     color: $main-color;
     font-weight: 600;
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
+    font-size: 24px;
     margin-bottom: 36px;
     letter-spacing: 32px;
     text-indent: 32px;
@@ -36,19 +37,28 @@
 
     // 單元圖片寬度高度設定
     &__picture {
+      margin-top: 60px;
       width: 50%;
       height: 400px;
     }
 
     // 文字區塊寬度與高度設定
     &__text-intro {
+      margin-top: 60px;
       width: 50%;
       height: 400px;
-      font-size: 1.1rem;
+      // font-size: 1.1rem;
       line-height: 2rem;
 
+      h2{
+        text-align: center;
+        font-weight: normal;
+        margin-top: 20px;
+      }
       p {
         margin: 48px 90px;
+        text-align: center;
+        font-size:18px;
       }
 
       p:first-child {
@@ -98,6 +108,7 @@
 }
 
 .marquee-area {
+  margin-top: 70px;
   width: 200%;
   display: flex;
   overflow-x: hidden;
@@ -135,8 +146,13 @@
     width: 100%;
     height: auto;
     text-align: center;
+    h2{
+      margin-top: 70px;
+      font-weight: normal;
+    }
     p {
-      margin: 48px 90px;
+      margin: 30px 90px;
+      font-size:18px;
     }
 
     p:first-child {

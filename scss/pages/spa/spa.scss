@@ -7,14 +7,155 @@
 // Welcome Picture
 
 .welcome:before {
-  @include welcome-setting("../../../pages/spa/pic/welcome.jpg", 1);
-  background-position: 50% 80%;
+  @include welcome-setting("../../../pages/spa/pic/welcome.jpg", 0.8);
+  background-position: center center;
 }
 
 .welcome {
   &__title {
     color: $white;
-    @include welcome-title-position(40%, 80%);
+    @include welcome-title-position(38%, 80%);
+  }
+}
+
+.spa-pic {
+  width: 85%;
+  margin: auto;
+  margin-bottom: 100px;
+  // background-color: antiquewhite;
+
+  &__title {
+    color: $main-color;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 60px;
+    text-indent: 60px;
+    margin-bottom: 15px;
+  }
+
+  &__img-div {
+    background-color: darkcyan;
+    width: 100%;
+    height: 400px;
+    background: url("../../../pages/spa/pic/spa.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.sales-group {
+  width: 70%;
+  margin: auto;
+
+  &__title {
+    color: $main-color;
+    font-size: 1.8rem;
+    letter-spacing: 60px;
+    text-indent: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+.sales-card {
+  background-color: $secondary-white-blue;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+  &__img {
+    border-radius: 10px 0 0 10px;
+    width: 40%;
+    height: 400px;
+    background: url(../../../pages/spa/pic/promote1.jpg) center bottom;
+  }
+  &__detail {
+    flex: 1;
+    // width: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
+    &__title {
+      color: $main-color;
+      font-size: 1.5rem;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 5px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid $main-color;
+    }
+
+    &__info {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      &__title {
+        flex: 15%;
+      }
+      &__detail {
+        width: 85%;
+      }
+    }
+  }
+}
+
+.phone-group {
+  // background-color: bisque;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding: 15px 0;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border-top: 2px solid $main-color;
+  // border-bottom: 2px solid $main-color;
+
+  &__title {
+    color: $main-color;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  &__number {
+    font-size: 1.2rem;
+    padding: 35px 0;
+    color: $main-color;
+    background-color: $secondary-white-blue;
+  }
+
+  &__img {
+    width: 1rem;
+    margin-right: 5px;
+    fill: currentColor;
+  }
+}
+
+.caution {
+  border-top: 2px solid $main-color;
+  border-bottom: 2px solid $main-color;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 120px;
+  padding: 30px 0 30px;
+  .caution-inner-wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  &__title {
+    color: $main-color;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  li {
+    list-style: disc;
+    margin-left: 25%;
+    // margin-right: 25%;
+    margin-bottom: 20px;
   }
 }
 
@@ -28,12 +169,92 @@
   }
 }
 
+@media (max-width: 1460px) {
+  .sales-card {
+    border-radius: 15px 0 15px 15px;
+
+    margin-bottom: 30px;
+    &__img {
+      border-radius: 10px 0 0 10px;
+      width: 30%;
+      background-position: -100px center;
+    }
+    &__detail {
+      // flex: 1;
+      width: 100%;
+      margin-left: 50px;
+      margin-right: 50px;
+      &__title {
+        color: $main-color;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 5px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid $main-color;
+      }
+
+      &__info {
+        flex-direction: row;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        &__title {
+          width: 15%;
+        }
+        &__detail {
+          width: 85%;
+        }
+      }
+    }
+  }
+
+  .caution {
+    li {
+      margin-left: 100px;
+    }
+  }
+}
+
 @media (max-width: 1280px) {
   .welcome {
     &__title {
       font-size: 1.8rem;
       @include welcome-title-position(30%, 80%);
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .sales-card {
+    width: 75%;
+    margin: auto;
+
+    margin-bottom: 30px;
+    &__img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      background-position: center center;
+    }
+    &__detail {
+      // flex: 1;
+      width: 100%;
+
+      &__info {
+        flex-direction: row;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        &__title {
+          width: 15%;
+        }
+        &__detail {
+          width: 85%;
+        }
+      }
+    }
+  }
+
+  .phone-group {
+    width: 65%;
   }
 }
 
@@ -45,7 +266,43 @@
     }
   }
 
+  .caution {
+    li {
+      margin-left: 40px;
+    }
+  }
+
   @include section-button-flex(33.33%, 70%, 10px);
+}
+
+@media (max-width: 924px) {
+  .sales-card {
+    width: 95%;
+    margin: auto;
+
+    margin-bottom: 30px;
+    &__img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      background-position: center center;
+    }
+    &__detail {
+      // flex: 1;
+      width: 100%;
+
+      &__info {
+        flex-direction: row;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        &__title {
+          width: 15%;
+        }
+        &__detail {
+          width: 85%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 840px) {
@@ -57,11 +314,72 @@
   }
 }
 
+@media (max-width: 728px) {
+  .sales-group {
+    width: 85%;
+  }
+
+  .sales-card {
+    width: 100%;
+    margin: auto;
+
+    margin-bottom: 30px;
+    &__img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      height: 250px;
+      background-position: center -175px;
+    }
+    &__detail {
+      // flex: 1;
+      width: 100%;
+
+      &__info {
+        flex-direction: row;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        text-align: center;
+        &__title {
+          width: 100%;
+          font-size: 1.4rem;
+          margin-bottom: 10px;
+          font-size: 700;
+          span {
+            display: none;
+          }
+        }
+        &__detail {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .phone-group {
+    width: 85%;
+  }
+}
+
 @media (max-width: 575px) {
   .welcome {
     &__title {
       font-size: 1.8rem;
       @include welcome-title-position(20%, 80%);
+    }
+  }
+
+  .caution {
+    li {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .sales-group {
+    &__title {
+      letter-spacing: 40px;
+      text-indent: 40px;
     }
   }
 }
@@ -72,5 +390,57 @@
       font-size: 1.6rem;
       @include welcome-title-position(0%, 80%);
     }
+  }
+
+  .caution {
+    li {
+      margin-left: 0px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .sales-group {
+    width: 90%;
+  }
+
+  .sales-card {
+    width: 100%;
+    margin: auto;
+
+    margin-bottom: 30px;
+    &__img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      height: 250px;
+      background-position: -120px -175px;
+    }
+    &__detail {
+      // flex: 1;
+      width: 100%;
+
+      &__info {
+        flex-direction: row;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        text-align: center;
+        &__title {
+          width: 100%;
+          font-size: 1.4rem;
+          margin-bottom: 10px;
+          font-size: 700;
+          span {
+            display: none;
+          }
+        }
+        &__detail {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .phone-group {
+    width: 90%;
   }
 }

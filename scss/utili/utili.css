@@ -2,11 +2,12 @@
   width: 80%;
   margin: auto;
   margin-top: 56px;
-  margin-bottom: 72px;
+  margin-bottom: 92px;
   text-align: center;
 }
 .foreword__paragraph {
   margin-top: 20px;
+  font-size: 18px;
 }
 .foreword__paragraph:last-of-type {
   margin-bottom: 28px;
@@ -20,12 +21,15 @@
 
 .page-button {
   display: inline-block;
+  width: 200px;
+  height: 50px;
   text-align: center;
   color: #fff;
-  padding: 0.8rem 1.2rem;
+  line-height: 50px;
   font-size: 1.2rem;
-  border-radius: 10px;
-  background-color: #00a3af;
+  border-radius: 50px;
+  background: linear-gradient(#83ccd2 10%, #00a3af 100%);
+  box-shadow: 0 2px 2px #83ccd2;
   border: 0;
 }
 
@@ -35,6 +39,95 @@
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 30px solid #555;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-49-5 {
+  width: 49.5%;
+}
+
+.w-49 {
+  width: 49%;
+}
+
+.w-48-5 {
+  width: 48.5%;
+}
+
+.w-48 {
+  width: 48%;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.order-0 {
+  order: 0;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+.order-4 {
+  order: 4;
+}
+
+.order-5 {
+  order: 5;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-item-center {
+  align-items: center;
 }
 
 @media (max-width: 998px) {

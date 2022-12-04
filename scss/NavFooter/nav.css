@@ -34,12 +34,11 @@ header {
   z-index: 100;
 }
 header .header-logo {
-  padding-left: 44px;
-  padding-right: 44px;
+  margin: 8px 0 10px 20px;
 }
 header .header-logo img {
-  height: 100%;
-  width: 100%;
+  width: 70%;
+  vertical-align: bottom;
 }
 header .pc-nav {
   display: flex;
