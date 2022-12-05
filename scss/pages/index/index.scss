@@ -6,7 +6,7 @@
 @import "../../media/media.scss";
 
 .welcome:before {
-  @include welcome-setting("../../../pages/index/pic/welcome.jpg", 0.9);
+  @include welcome-setting("../../../pages/index/pic/welcome.jpg", 0.75);
 }
 
 // 所有的單元介紹
@@ -50,9 +50,10 @@
       // font-size: 1.1rem;
       line-height: 2rem;
 
-      h2{
+      h3{
         text-align: center;
         font-weight: normal;
+        font-size: 20px;
         margin-top: 20px;
       }
       p {
@@ -146,9 +147,10 @@
     width: 100%;
     height: auto;
     text-align: center;
-    h2{
+    h3{
       margin-top: 70px;
       font-weight: normal;
+      font-size: 20px;
     }
     p {
       margin: 30px 90px;

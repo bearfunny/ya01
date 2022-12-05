@@ -395,11 +395,12 @@ footer .copyright {
   width: 80%;
   margin: auto;
   margin-top: 56px;
-  margin-bottom: 72px;
+  margin-bottom: 92px;
   text-align: center;
 }
 .foreword__paragraph {
   margin-top: 20px;
+  font-size: 18px;
 }
 .foreword__paragraph:last-of-type {
   margin-bottom: 28px;

@@ -8,7 +8,7 @@
 // Welcome Picture
 
 .welcome:before {
-  @include welcome-setting("../../../pages/cuisine/pic/welcome.jpg", 0.7);
+  @include welcome-setting("../../../pages/cuisine/pic/welcome.jpg", 0.75);
 }
 
 .welcome {
@@ -40,24 +40,24 @@
 
 .hr-line::before {
   content: " ";
-  border: 1.5px solid $main-color;
-  background-color: $main-color;
+  border: 1.5px solid $secondary-lighter-blue;
+  background-color: $secondary-lighter-blue;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 38px;
   display: block;
   width: 55%;
 }
 
 // The Card of Open Time
 .open-time {
-  width: 70%;
+  width: 75%;
   height: 100%;
   background-color: $secondary-white-blue;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
-  margin-bottom: 120px;
+  margin-bottom: 260px;
   border-radius: 10px;
 
   &__img {
@@ -80,30 +80,35 @@
     }
     .text-info-title {
       width: 100%;
-      font-size: 1.5rem;
+      // font-size: 1.5rem;
+      font-size: 30px;
       color: $main-color;
       letter-spacing: 10px;
-      margin-top: 30px;
-      margin-bottom: 20px;
+      margin-top: 42px;
+      margin-bottom: 35px;
     }
     .text-info {
       width: 100%;
       .text-info-sub {
-        font-size: 1.2rem;
+        // font-size: 1.2rem;
+        font-size: 20px;
         margin-bottom: 20px;
       }
 
       .text-info-detail {
-        font-size: 1rem;
+        // font-size: 1rem;
+        font-size: 20px;
         margin-bottom: 20px;
       }
 
       .text-info-time {
-        font-size: 1.2rem;
+        // font-size: 1.2rem;
+        font-size: 20px;
         font-weight: bold;
         background-color: $secondary-lighter-blue;
-        padding: 10px 5px;
+        padding: 10px 20px;
         margin-bottom: 30px;
+        border-radius: 50px;
 
         span {
           font-weight: 400;
@@ -115,11 +120,11 @@
 }
 
 .meal-intro-wrapper {
-  width: 70%;
-  height: 100%;
+  width: 85%;
+  height: 512px;
   margin: auto;
   background-color: $secondary-white-blue;
-  margin-bottom: 120px;
+  margin-bottom: 300px;
   border-radius: 10px;
   display: flex;
 }
@@ -128,19 +133,20 @@
   height: 100%;
   width: 100%;
   padding: 50px;
+  padding-bottom: 88px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   .meal-intro-img {
-    width: 35%;
-    height: 600px;
+    width: 559px;
+    height: 762px;
     // background-color: rgb(23, 107, 107);
     border-radius: 10px;
     background-size: cover !important;
   }
   .meal-intro-detail {
     text-align: center;
-    width: 60%;
+    width: 55%;
     z-index: 10;
 
     .meal-title {
@@ -163,11 +169,10 @@
       border: 0.1px solid $main-color;
       background-color: $main-color;
       margin: auto;
-      margin-bottom: 15px;
+      margin-bottom: 26px;
       display: block;
       text-align: right;
       width: 120%;
-      margin-bottom: 48px;
     }
   }
 }
@@ -297,10 +302,18 @@
 
 #breakfast-img {
   background: url("../../../pages/cuisine/pic/breakfast.jpg") left bottom;
+  position: relative;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
 }
 
 #lunch-img {
   background: url("../../../pages/cuisine/pic/lunch.jpg") center center;
+  position: relative;
+  top: 55%;
+  right: -17%;
+  transform: translate(-50%,-50%);
 }
 
 #dinner-img {
@@ -317,9 +330,24 @@
   }
 }
 
+@media (max-width: 1779px){
+  .meal-intro-box .meal-intro-detail{
+    width: 40%;
+  }
+}
+
 @media (max-width: 1250px) {
   .open-time {
     width: 80%;
+  }
+
+  #breakfast-img,
+  #lunch-img{
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
   }
 
   .meal-intro-wrapper {
@@ -358,10 +386,21 @@
     }
   }
 
+  #breakfast-img,
+  #lunch-img{
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: none;
+  }
+  
+  .meal-intro-wrapper {
+    height: 722px;
+  }
   .meal-intro-box {
     .meal-intro-img {
       width: 100%;
-      height: 300px;
+      height: 400px;
     }
     .meal-intro-detail {
       width: 100%;
@@ -370,7 +409,7 @@
       }
       .meal-line::after {
         width: 60%;
-        margin-bottom: 48px;
+        // margin-bottom: 48px;
       }
     }
   }
