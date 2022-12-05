@@ -78,6 +78,7 @@
       display: flex;
       flex-wrap: wrap;
     }
+
     .text-info-title {
       width: 100%;
       // font-size: 1.5rem;
@@ -87,12 +88,15 @@
       margin-top: 42px;
       margin-bottom: 35px;
     }
+
     .text-info {
       width: 100%;
+
       .text-info-sub {
         // font-size: 1.2rem;
         font-size: 20px;
         margin-bottom: 20px;
+        color: $main-color;
       }
 
       .text-info-detail {
@@ -137,6 +141,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+
   .meal-intro-img {
     width: 559px;
     height: 762px;
@@ -144,6 +149,7 @@
     border-radius: 10px;
     background-size: cover !important;
   }
+
   .meal-intro-detail {
     text-align: center;
     width: 55%;
@@ -159,15 +165,17 @@
     .meal-detail {
       font-size: 1.2rem;
       line-height: 35px;
+      color: $main-color;
     }
 
     .meal-line {
       direction: rtl;
     }
+
     .meal-line::after {
       content: "";
-      border: 0.1px solid $main-color;
-      background-color: $main-color;
+      border: 0.1px solid $secondary-lighter-blue;
+      background-color: $secondary-lighter-blue;
       margin: auto;
       margin-bottom: 26px;
       display: block;
@@ -182,6 +190,7 @@
     .meal-line {
       direction: ltr;
     }
+
     .meal-intro-img {
       order: 1;
     }
@@ -196,13 +205,16 @@
       width: 100%;
       height: 400px;
     }
+
     .meal-intro-detail {
       .meal-title {
         padding: 0;
       }
+
       .meal-line::after {
         width: 50%;
       }
+
       width: 100%;
       height: 100%;
     }
@@ -212,6 +224,7 @@
 .set-wrapper {
   width: 70%;
   margin: auto;
+
   // background-color: rgb(86, 24, 62);
   .title {
     font-size: 1.8rem;
@@ -221,7 +234,7 @@
 
   .set-line::before {
     content: "";
-    border: 1px solid $black;
+    border: 1px solid $secondary-lighter-blue;
     background-color: $main-color;
     margin: auto;
     margin-top: 20px;
@@ -242,20 +255,25 @@
     margin: auto;
     margin-bottom: 60px;
     overflow-y: hidden;
+
     .set-group {
       display: flex;
       flex-direction: column;
+
       .set-name {
         text-align: left;
         margin-bottom: 30px;
       }
+
       .set-content-list {
         margin-left: 50px;
         margin-bottom: 30px;
+
         .set-content {
           margin-bottom: 20px;
         }
       }
+
       .set-price {
         text-align: right;
       }
@@ -263,22 +281,24 @@
   }
 
 
-  #set-box-one{
+  #set-box-one {
     display: block;
   }
 
-  #set-box-two{
+  #set-box-two {
     display: block;
-    
+
   }
 }
 
 
 .set-one-title {
   position: relative;
+
   #set-icon-one {
     position: absolute;
-    top: 3px;
+    top: 11px;
+    margin-left: 10px;
     cursor: pointer;
 
     transition: all 0.2s ease;
@@ -287,9 +307,11 @@
 
 .set-two-title {
   position: relative;
+
   #set-icon-two {
     position: absolute;
-    top: 3px;
+    top: 11px;
+    margin-left: 10px;
     cursor: pointer;
 
     transition: all 0.2s ease;
@@ -304,16 +326,16 @@
   background: url("../../../pages/cuisine/pic/breakfast.jpg") left bottom;
   position: relative;
   top: 50%;
-  left: 20%;
-  transform: translate(-50%,-50%);
+  left: 18%;
+  transform: translate(-50%, -50%);
 }
 
 #lunch-img {
   background: url("../../../pages/cuisine/pic/lunch.jpg") center center;
   position: relative;
   top: 55%;
-  right: -17%;
-  transform: translate(-50%,-50%);
+  right: -19%;
+  transform: translate(-50%, -50%);
 }
 
 #dinner-img {
@@ -330,31 +352,15 @@
   }
 }
 
-@media (max-width: 1779px){
-  .meal-intro-box .meal-intro-detail{
+@media (max-width: 1779px) {
+  .meal-intro-box .meal-intro-detail {
     width: 40%;
   }
-}
 
-@media (max-width: 1250px) {
-  .open-time {
-    width: 80%;
-  }
-
-  #breakfast-img,
-  #lunch-img{
-    top: 0;
-    right: 0;
-    left: 0;
-    transform: none;
-    width: 100%;
-  }
-
-  .meal-intro-wrapper {
-    width: 80%;
+  #lunch-img {
+    right: -25%;
   }
 }
-
 @media (max-width: 1100px) {
   .open-time {
     width: 90%;
@@ -365,7 +371,7 @@
   }
 }
 
-@media (max-width: 998px) {
+@media (max-width: 1250px) {
   .welcome {
     &__title {
       font-size: 1.8rem;
@@ -375,38 +381,43 @@
 
   .open-time {
     height: 100%;
+
     &__img {
       width: 100%;
       height: 350px;
       border-radius: 10px 10px 0 0;
     }
+
     &__text {
       width: 100%;
       height: 45%;
     }
   }
-
   #breakfast-img,
-  #lunch-img{
+  #lunch-img {
     top: 0;
     right: 0;
     left: 0;
     transform: none;
+    width: 100%;
   }
-  
   .meal-intro-wrapper {
     height: 722px;
   }
+
   .meal-intro-box {
     .meal-intro-img {
       width: 100%;
       height: 400px;
     }
+
     .meal-intro-detail {
       width: 100%;
+
       .meal-title {
         padding-top: 0px;
       }
+
       .meal-line::after {
         width: 60%;
         // margin-bottom: 48px;
@@ -419,6 +430,7 @@
       .meal-line {
         direction: ltr;
       }
+
       .meal-intro-img {
         order: 0;
       }
@@ -433,9 +445,11 @@
 
   .set-wrapper {
     width: 80%;
+
     .set-line::before {
       width: 65%;
     }
+
     .set-box {
       width: 65%;
     }
@@ -454,9 +468,11 @@
 
   .set-wrapper {
     width: 80%;
+
     .set-line::before {
       width: 75%;
     }
+
     .set-box {
       width: 75%;
     }
@@ -479,9 +495,11 @@
 
   .set-wrapper {
     width: 100%;
+
     .set-line::before {
       width: 75%;
     }
+
     .set-box {
       width: 75%;
     }
@@ -505,9 +523,11 @@
   .open-time {
     width: 100%;
     border-radius: 0;
+
     &__img {
       border-radius: 0;
     }
+
     &__text {
       .text-info {
         .text-info-time {
@@ -522,8 +542,10 @@
     margin-bottom: 60px;
     border-radius: 0;
   }
+
   .meal-intro-box {
     padding: 0px;
+
     .meal-intro-img {
       border-radius: 0;
     }
@@ -531,9 +553,11 @@
 
   .set-wrapper {
     width: 100%;
+
     .set-line::before {
       width: 90%;
     }
+
     .set-box {
       width: 90%;
     }

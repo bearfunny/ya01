@@ -489,9 +489,9 @@ footer .copyright {
 .triangle-up {
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 30px solid #555;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 22px solid #165e83;
 }
 
 .flex {
@@ -723,6 +723,7 @@ footer .copyright {
 .open-time__text .text-info .text-info-sub {
   font-size: 20px;
   margin-bottom: 20px;
+  color: #165e83;
 }
 .open-time__text .text-info .text-info-detail {
   font-size: 20px;
@@ -780,14 +781,15 @@ footer .copyright {
 .meal-intro-box .meal-intro-detail .meal-detail {
   font-size: 1.2rem;
   line-height: 35px;
+  color: #165e83;
 }
 .meal-intro-box .meal-intro-detail .meal-line {
   direction: rtl;
 }
 .meal-intro-box .meal-intro-detail .meal-line::after {
   content: "";
-  border: 0.1px solid #165e83;
-  background-color: #165e83;
+  border: 0.1px solid #83ccd2;
+  background-color: #83ccd2;
   margin: auto;
   margin-bottom: 26px;
   display: block;
@@ -831,7 +833,7 @@ footer .copyright {
 }
 .set-wrapper .set-line::before {
   content: "";
-  border: 1px solid #000;
+  border: 1px solid #83ccd2;
   background-color: #165e83;
   margin: auto;
   margin-top: 20px;
@@ -880,7 +882,8 @@ footer .copyright {
 }
 .set-one-title #set-icon-one {
   position: absolute;
-  top: 3px;
+  top: 11px;
+  margin-left: 10px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -890,7 +893,8 @@ footer .copyright {
 }
 .set-two-title #set-icon-two {
   position: absolute;
-  top: 3px;
+  top: 11px;
+  margin-left: 10px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -903,7 +907,7 @@ footer .copyright {
   background: url("../../../pages/cuisine/pic/breakfast.jpg") left bottom;
   position: relative;
   top: 50%;
-  left: 20%;
+  left: 18%;
   transform: translate(-50%, -50%);
 }
 
@@ -911,7 +915,7 @@ footer .copyright {
   background: url("../../../pages/cuisine/pic/lunch.jpg") center center;
   position: relative;
   top: 55%;
-  right: -17%;
+  right: -19%;
   transform: translate(-50%, -50%);
 }
 
@@ -928,21 +932,8 @@ footer .copyright {
   .meal-intro-box .meal-intro-detail {
     width: 40%;
   }
-}
-@media (max-width: 1250px) {
-  .open-time {
-    width: 80%;
-  }
-  #breakfast-img,
-#lunch-img {
-    top: 0;
-    right: 0;
-    left: 0;
-    transform: none;
-    width: 100%;
-  }
-  .meal-intro-wrapper {
-    width: 80%;
+  #lunch-img {
+    right: -25%;
   }
 }
 @media (max-width: 1100px) {
@@ -953,7 +944,7 @@ footer .copyright {
     width: 90%;
   }
 }
-@media (max-width: 998px) {
+@media (max-width: 1250px) {
   .welcome__title {
     font-size: 1.8rem;
     left: 20%;
@@ -978,6 +969,7 @@ footer .copyright {
     right: 0;
     left: 0;
     transform: none;
+    width: 100%;
   }
   .meal-intro-wrapper {
     height: 722px;
