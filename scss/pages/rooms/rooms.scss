@@ -13,7 +13,7 @@
 .welcome {
   &__title {
     color: $white;
-    @include welcome-title-position(35%, 70%);
+    @include welcome-title-position(38%, 75%);
   }
 }
 

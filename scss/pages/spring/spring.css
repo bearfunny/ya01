@@ -429,9 +429,9 @@ footer .copyright {
 .triangle-up {
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 30px solid #555;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 22px solid #165e83;
 }
 
 .flex {
@@ -581,20 +581,19 @@ footer .copyright {
 .welcome:before {
   content: "";
   background: linear-gradient(transparent 70%, #fff), url("../../../pages/spring/pic/welcome.jpg") no-repeat center center/cover;
-  opacity: 0.7;
+  opacity: 0.75;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1;
-  background-position: center center;
 }
 
 .welcome__title {
   color: #fff;
-  left: 40%;
-  top: 80%;
+  left: 38%;
+  top: 75%;
   letter-spacing: 2px;
 }
 
@@ -617,11 +616,12 @@ footer .copyright {
 }
 .spring__img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
   vertical-align: bottom;
 }
 .spring__sub-title {
-  font-size: 1.2rem;
+  font-size: 20px;
   text-align: center;
   color: #fff;
   background-color: #165e83;
@@ -642,29 +642,34 @@ footer .copyright {
 .spring__intro-title {
   padding: 0 36px;
   color: #fff;
+  font-size: 18px;
 }
 .spring__intro-detail {
   width: auto;
   flex: 1;
   background-color: #ebf6f7;
+  border: 1px solid #00a3af;
 }
 .spring .intro-radius-adjust {
   border-radius: 0 0 15px 10px;
 }
 .spring .intro-radius {
   border-radius: 0 0 10px 0;
+  border: 1px solid #00a3af;
 }
 .spring .img-radius {
   border-radius: 10px 10px 0 0;
 }
 .spring .dot li {
-  margin: 15px 5px 15px 5px;
+  margin: 15px 30px 15px 30px;
+  color: #165e83;
+  font-size: 18px;
+}
+.spring .dot li:first-child {
+  margin-top: 40px;
 }
 .spring .dot li:last-child {
-  margin-bottom: 15px;
-}
-.spring .dot li {
-  margin: 15px 5px 15px 5px;
+  margin-bottom: 40px;
 }
 
 .phone-group {
@@ -732,6 +737,12 @@ footer .copyright {
   }
   .spring .intro-radius {
     border-radius: 0 0 10px 10px;
+  }
+  .spring .dot li:first-child {
+    margin-top: 25px;
+  }
+  .spring .dot li:last-child {
+    margin-bottom: 25px;
   }
   .ul-center {
     text-align: center;

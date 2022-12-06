@@ -430,9 +430,9 @@ footer .copyright {
 .triangle-up {
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 30px solid #555;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 22px solid #165e83;
 }
 
 .flex {
@@ -593,8 +593,8 @@ footer .copyright {
 
 .welcome__title {
   color: #fff;
-  left: 35%;
-  top: 70%;
+  left: 38%;
+  top: 75%;
   letter-spacing: 2px;
 }
 

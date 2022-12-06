@@ -8,13 +8,12 @@
 
 .welcome:before {
   @include welcome-setting("../../../pages/spa/pic/welcome.jpg", 0.8);
-  background-position: center center;
 }
 
 .welcome {
   &__title {
     color: $white;
-    @include welcome-title-position(38%, 80%);
+    @include welcome-title-position(38%, 75%);
   }
 }
 
@@ -27,29 +26,33 @@
   &__title {
     color: $main-color;
     text-align: center;
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
+    font-size: 30px;
     letter-spacing: 60px;
     text-indent: 60px;
-    margin-bottom: 15px;
+    margin-bottom: 52px;
   }
 
   &__img-div {
-    background-color: darkcyan;
+    // background-color: darkcyan;
     width: 100%;
     height: 400px;
     background: url("../../../pages/spa/pic/spa.jpg");
     background-size: cover;
     background-position: center center;
+    border-radius: 20px;
   }
 }
 
 .sales-group {
-  width: 70%;
+  width: 65%;
   margin: auto;
 
   &__title {
     color: $main-color;
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
+    font-size: 30px;
+    font-weight: normal;
     letter-spacing: 60px;
     text-indent: 60px;
     text-align: center;
@@ -57,19 +60,15 @@
   }
 }
 
-.sales-card {
+.sales-card,
+.sales-card2,
+.sales-card3 {
   background-color: $secondary-white-blue;
-  border-radius: 15px 0 0 15px;
+  border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
 
   margin-bottom: 30px;
-  &__img {
-    border-radius: 10px 0 0 10px;
-    width: 40%;
-    height: 400px;
-    background: url(../../../pages/spa/pic/promote1.jpg) center bottom;
-  }
   &__detail {
     flex: 1;
     // width: 50%;
@@ -77,7 +76,8 @@
     margin-right: 50px;
     &__title {
       color: $main-color;
-      font-size: 1.5rem;
+      // font-size: 1.5rem;
+      font-size: 24px;
       text-align: center;
       padding-top: 30px;
       padding-bottom: 5px;
@@ -86,24 +86,50 @@
     }
 
     &__info {
+      color: $main-color;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       font-size: 1.2rem;
       margin-bottom: 20px;
-      &__title {
-        flex: 15%;
-      }
       &__detail {
         width: 85%;
       }
     }
   }
 }
+.sales-card{
+  &__img {
+    border-radius: 20px 0 0 20px;
+    width: 40%;
+    height: 366px;
+    background: url(../../../pages/spa/pic/promote1.jpg) center bottom;
+  }
+}
+.sales-card2{
+  .sales-card__img {
+    border-radius: 20px 0 0 20px;
+    width: 40%;
+    height: 366px;
+    background: url(../../../pages/spa/pic/promote2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.sales-card3{
+  .sales-card__img {
+    border-radius: 20px 0 0 20px;
+    width: 40%;
+    height: 366px;
+    background: url(../../../pages/spa/pic/promote3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 .phone-group {
   // background-color: bisque;
-  width: 70%;
+  width: 65%;
   margin: auto;
   text-align: center;
   padding: 15px 0;
@@ -124,6 +150,7 @@
     padding: 35px 0;
     color: $main-color;
     background-color: $secondary-white-blue;
+    border-radius: 20px;
   }
 
   &__img {
@@ -134,6 +161,7 @@
 }
 
 .caution {
+  color: $main-color;
   border-top: 2px solid $main-color;
   border-bottom: 2px solid $main-color;
   width: 85%;

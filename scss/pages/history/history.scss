@@ -7,15 +7,7 @@
 // Welcome Picture
 
 .welcome:before {
-  @include welcome-setting("../../../pages/history/pic/welcome.jpg", 0.7);
-  background-position: 50% 80%;
-}
-
-.welcome {
-  &__title {
-    color: $white;
-    @include welcome-title-position(40%, 80%);
-  }
+  @include welcome-setting("../../../pages/history/pic/welcome.jpg", 0.8);
 }
 
 .history {
@@ -119,7 +111,9 @@
     color: $white;
     background-color: $main-color;
     text-align: center;
-    font-size: 1.2rem;
+    // font-size: 1.2rem;
+    font-size: 20px;
+    font-weight: normal;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 10px 10px 0 0;
@@ -135,7 +129,7 @@
 .garden-one {
   width: 100%;
   background: url(../../../pages/history/pic/garden1.jpg);
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
 }
 
@@ -182,15 +176,15 @@
 
 .food-one {
   width: 100%;
-  background: url(../../../pages/history/pic/food1.jpg);
-  background-position: center bottom;
+  background: url(../../../pages/history/pic/food3.jpg);
+  background-position: center center;
   background-size: cover;
   border-radius: 0 0 10px 10px;
 }
 
 .food-two {
   width: 49.5%;
-  background: url(../../../pages/history/pic/food2.jpg);
+  background: url(../../../pages/history/pic/food1.jpg);
   background-position: center center;
   background-size: cover;
   // border-radius: 0 0 0 10px;
@@ -198,7 +192,7 @@
 
 .food-three {
   width: 49.5%;
-  background: url(../../../pages/history/pic/food3.jpg);
+  background: url(../../../pages/history/pic/food2.jpg);
   background-position: center center;
   background-size: cover;
   // border-radius: 0 0 10px 0;
