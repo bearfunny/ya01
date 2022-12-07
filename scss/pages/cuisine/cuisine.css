@@ -302,7 +302,7 @@ footer .copyright {
   width: 85%;
   display: flex;
   align-items: center;
-  height: 136px;
+  height: 90px;
   margin: auto;
   margin-bottom: 120px;
 }
@@ -640,14 +640,15 @@ footer .copyright {
 }
 .welcome:before {
   content: "";
-  background: linear-gradient(transparent 70%, #fff), url("../../../pages/cuisine/pic/welcome.jpg") no-repeat center center/cover;
-  opacity: 0.75;
+  background: linear-gradient(transparent 70%, #fff), url("../../../pages/cuisine/pic/pexels-5652918.jpg") no-repeat center center/cover;
+  opacity: 0.8;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1;
+  background-size: 120%;
 }
 
 .welcome__title {
@@ -660,6 +661,7 @@ footer .copyright {
 .scroll-background {
   width: 100%;
   background-color: #ebf6f7;
+  box-shadow: 0px 0px 20px #ebf6f7;
 }
 
 .scroll-section {

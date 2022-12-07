@@ -243,7 +243,7 @@ footer .copyright {
   width: 85%;
   display: flex;
   align-items: center;
-  height: 136px;
+  height: 90px;
   margin: auto;
   margin-bottom: 120px;
 }
@@ -581,8 +581,8 @@ footer .copyright {
 }
 .welcome:before {
   content: "";
-  background: linear-gradient(transparent 70%, #fff), url("../../../pages/rooms/pic/welcome.jpg") no-repeat center center/cover;
-  opacity: 0.6;
+  background: linear-gradient(transparent 70%, #fff), url("../../../pages/rooms/pic/img_main.jpg") no-repeat center center/cover;
+  opacity: 0.8;
   top: 0;
   left: 0;
   bottom: 0;
@@ -601,6 +601,7 @@ footer .copyright {
 .scroll-background {
   width: 100%;
   background-color: #ebf6f7;
+  box-shadow: 0px 0px 20px #ebf6f7;
 }
 
 .scroll-section {
@@ -626,25 +627,28 @@ footer .copyright {
   border-radius: 20px;
 }
 .hotel-intro .hotel-detail {
+  margin-top: 15px;
   width: 59%;
   height: 45%;
 }
 .hotel-intro .hotel-detail .hotel-name {
   color: #165e83;
-  font-size: 2rem;
+  font-size: 30px;
   margin-top: 28px;
   text-align: left;
 }
 .hotel-intro .hotel-detail .hotel-paragraph {
-  font-size: 1.2rem;
+  font-size: 20px;
   margin-top: 32px;
   margin-left: 0;
 }
 .hotel-intro .hotel-modal {
+  margin-top: 15px;
   border-radius: 20px;
-  width: 39%;
-  height: 45%;
+  width: 35%;
+  height: 42%;
   background-color: #ebf6f7;
+  box-shadow: 0px 4px 8px #83ccd2;
 }
 .hotel-intro .hotel-modal .hotel-button {
   text-align: center;
@@ -658,26 +662,31 @@ footer .copyright {
   display: flex;
   flex-wrap: nowrap;
   border-radius: 10px;
-  background-color: #83ccd2;
+  background-color: #fff;
+  box-shadow: inset 0px 2px 5px rgba(131, 204, 210, 0.7);
   font-size: 1.5rem;
-  padding: 20px 0;
-  margin: 15px 48px;
+  padding: 10px 0;
+  margin: 30px 48px;
 }
 .hotel-modal-paragraph-group .hotel-modal-paragraph .hotel-modal-subject {
   width: 60%;
+  font-size: 20px;
   margin-left: 36px;
+  color: #00a3af;
 }
 .hotel-modal-paragraph-group .hotel-modal-paragraph .hotel-modal-number {
   width: 40%;
+  font-size: 20px;
   margin-right: 50px;
   text-align: end;
+  color: #00a3af;
 }
 
 .hotel-modal-pop {
   max-width: 1920px;
   width: 100%;
   height: 100vh;
-  background-color: #ebf6f7;
+  background-color: rgba(235, 246, 247, 0.9333333333);
   display: none;
   flex-direction: column;
   position: fixed;
@@ -687,14 +696,16 @@ footer .copyright {
   opacity: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-  transition: 1.5s all;
+  transition: 0.5s all;
   gap: 10px;
+  padding-top: 40px;
 }
 .hotel-modal-pop__title {
   margin-top: 36px;
   margin-bottom: 16px;
   text-align: center;
-  font-size: 2rem;
+  letter-spacing: 2px;
+  font-size: 30px;
   width: 100%;
   color: #8c6450;
 }
@@ -715,21 +726,13 @@ footer .copyright {
   align-items: center;
   background-color: #d9a62e;
 }
-.hotel-modal-pop .close {
-  margin: 0 auto;
-}
-.hotel-modal-pop .close .close-text {
-  font-size: 2.5rem;
-  cursor: pointer;
-  margin: 2rem;
-  color: #8c6450;
-}
 .hotel-modal-pop .close-btn {
   text-align: center;
-  font-size: 60.5px;
+  font-size: 50px;
   position: absolute;
-  top: 15px;
-  right: 120px;
+  top: 20px;
+  right: 20%;
+  padding-top: 40px;
   cursor: pointer;
 }
 .hotel-modal-pop .close-btn::after {
@@ -743,7 +746,7 @@ footer .copyright {
 }
 .hotel-modal-detail__utili {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 20px;
   letter-spacing: 10px;
   text-indent: 10px;
   width: 30%;
@@ -753,7 +756,7 @@ footer .copyright {
 .hotel-modal-detail__list {
   color: #8c6450;
   width: 70%;
-  padding: 15px 10px;
+  padding: 20px 10px;
   background-color: #fff;
 }
 
@@ -780,7 +783,7 @@ footer .copyright {
 }
 @media (min-width: 1360px) {
   .hotel-paragraph {
-    margin: auto 120px;
+    margin: auto 50px;
   }
   .hotel-button {
     margin-top: 36px;
@@ -789,12 +792,15 @@ footer .copyright {
 @media (max-width: 1360px) {
   .hotel-intro {
     width: 75%;
+    gap: 0px;
   }
   .hotel-intro .hotel-detail {
+    margin-top: 0;
     width: 48%;
     height: 20%;
   }
   .hotel-intro .hotel-modal {
+    margin-top: 0;
     width: 48%;
     height: 30%;
   }
@@ -832,6 +838,7 @@ footer .copyright {
     height: 20%;
   }
   .hotel-intro .hotel-modal {
+    margin-top: 32px;
     width: 48%;
     height: 35%;
   }
@@ -856,7 +863,7 @@ footer .copyright {
   }
   .hotel-intro .hotel-modal {
     width: 100%;
-    height: 35%;
+    height: 34%;
   }
 }
 @media (max-width: 850px) {
@@ -867,8 +874,13 @@ footer .copyright {
     width: 84.5%;
   }
   .hotel-modal-pop .close-btn {
-    top: 15px;
+    top: 20px;
     right: 60px;
+  }
+}
+@media (max-width: 806px) {
+  .hotel-intro .hotel-modal {
+    margin-top: 52px;
   }
 }
 @media (max-width: 650px) {
@@ -880,13 +892,17 @@ footer .copyright {
   }
 }
 @media (max-width: 650px) {
+  .hotel-modal-pop .hotel-modal-detail {
+    width: 80%;
+  }
   .hotel-modal-pop .hotel-modal-detail__utili {
     border: 1px solid #8c6450;
     border-bottom: none;
-    font-size: 30px;
-    letter-spacing: 1.5rem;
+    font-size: 24px;
     text-indent: 1.5rem;
+    line-height: 22.5px;
     width: 100%;
+    height: 55px;
   }
   .hotel-modal-pop .hotel-modal-detail__list {
     border: 1px solid #8c6450;
@@ -920,7 +936,8 @@ footer .copyright {
     height: 55%;
   }
   .hotel-modal-pop .close-btn {
-    top: 15px;
+    font-size: 40px;
+    top: 30px;
     right: 40px;
   }
   .scroll-section ul li {
@@ -962,7 +979,6 @@ footer .copyright {
 }
 @media (max-width: 450px) {
   .hotel-modal-pop .close-btn {
-    top: 15px;
     right: 30px;
   }
 }
@@ -976,7 +992,6 @@ footer .copyright {
 }
 @media (max-width: 400px) {
   .hotel-modal-pop .close-btn {
-    top: 15px;
     right: 20px;
   }
 }/*# sourceMappingURL=rooms.css.map */
