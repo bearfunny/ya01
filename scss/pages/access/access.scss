@@ -7,7 +7,7 @@
 // Welcome Picture
 
 .welcome:before {
-  @include welcome-setting("../../../pages/access/pic/welcome.jpg", 0.75);
+  @include welcome-setting("../../../pages/access/pic/welcome.jpg", 0.8);
 }
 
 .welcome {
@@ -44,16 +44,17 @@
 
   .access-detail {
     width: 100%;
+    margin-left: 10px;
     &__title {
       color: $main-color;
-      font-size: 50px;
+      font-size: 40px;
       padding: 5px;
       margin-bottom: 30px;
     }
 
-    // &__paragraph {
-    //   margin-bottom: 100px;
-    // }
+    &__paragraph {
+      line-height: 40px;
+    }
   }
 
   // 旅館資訊 使用Flex 至於最下方
@@ -140,6 +141,7 @@
       width: 33%;
       color: $white;
       text-align: center;
+      font-size: 24px;
       background-color: $main-color;
 
       a {
@@ -290,15 +292,16 @@
       height: 100%;
     }
   }
-  &__name {
+  &__name h3{
     color: $main-color;
-    font-size: 20px;
+    font-size: 24px;
     margin: 10px;
   }
 
   &__detail {
     text-align: left;
     margin-bottom: 30px;
+    font-size: 18px;
   }
 
   &__time {
