@@ -754,6 +754,10 @@ footer .copyright {
   display: flex;
 }
 
+.meal-intro-wrapper:last-child {
+  margin-bottom: 100px;
+}
+
 .meal-intro-box {
   height: 100%;
   width: 100%;
@@ -950,7 +954,7 @@ footer .copyright {
   .welcome__title {
     font-size: 1.8rem;
     left: 20%;
-    top: 70%;
+    top: 75%;
     letter-spacing: 2px;
   }
   .open-time {
@@ -1017,9 +1021,9 @@ footer .copyright {
 }
 @media (max-width: 840px) {
   .welcome__title {
-    font-size: 1.8rem;
+    line-height: 40px;
     left: 30%;
-    top: 55%;
+    top: 70%;
     letter-spacing: 2px;
   }
   .set-wrapper {
@@ -1034,9 +1038,9 @@ footer .copyright {
 }
 @media (max-width: 575px) {
   .welcome__title {
-    font-size: 1.8rem;
+    font-size: 24px;
     left: 20%;
-    top: 50%;
+    top: 70%;
     letter-spacing: 2px;
   }
   .scroll-section {
@@ -1072,9 +1076,8 @@ footer .copyright {
 }
 @media (max-width: 420px) {
   .welcome__title {
-    font-size: 1.6rem;
     left: 0%;
-    top: 50%;
+    top: 65%;
     letter-spacing: 2px;
   }
   .open-time {

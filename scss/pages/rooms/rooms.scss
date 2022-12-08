@@ -278,7 +278,7 @@
   .welcome {
     &__title {
       font-size: 1.8rem;
-      @include welcome-title-position(20%, 70%);
+      @include welcome-title-position(20%, 75%);
     }
   }
 
@@ -307,7 +307,7 @@
   .welcome {
     &__title {
       font-size: 1.8rem;
-      @include welcome-title-position(20%, 70%);
+      @include welcome-title-position(20%, 75%);
     }
   }
 
@@ -383,7 +383,7 @@
   .welcome {
     &__title {
       font-size: 1.8rem;
-      @include welcome-title-position(10%, 70%);
+      @include welcome-title-position(10%, 75%);
     }
   }
 
@@ -458,7 +458,7 @@
   .welcome {
     &__title {
       font-size: 1.6rem;
-      @include welcome-title-position(0%, 50%);
+      @include welcome-title-position(0%, 75%);
     }
   }
 }

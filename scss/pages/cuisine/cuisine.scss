@@ -133,6 +133,9 @@
   border-radius: 10px;
   display: flex;
 }
+.meal-intro-wrapper:last-child {
+  margin-bottom: 100px;
+}
 
 .meal-intro-box {
   height: 100%;
@@ -376,7 +379,7 @@
   .welcome {
     &__title {
       font-size: 1.8rem;
-      @include welcome-title-position(20%, 70%);
+      @include welcome-title-position(20%, 75%);
     }
   }
 
@@ -462,8 +465,8 @@
 @media (max-width: 840px) {
   .welcome {
     &__title {
-      font-size: 1.8rem;
-      @include welcome-title-position(30%, 55%);
+      line-height: 40px;
+      @include welcome-title-position(30%, 70%);
     }
   }
 
@@ -483,8 +486,8 @@
 @media (max-width: 575px) {
   .welcome {
     &__title {
-      font-size: 1.8rem;
-      @include welcome-title-position(20%, 50%);
+      font-size: 24px;
+      @include welcome-title-position(20%, 70%);
     }
   }
 
@@ -516,8 +519,7 @@
 @media (max-width: 420px) {
   .welcome {
     &__title {
-      font-size: 1.6rem;
-      @include welcome-title-position(0%, 50%);
+      @include welcome-title-position(0%, 65%);
     }
   }
 

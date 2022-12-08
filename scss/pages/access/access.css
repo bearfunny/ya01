@@ -706,14 +706,15 @@ footer .copyright {
   width: 33%;
   color: #fff;
   text-align: center;
-  font-size: 24px;
-  background-color: #165e83;
+  line-height: 69px;
+  font-size: 20px;
+  background: linear-gradient(#00a3af -50%, #165e83 90%);
 }
 .route-scroll .scroll-group li a {
   display: inline-block;
   color: #fff;
   width: 100%;
-  padding: 20px;
+  height: 69px;
 }
 .route-scroll .scroll-group li:first-child {
   border-radius: 10px 0 0 10px;
@@ -832,7 +833,7 @@ footer .copyright {
   margin: auto;
 }
 .sight__title {
-  font-size: 32px;
+  font-size: 30px;
   text-align: center;
   color: #165e83;
 }
@@ -866,6 +867,7 @@ footer .copyright {
 .card-group .card-group__img6 {
   width: 100%;
   height: 330px;
+  border-radius: 10px;
 }
 .card-group .card-group__img1 {
   background: url(../../../pages/access/pic/sight1.jpg);
@@ -900,12 +902,13 @@ footer .copyright {
 .card-group__name h3 {
   color: #165e83;
   font-size: 24px;
-  margin: 10px;
+  margin: 15px 0;
 }
 .card-group__detail {
   text-align: left;
   margin-bottom: 30px;
   font-size: 18px;
+  line-height: 30px;
 }
 .card-group__time {
   text-align: left;
@@ -968,8 +971,15 @@ footer .copyright {
   .caution {
     font-size: 20px;
   }
-  .card-group__img {
+  .card-group .card-group__img1,
+.card-group .card-group__img2,
+.card-group .card-group__img3,
+.card-group .card-group__img4,
+.card-group .card-group__img5,
+.card-group .card-group__img6 {
+    width: 100%;
     height: 250px;
+    border-radius: 10px;
   }
   .scroll-section ul li {
     width: 33.33%;
@@ -997,7 +1007,18 @@ footer .copyright {
   }
   .route-scroll .scroll-group li {
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    line-height: 60px;
+  }
+  .route-scroll .scroll-group li a {
+    height: 60px;
+  }
+  .route-scroll .scroll-group li:first-child {
+    border-radius: 10px;
+  }
+  .route-scroll .scroll-group li:last-child {
+    border-radius: 10px;
   }
 }
 @media (max-width: 785px) {
@@ -1008,9 +1029,6 @@ footer .copyright {
 @media (max-width: 780px) {
   .card-group {
     width: 80%;
-  }
-  .card-group__img {
-    height: 320px;
   }
 }
 @media (max-width: 575px) {
@@ -1043,8 +1061,5 @@ footer .copyright {
 @media (max-width: 361px) {
   .card-group {
     width: 95%;
-  }
-  .card-group__img {
-    height: 200px;
   }
 }/*# sourceMappingURL=access.css.map */

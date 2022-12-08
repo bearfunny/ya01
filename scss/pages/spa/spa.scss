@@ -247,7 +247,7 @@
   .welcome {
     &__title {
       font-size: 1.8rem;
-      @include welcome-title-position(30%, 80%);
+      @include welcome-title-position(30%, 75%);
     }
   }
 }
@@ -290,7 +290,7 @@
   .welcome {
     &__title {
       font-size: 1.8rem;
-      @include welcome-title-position(25%, 80%);
+      @include welcome-title-position(25%, 75%);
     }
   }
 
@@ -337,7 +337,7 @@
   .welcome {
     &__title {
       font-size: 1.8rem;
-      @include welcome-title-position(30%, 80%);
+      @include welcome-title-position(30%, 75%);
     }
   }
 }
@@ -392,7 +392,7 @@
   .welcome {
     &__title {
       font-size: 1.8rem;
-      @include welcome-title-position(20%, 80%);
+      @include welcome-title-position(20%, 75%);
     }
   }
 
@@ -416,7 +416,7 @@
   .welcome {
     &__title {
       font-size: 1.6rem;
-      @include welcome-title-position(0%, 80%);
+      @include welcome-title-position(0%, 75%);
     }
   }
 

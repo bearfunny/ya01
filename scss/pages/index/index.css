@@ -907,6 +907,11 @@ footer .copyright {
     transform: translateX(calc(-100% - 30px));
   }
 }
+@media (max-width: 1400px) {
+  .intro .intro-section__text-intro p {
+    margin: 30px 60px;
+  }
+}
 @media (min-width: 1070px) {
   .welcome__title {
     font-size: 2rem;
@@ -959,6 +964,9 @@ footer .copyright {
   .intro .intro-section {
     width: 90%;
   }
+  .intro .intro-section h3 {
+    margin-top: 40px;
+  }
   .intro .intro-section p {
     margin: 30px 56px;
   }
@@ -966,11 +974,12 @@ footer .copyright {
     width: 100%;
   }
   .intro .intro-section__text-intro {
+    margin-top: 0;
     width: 100%;
     height: 100%;
   }
   .intro .intro-section .button-div .page-button {
-    margin-top: 28px;
+    margin-top: 20px;
   }
   .marquee-area .marquee-round {
     gap: 0;
@@ -1094,6 +1103,13 @@ footer .copyright {
     width: 100%;
     height: 100%;
   }
+  .intro .intro-section h3 {
+    margin-top: 0;
+  }
+  .intro .intro-section .intro-section__picture {
+    height: 300px;
+    margin-top: 0;
+  }
   .intro .intro-section .intro-section__picture__picture-one {
     display: none;
   }
@@ -1101,7 +1117,7 @@ footer .copyright {
     position: relative;
     margin: auto;
     width: 85%;
-    height: 100%;
+    height: 90%;
   }
   .welcome__title {
     font-size: 1.2rem;
