@@ -127,7 +127,7 @@
   width: 80%;
   height: 100%;
   margin: auto;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 
   .scroll-group {
     display: flex;
@@ -151,6 +151,12 @@
         padding: 20px;
       }
     }
+    li:first-child{
+      border-radius: 10px 0 0 10px;
+    }
+    li:last-child{
+      border-radius: 0 10px 10px 0;
+    }
   }
 }
 
@@ -162,7 +168,21 @@
     width: 100%;
   }
 }
-
+.car-route{
+  img:not([src]){
+    content: url(../../../pages/access/pic/car.svg);
+  }
+}
+.train-route{
+  img:not([src]){
+    content: url(../../../pages/access/pic/train.svg);
+  }
+}
+.bus-route{
+  img:not([src]){
+    content: url(../../../pages/access/pic/bus.svg);
+  }
+}
 .route:last-child {
   width: 80%;
   margin: auto;
@@ -210,6 +230,7 @@
     text-align: center;
     width: 49.3%;
     background-color: $secondary-white-blue;
+    border-radius: 10px;
     &__title {
       font-size: 18px;
       padding-top: 32px;
@@ -248,6 +269,7 @@
   text-align: center;
   padding: 20px;
   margin-bottom: 120px;
+  border-radius: 10px;
 }
 
 .sight {
@@ -281,16 +303,45 @@
 .card-group {
   width: 26%;
   text-align: center;
-  // background-color: aquamarine;
   margin-bottom: 60px;
-  &__img {
-    background-color: rgb(42, 131, 24);
+  .card-group__img1,
+  .card-group__img2,
+  .card-group__img3,
+  .card-group__img4,
+  .card-group__img5,
+  .card-group__img6 {
     width: 100%;
     height: 330px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
+  }
+  .card-group__img1{
+    background: url(../../../pages/access/pic/sight1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .card-group__img2{
+    background: url(../../../pages/access/pic/sight2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .card-group__img3{
+    background: url(../../../pages/access/pic/sight3.jpg);
+    background-size: cover;
+    background-position: center bottom;
+  }
+  .card-group__img4{
+    background: url(../../../pages/access/pic/sight4.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .card-group__img5{
+    background: url(../../../pages/access/pic/sight5.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .card-group__img6{
+    background: url(../../../pages/access/pic/sight6.jpg);
+    background-size: cover;
+    background-position: center;
   }
   &__name h3{
     color: $main-color;
@@ -398,6 +449,21 @@
     }
   }
 
+  .car-route{
+    img:not([src]){
+      content: url(../../../pages/access/pic/car2.svg);
+    }
+  }
+  .train-route{
+    img:not([src]){
+      content: url(../../../pages/access/pic/train2.svg);
+    }
+  }
+  .bus-route{
+    img:not([src]){
+      content: url(../../../pages/access/pic/bus2.svg);
+    }
+  }
   .route-scroll {
     .scroll-group {
       li {
