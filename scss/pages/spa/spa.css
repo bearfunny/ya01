@@ -687,7 +687,7 @@ footer .copyright {
   border-radius: 20px 0 0 20px;
   width: 40%;
   height: 366px;
-  background: url(../../../pages/spa/pic/promote2.jpg);
+  background: url(../../../pages/spa/pic/promote2.jpg) center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -696,7 +696,7 @@ footer .copyright {
   border-radius: 20px 0 0 20px;
   width: 40%;
   height: 366px;
-  background: url(../../../pages/spa/pic/promote3.jpg);
+  background: url(../../../pages/spa/pic/promote3.jpg) center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -764,11 +764,6 @@ footer .copyright {
     border-radius: 15px 0 15px 15px;
     margin-bottom: 30px;
   }
-  .sales-card__img {
-    border-radius: 10px 0 0 10px;
-    width: 30%;
-    background-position: -100px center;
-  }
   .sales-card__detail {
     width: 100%;
     margin-left: 50px;
@@ -810,7 +805,7 @@ footer .copyright {
   .sales-card {
     width: 75%;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .sales-card__img {
     border-radius: 10px 10px 0 0;
@@ -831,8 +826,21 @@ footer .copyright {
   .sales-card__detail__info__detail {
     width: 85%;
   }
+  .sales-card2,
+.sales-card3 {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .sales-card2 .sales-card__img,
+.sales-card3 .sales-card__img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    background-position: center center;
+  }
   .phone-group {
     width: 65%;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 998px) {
@@ -856,7 +864,6 @@ footer .copyright {
 @media (max-width: 924px) {
   .sales-card {
     width: 95%;
-    margin: auto;
     margin-bottom: 30px;
   }
   .sales-card__img {
@@ -878,12 +885,16 @@ footer .copyright {
   .sales-card__detail__info__detail {
     width: 85%;
   }
+  .sales-card2,
+.sales-card3 {
+    width: 95%;
+  }
 }
 @media (max-width: 840px) {
   .welcome__title {
     font-size: 1.8rem;
-    left: 30%;
-    top: 75%;
+    left: 20%;
+    top: 70%;
     letter-spacing: 2px;
   }
 }
@@ -930,8 +941,8 @@ footer .copyright {
 @media (max-width: 575px) {
   .welcome__title {
     font-size: 1.8rem;
-    left: 20%;
-    top: 75%;
+    left: 10%;
+    top: 70%;
     letter-spacing: 2px;
   }
   .caution li {
@@ -948,7 +959,7 @@ footer .copyright {
   .welcome__title {
     font-size: 1.6rem;
     left: 0%;
-    top: 75%;
+    top: 70%;
     letter-spacing: 2px;
   }
   .caution li {

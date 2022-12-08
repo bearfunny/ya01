@@ -111,7 +111,7 @@
     border-radius: 20px 0 0 20px;
     width: 40%;
     height: 366px;
-    background: url(../../../pages/spa/pic/promote2.jpg);
+    background: url(../../../pages/spa/pic/promote2.jpg) center;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -121,7 +121,7 @@
     border-radius: 20px 0 0 20px;
     width: 40%;
     height: 366px;
-    background: url(../../../pages/spa/pic/promote3.jpg);
+    background: url(../../../pages/spa/pic/promote3.jpg) center;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -202,11 +202,11 @@
     border-radius: 15px 0 15px 15px;
 
     margin-bottom: 30px;
-    &__img {
-      border-radius: 10px 0 0 10px;
-      width: 30%;
-      background-position: -100px center;
-    }
+    // &__img {
+    //   border-radius: 10px 0 0 10px;
+    //   width: 30%;
+    //   background-position: -100px center;
+    // }
     &__detail {
       // flex: 1;
       width: 100%;
@@ -257,7 +257,7 @@
     width: 75%;
     margin: auto;
 
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     &__img {
       border-radius: 10px 10px 0 0;
       width: 100%;
@@ -280,9 +280,21 @@
       }
     }
   }
+  .sales-card2,
+  .sales-card3{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 40px;
+    .sales-card__img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+      background-position: center center;
+    }
+  }
 
   .phone-group {
     width: 65%;
+    margin-bottom: 0;
   }
 }
 
@@ -306,7 +318,6 @@
 @media (max-width: 924px) {
   .sales-card {
     width: 95%;
-    margin: auto;
 
     margin-bottom: 30px;
     &__img {
@@ -331,13 +342,17 @@
       }
     }
   }
+  .sales-card2,
+  .sales-card3{
+    width: 95%;
+  }
 }
 
 @media (max-width: 840px) {
   .welcome {
     &__title {
       font-size: 1.8rem;
-      @include welcome-title-position(30%, 75%);
+      @include welcome-title-position(20%, 70%);
     }
   }
 }
@@ -392,7 +407,7 @@
   .welcome {
     &__title {
       font-size: 1.8rem;
-      @include welcome-title-position(20%, 75%);
+      @include welcome-title-position(10%, 70%);
     }
   }
 
@@ -416,7 +431,7 @@
   .welcome {
     &__title {
       font-size: 1.6rem;
-      @include welcome-title-position(0%, 75%);
+      @include welcome-title-position(0%, 70%);
     }
   }
 

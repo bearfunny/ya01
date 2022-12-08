@@ -766,7 +766,7 @@ footer .copyright {
 @media (max-width: 575px) {
   .welcome__title {
     font-size: 1.8rem;
-    left: 20%;
+    left: 15%;
     top: 80%;
     letter-spacing: 2px;
   }

@@ -224,7 +224,7 @@
   .welcome {
     &__title {
       font-size: 1.8rem;
-      @include welcome-title-position(20%, 80%);
+      @include welcome-title-position(15%, 80%);
     }
   }
 }
