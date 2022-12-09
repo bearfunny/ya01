@@ -278,6 +278,9 @@
 
 @media (max-width: 1400px) {
   .intro {
+    &__title{
+      margin-bottom: 0;
+    }
     .intro-section {
       &__text-intro {
         p {
@@ -531,6 +534,9 @@
 
 @media (max-width: 576px) {
   .intro {
+    &__title{
+      margin-bottom: 36px;
+    }
     .intro-section {
       width: 100%;
       height: 100%;

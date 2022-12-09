@@ -908,6 +908,9 @@ footer .copyright {
   }
 }
 @media (max-width: 1400px) {
+  .intro__title {
+    margin-bottom: 0;
+  }
   .intro .intro-section__text-intro p {
     margin: 30px 60px;
   }
@@ -1099,6 +1102,9 @@ footer .copyright {
   }
 }
 @media (max-width: 576px) {
+  .intro__title {
+    margin-bottom: 36px;
+  }
   .intro .intro-section {
     width: 100%;
     height: 100%;
