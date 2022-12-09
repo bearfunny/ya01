@@ -590,6 +590,19 @@ footer .copyright {
   z-index: -1;
 }
 
+main {
+  position: relative;
+}
+main .historyBG img {
+  position: absolute;
+  width: 1000px;
+  height: auto;
+  top: 65%;
+  right: 55%;
+  opacity: 10%;
+  z-index: -1;
+}
+
 .history {
   width: 80%;
   margin: auto;
@@ -824,13 +837,16 @@ footer .copyright {
   }
 }
 @media (max-width: 750px) {
+  main .historyBG img {
+    width: 900px;
+    right: 10%;
+  }
   .gallery-card {
     width: 100%;
   }
 }
 @media (max-width: 575px) {
   .welcome__title {
-    font-size: 1.8rem;
     left: 20%;
     top: 80%;
     letter-spacing: 2px;
@@ -866,6 +882,9 @@ footer .copyright {
   .size-return {
     height: 300px;
   }
+  .history .history-intro-text {
+    margin: 40px;
+  }
 }
 @media (max-width: 420px) {
   .welcome__title {
@@ -878,10 +897,13 @@ footer .copyright {
     width: 90%;
   }
   .history__intro {
-    background-position-x: -200px !important;
+    min-height: 300px;
   }
   .history .history-intro-text {
-    margin: 40px 25px 20px;
+    margin: 0px 25px 20px;
+  }
+  .history .history-intro-text__title {
+    margin: 20px 0;
   }
   .gallery__title {
     letter-spacing: 1.5rem;
