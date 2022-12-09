@@ -18,7 +18,46 @@
     @include welcome-title-position(32%, 75%);
   }
 }
-
+main{
+  position: relative;
+  .foodBG img {
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    top: 10%;
+    right: 60%;
+    opacity: 20%;
+    z-index: -1;
+  }
+  .foodBG2 img {
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    top: 35%;
+    right: -10%;
+    opacity: 20%;
+    z-index: -1;
+    transform: scaleX(-1);
+  }
+  .foodBG3 img {
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    top: 55%;
+    right: 60%;
+    opacity: 20%;
+    z-index: -1;
+  }
+  .foodBG4 img {
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    top: 90%;
+    right: -20%;
+    opacity: 20%;
+    z-index: -1;
+  }
+}
 // 點選向下滑動選單
 
 // Onclick Scroll Button Section
@@ -376,6 +415,19 @@
 }
 
 @media (max-width: 1250px) {
+  main{
+    .foodBG2 img {
+      top: 40%;
+      right: -20%;
+    }
+    .foodBG3 img {
+      right: 50%;
+    }
+    .foodBG4 img {
+      top: 95%;
+      right: -30%;
+    }
+  }
   .welcome {
     &__title {
       font-size: 1.8rem;
@@ -463,6 +515,21 @@
 }
 
 @media (max-width: 840px) {
+  main{
+    .foodBG img {
+      right: 40%;
+    }
+    .foodBG2 img {
+      right: -50%;
+    }
+    .foodBG3 img {
+      top: 70%;
+      right: 20%;
+    }
+    .foodBG4 img {
+      right: -60%;
+    }
+  }
   .welcome {
     &__title {
       line-height: 40px;
@@ -484,6 +551,19 @@
 }
 
 @media (max-width: 575px) {
+  main{
+    .foodBG img {
+      top: 12%;
+      right: 30%;
+    }
+    .foodBG2 img {
+      right: -80%;
+    }
+    .foodBG4 img {
+      top: 95%;
+      right: -90%;
+    }
+  }
   .welcome {
     &__title {
       font-size: 24px;
@@ -514,6 +594,40 @@
 
 @media (max-width: 500px) {
   @include section-button-flex(100%, 60%, 16px);
+  main{
+    .foodBG img {
+      top: 12%;
+      right: 10%;
+    }
+    .foodBG2 img {
+      right: -100%;
+    }
+    .foodBG3 img {
+      top: 60%;
+      right: 10%;
+    }
+  }
+  .meal-list .meal-intro-wrapper:nth-child(3) .meal-intro-img{
+    height: 300px;
+  }
+  .meal-intro-wrapper{
+    height: 560px;
+    margin-bottom: 150px;
+  }
+  .meal-intro-box {
+    padding: 20px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    .meal-intro-detail{
+      .meal-title{
+        margin: 15px;
+      }
+    }
+    .meal-intro-img {
+      height: 300px;
+    }
+  }
 }
 
 @media (max-width: 420px) {

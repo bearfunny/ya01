@@ -658,6 +658,47 @@ footer .copyright {
   letter-spacing: 2px;
 }
 
+main {
+  position: relative;
+}
+main .foodBG img {
+  position: absolute;
+  width: 1000px;
+  height: auto;
+  top: 10%;
+  right: 60%;
+  opacity: 20%;
+  z-index: -1;
+}
+main .foodBG2 img {
+  position: absolute;
+  width: 1000px;
+  height: auto;
+  top: 35%;
+  right: -10%;
+  opacity: 20%;
+  z-index: -1;
+  transform: scaleX(-1);
+}
+main .foodBG3 img {
+  position: absolute;
+  width: 1000px;
+  height: auto;
+  top: 55%;
+  right: 60%;
+  opacity: 20%;
+  z-index: -1;
+}
+main .foodBG4 img {
+  position: absolute;
+  width: 1000px;
+  height: auto;
+  top: 90%;
+  right: -20%;
+  opacity: 20%;
+  z-index: -1;
+}
+
 .scroll-background {
   width: 100%;
   background-color: #ebf6f7;
@@ -951,6 +992,17 @@ footer .copyright {
   }
 }
 @media (max-width: 1250px) {
+  main .foodBG2 img {
+    top: 40%;
+    right: -20%;
+  }
+  main .foodBG3 img {
+    right: 50%;
+  }
+  main .foodBG4 img {
+    top: 95%;
+    right: -30%;
+  }
   .welcome__title {
     font-size: 1.8rem;
     left: 20%;
@@ -1020,6 +1072,19 @@ footer .copyright {
   }
 }
 @media (max-width: 840px) {
+  main .foodBG img {
+    right: 40%;
+  }
+  main .foodBG2 img {
+    right: -50%;
+  }
+  main .foodBG3 img {
+    top: 70%;
+    right: 20%;
+  }
+  main .foodBG4 img {
+    right: -60%;
+  }
   .welcome__title {
     line-height: 40px;
     left: 30%;
@@ -1037,6 +1102,17 @@ footer .copyright {
   }
 }
 @media (max-width: 575px) {
+  main .foodBG img {
+    top: 12%;
+    right: 30%;
+  }
+  main .foodBG2 img {
+    right: -80%;
+  }
+  main .foodBG4 img {
+    top: 95%;
+    right: -90%;
+  }
   .welcome__title {
     font-size: 24px;
     left: 20%;
@@ -1072,6 +1148,36 @@ footer .copyright {
   .scroll-section ul a {
     width: 60%;
     margin: 16px;
+  }
+  main .foodBG img {
+    top: 12%;
+    right: 10%;
+  }
+  main .foodBG2 img {
+    right: -100%;
+  }
+  main .foodBG3 img {
+    top: 60%;
+    right: 10%;
+  }
+  .meal-list .meal-intro-wrapper:nth-child(3) .meal-intro-img {
+    height: 300px;
+  }
+  .meal-intro-wrapper {
+    height: 560px;
+    margin-bottom: 150px;
+  }
+  .meal-intro-box {
+    padding: 20px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .meal-intro-box .meal-intro-detail .meal-title {
+    margin: 15px;
+  }
+  .meal-intro-box .meal-intro-img {
+    height: 300px;
   }
 }
 @media (max-width: 420px) {
