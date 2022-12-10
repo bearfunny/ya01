@@ -42,6 +42,10 @@
   background: linear-gradient(#00a3af -40%, #165e83 100%);
 }
 
+.form-menu-pt {
+  padding-top: 150px;
+}
+
 .form-menu {
   width: 500px;
   background-color: #fff;
@@ -57,6 +61,15 @@
   font-size: 23px;
   text-align: center;
   margin-top: 25px;
+}
+.form-menu__paragraph {
+  color: #165e83;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  line-height: 1.5rem;
+  font-weight: 700;
 }
 .form-menu__api {
   color: #165e83;
@@ -133,6 +146,7 @@
   accent-color: #83ccd2;
   background-color: #fff;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 .form-menu__checkbox__input {
   width: 20px;

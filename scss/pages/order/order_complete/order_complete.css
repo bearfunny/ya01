@@ -1,0 +1,15 @@
+.form-menu {
+  margin: auto;
+}
+.form-menu__title {
+  font-size: 1.8rem;
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+.form-menu__paragraph {
+  font-size: 1rem;
+  margin-bottom: 150px;
+}
+.form-menu__submit {
+  margin-bottom: 52px;
+}/*# sourceMappingURL=order_complete.css.map */

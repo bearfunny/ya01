@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" id="body-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>雫ノ泉 京都｜和風ホテル【公式】</title>
+    <link rel="stylesheet" href="../../scss/pages/order/order.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="../../index.html">
+          <img id="logo" src="../../NavFooterPic/logo-dark.png" alt="Logo" />
+        </a>
+      </div>
+      <nav class="pc-nav">
+        <ul class="nav-item">
+          <li><a href="../history/history.html">歷史</a></li>
+          <li><a href="../cuisine/cuisine.html">佳餚美饌</a></li>
+          <li><a href="../rooms/rooms.html">房型</a></li>
+          <li><a href="../spring/spring.html">溫泉</a></li>
+          <li><a href="../spa/spa.html">SPA</a></li>
+          <li><a href="../access/access.html">觀光交通</a></li>
+          <li><a href="../booking/booking.html">訂房專區</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-nav-toggle" class="hamburger">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+    </header>
+
+    <div class="mobile-nav">
+      <h2 class="mobile-nav__menu">MENU</h2>
+      <ul class="mobile-nav__navbar">
+        <li class="mobile-nav__nav-item">
+          <a href="../history/history.html">歷史</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="../cuisine/cuisine.html">佳餚美饌</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="../rooms/rooms.html">房型</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="../spring/spring.html">溫泉</a>
+        </li>
+        <li class="mobile-nav__nav-item"><a href="../spa/spa.html">SPA</a></li>
+        <li class="mobile-nav__nav-item">
+          <a href="../access/access.html">觀光交通</a>
+        </li>
+        <li class="mobile-nav__nav-item"><a href="">訂房專區</a></li>
+        <!-- <li class="mobile-nav__nav-item"><a href="#">常見問題</a></li>
+        <li class="mobile-nav__nav-item"><a href="#">電郵詢問</a></li>
+        <li class="mobile-nav__nav-item"><a href="#">隱私權政策</a></li> -->
+        <li class="mobile-nav__nav-item">
+          <a href="#" id="mobile-nav-previous">回上頁</a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="progress-bar">
+        <div class="progress-bar__box-group flex flex-around">
+          <div class="progress-bar__box">
+            <div class="progress-bar__check"></div>
+            <p class="progress-bar__text">選擇房間</p>
+            <p class="progress-bar__mark">&check;</p>
+          </div>
+          <div class="progress-bar__box gray">
+            <div class="progress-bar__check"></div>
+            <p class="progress-bar__text text-gray">加購餐點</p>
+            <p class="progress-bar__mark none">&check;</p>
+          </div>
+          <div class="progress-bar__box gray">
+            <div class="progress-bar__check"></div>
+            <p class="progress-bar__text text-gray">確認付款</p>
+            <p class="progress-bar__mark none">&check;</p>
+          </div>
+          <div class="progress-bar__box gray">
+            <div class="progress-bar__check"></div>
+            <p class="progress-bar__text abosolute-two-word text-gray">完成</p>
+            <p class="progress-bar__mark none">&check;</p>
+          </div>
+        </div>
+
+        <div class="progress-bar__line"></div>
+      </div>
+      <div class="wrapper">
+        <div
+          class="section-title greeting flex align-item-center flex-end rounded-radius-top rounded-radius-bottom main-color-shadow"
+        >
+          <p class="greeting__hello">張錫津先生您好</p>
+          <p class="greeting__logout">
+            <a href="../../index.html" class="greeting__href" id="logout-button">登出</a>
+          </p>
+        </div>
+
+        <div
+          class="section-title room flex align-item-center flex-end rounded-radius-top main-color-shadow mb-10"
+        >
+          <p class="room__title">訂房</p>
+        </div>
+        <form class="room-form" action="javascript:void(0)">
+          <div
+            class="section-title people flex rounded-radius-bottom main-color-shadow mb-60"
+          >
+            <div class="room__sub-title flex align-item-center gap-10 nowrap">
+              <div><img src="./pic/date.svg" alt="date" /></div>
+              <p class="room__sub">請選擇日期</p>
+            </div>
+            <div class="room__date flex mb-10">
+              <p class="room__date-intro rounded-radius-left">入住日期</p>
+              <input
+                class="room__date-input"
+                type="date"
+                name=""
+                id="date-start"
+              />
+            </div>
+            <div class="room__date flex mb-30">
+              <p class="room__date-intro rounded-radius-left">退房日期</p>
+              <input
+                class="room__date-input"
+                type="date"
+                name=""
+                id="date-end"
+              />
+            </div>
+            <div class="room__sub-title flex align-item-center gap-10 nowrap">
+              <div><img src="./pic/people.svg" alt="date" /></div>
+              <p class="room__sub">請選擇人數</p>
+            </div>
+            <div class="room__people flex">
+              <!-- <p class="room__people-intro rounded-radius-left">入住日期</p> -->
+              <div class="number-selector" id="adult-people-number">
+                <p class="number-selector__name">成人</p>
+                <div class="number-selector__count-group">
+                  <div class="number-selector__count">
+                    <div class="number-selector__count__minus">&minus;</div>
+
+                    <input
+                      class="number-selector__count__amount number-selector__count__number"
+                      type="number"
+                      value="0"
+                      name="adult-number"
+                      id="adult-number"
+                    />
+                    <div class="number-selector__count__plus">&plus;</div>
+                  </div>
+                </div>
+              </div>
+              <div class="number-selector" id="child-people-number">
+                <p class="number-selector__name">兒童</p>
+                <div class="number-selector__count-group">
+                  <div class="number-selector__count">
+                    <div class="number-selector__count__minus">&minus;</div>
+                    <input
+                      class="number-selector__count__amount number-selector__count__number"
+                      type="number"
+                      value="0"
+                      name="child-number"
+                      id="child-number"
+                    />
+                    <div class="number-selector__count__plus">&plus;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="section-title flex align-item-center flex-end rounded-radius-top main-color-shadow mb-10"
+          >
+            <p class="choose__title">選擇房間</p>
+          </div>
+          <div class="choose rounded-radius-bottom main-color-shadow mb-60">
+            <div class="choose__room-group flex mb-30" id="leaf-room">
+              <div class="choose__room-img" id="room-pic-one"></div>
+              <div class="choose__room-info">
+                <div class="flex-group flex">
+                  <h3 class="choose__room-title">葉之蔭簡約套房</h3>
+                  <p class="choose__room-description">
+                    簡約套房位於客房棟1樓，窗外是日光美麗的自然風光。所有客房配天然溫泉浴池，室內裝潢各具特色，有雙床及大床兩種床型客房。最多入住2名賓客。
+                  </p>
+                  <p class="choose__room-items">
+                    20坪&nbsp;2張單人床(100cm*200cm)
+                  </p>
+                  <div class="choose__room-caution flex">
+                    <div class="choose__img">
+                      <img src="./pic/wifi.svg" alt="wifi caution picutre" />
+                    </div>
+                    <p class="choose__caution-text">免費無線上網</p>
+                    <div class="choose__img">
+                      <img src="./pic/smoke.svg" alt="smoke caution picture" />
+                    </div>
+                    <p class="choose__caution-text">禁止吸菸</p>
+                  </div>
+                  <div class="number-selector flex mb-20">
+                    <p class="number-selector__name">價格</p>
+                    <div class="number-selector__count-group">
+                      <div class="number-selector__count">
+                        <div class="number-selector__count__amount">
+                          ￥35,000
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="number-selector flex">
+                    <p class="number-selector__name">房間數量</p>
+                    <div class="number-selector__count-group">
+                      <div class="number-selector__count">
+                        <div class="number-selector__count__minus">&minus;</div>
+                        <input
+                          class="number-selector__count__amount number-selector__count__number"
+                          type="number"
+                          value="0"
+                          name="leaf-number"
+                          id="leaf-number"
+                        />
+                        <div class="number-selector__count__plus">&plus;</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="choose__room-group flex mb-30" id="tree-room">
+              <div class="choose__room-img" id="room-pic-two"></div>
+              <div class="choose__room-info">
+                <div class="flex-group flex">
+                  <h3 class="choose__room-title">木之花舒適套房</h3>
+                  <p class="choose__room-description">
+                    舒適套房位於客房棟2樓，窗外是日光美麗的自然風光。所有客房配天然溫泉浴池，室內裝潢各具特色，有雙床及大床兩種床型客房。最多入住2名賓客。
+                  </p>
+                  <p class="choose__room-items">
+                    26坪&nbsp;2張單人床 (100cm*200cm)
+                  </p>
+                  <div class="choose__room-caution flex">
+                    <div class="choose__img">
+                      <img src="./pic/wifi.svg" alt="wifi caution picutre" />
+                    </div>
+                    <p class="choose__caution-text">免費無線上網</p>
+                    <div class="choose__img">
+                      <img src="./pic/smoke.svg" alt="smoke caution picture" />
+                    </div>
+                    <p class="choose__caution-text">禁止吸菸</p>
+                  </div>
+                  <div class="number-selector flex mb-20">
+                    <p class="number-selector__name">價格</p>
+                    <div class="number-selector__count-group">
+                      <div class="number-selector__count">
+                        <div class="number-selector__count__amount">
+                          ￥39,000
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="number-selector flex">
+                    <p class="number-selector__name">房間數量</p>
+                    <div class="number-selector__count-group">
+                      <div class="number-selector__count">
+                        <div class="number-selector__count__minus">&minus;</div>
+                        <input
+                          class="number-selector__count__amount number-selector__count__number"
+                          type="number"
+                          value="0"
+                          name="tree-number"
+                          id="tree-number"
+                        />
+                        <div class="number-selector__count__plus">&plus;</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="choose__room-group flex mb-30" id="branch-room">
+              <div class="choose__room-img" id="room-pic-three"></div>
+              <div class="choose__room-info">
+                <div class="flex-group flex">
+                  <h3 class="choose__room-title">梢之景悅享套房</h3>
+                  <p class="choose__room-description">
+                    悅享套房擁有寬敞舒適的休息空間，窗外是日光美麗的自然風光。所有客房配天然溫泉浴池，室內裝潢各具特色。最多入住4名賓客。
+                  </p>
+                  <p class="choose__room-items">
+                    30坪&nbsp;2張雙人床 (400cm*200cm)
+                  </p>
+                  <div class="choose__room-caution flex">
+                    <div class="choose__img">
+                      <img src="./pic/wifi.svg" alt="wifi caution picutre" />
+                    </div>
+                    <p class="choose__caution-text">免費無線上網</p>
+                    <div class="choose__img">
+                      <img src="./pic/smoke.svg" alt="smoke caution picture" />
+                    </div>
+                    <p class="choose__caution-text">禁止吸菸</p>
+                  </div>
+                  <div class="number-selector flex mb-20">
+                    <p class="number-selector__name">價格</p>
+                    <div class="number-selector__count-group">
+                      <div class="number-selector__count">
+                        <div class="number-selector__count__amount">
+                          ￥42,500
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="number-selector flex">
+                    <p class="number-selector__name">房間數量</p>
+                    <div class="number-selector__count-group">
+                      <div class="number-selector__count">
+                        <div class="number-selector__count__minus">&minus;</div>
+                        <input
+                          class="number-selector__count__amount number-selector__count__number"
+                          type="number"
+                          value="0"
+                          name="branch-number"
+                          id="branch-number"
+                        />
+                        <div class="number-selector__count__plus">&plus;</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="choose__room-group flex mb-30" id="prime-room">
+              <div class="choose__room-img" id="room-pic-four"></div>
+              <div class="choose__room-info">
+                <div class="flex-group flex">
+                  <h3 class="choose__room-title">常盤木尊貴套房</h3>
+                  <p class="choose__room-description">
+                    尊貴套房擁有十分寬敞舒適的空間，窗外是日光美麗的自然風光。所有客房配天然溫泉浴池，室內裝潢各具特色。最多入住4名賓客。
+                  </p>
+                  <p class="choose__room-items">
+                    40坪&nbsp;4張單人床 (400cm*200cm)
+                  </p>
+                  <div class="choose__room-caution flex">
+                    <div class="choose__img">
+                      <img src="./pic/wifi.svg" alt="wifi caution picutre" />
+                    </div>
+                    <p class="choose__caution-text">免費無線上網</p>
+                    <div class="choose__img">
+                      <img src="./pic/smoke.svg" alt="smoke caution picture" />
+                    </div>
+                    <p class="choose__caution-text">禁止吸菸</p>
+                  </div>
+                  <div class="number-selector flex mb-20">
+                    <p class="number-selector__name">價格</p>
+                    <div class="number-selector__count-group">
+                      <div class="number-selector__count">
+                        <div class="number-selector__count__amount">
+                          ￥52,000
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="number-selector flex">
+                    <p class="number-selector__name">房間數量</p>
+                    <div class="number-selector__count-group">
+                      <div class="number-selector__count">
+                        <div class="number-selector__count__minus">&minus;</div>
+                        <input
+                          class="number-selector__count__amount number-selector__count__number"
+                          type="number"
+                          value="0"
+                          name="prime-number"
+                          id="prime-number"
+                        />
+                        <div class="number-selector__count__plus">&plus;</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button-div w-60 m-auto">
+              <button
+                class="form-menu__submit text-center block"
+                type="submit"
+                id="submit-button"
+              >
+                立即預定
+              </button>
+              <!-- <a
+                class="form-menu__submit text-center w-60 block"
+                href="https://youtube.com"
+                ></a
+              > -->
+            </div>
+            <div class="button-div mt-0">
+              <a
+                class="text-center block return"
+                href="javascript: history.go(-1)"
+                >返回前頁</a
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <div class="footer-info-left">
+          <div class="footer-info-left__logo">
+            <img src="../../NavFooterPic/footer.jpg" alt="footer-logo" />
+          </div>
+
+          <div class="footer-info-left__hotel__info">
+            <p class="hotel-name hotel-info">雫ノ泉&ensp;京都</p>
+          </div>
+        </div>
+        <div class="footer-info-right">
+          <div class="ul-flex">
+            <p class="hotel-address hotel-info">
+              〒620-0967 京都府福知山市畑中2番2号
+            </p>
+            <div class="phone">
+              <img src="../../NavFooterPic/phone-call.svg" alt="" />
+              <p class="hotel-number hotel-info">0570-8754-56</p>
+            </div>
+
+            <!-- <ul class="ul-menu">
+                <li class="li-menu"><a href="#">歷史</a></li>
+                <li class="li-menu"><a href="#">佳餚美饌</a></li>
+                <li class="li-menu"><a href="#">房型</a></li>
+                <li class="li-menu"><a href="#">設備</a></li>
+                <li class="li-menu"><a href="#">觀光交通</a></li>
+              </ul>
+              <ul class="ul-menu">
+                <li class="li-menu"><a href="#">繁體中文</a></li>
+                <li class="li-menu"><a href="#">简体中文</a></li>
+                <li class="li-menu"><a href="#">日本語</a></li>
+                <li class="li-menu"><a href="#">English</a></li>
+              </ul>
+              <ul class="ul-menu">
+                <li class="li-menu"><a href="#">常見問題</a></li>
+                <li class="li-menu"><a href="#">電郵詢問</a></li>
+                <li class="li-menu"><a href="#">隱私權政策</a></li>
+              </ul> -->
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy;&ensp;雫ノ泉&ensp; SHIZUKU NO ITSUMI</p>
+    </footer>
+
+    <script src="../../js/nav.js"></script>
+    <script src="./js/order_room.js"></script>
+    <script src="./order.js"></script>
+  </body>
+</html>

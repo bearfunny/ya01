@@ -1,0 +1,242 @@
+.checkout__title {
+  width: 65%;
+  color: #165e83;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2.5px solid #83ccd2;
+  margin-bottom: 30px;
+}
+.checkout__list {
+  width: 100%;
+  color: #165e83;
+  border: 3px solid #83ccd2;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.checkout__list__row {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+}
+.checkout__list__title-container {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  border-right: 1.5px solid #83ccd2;
+  border-bottom: 1.5px solid #83ccd2;
+}
+.checkout__list__title-container:last-child {
+  border-bottom: 0px;
+}
+.checkout__list__title {
+  width: 100%;
+  text-align: center;
+}
+.checkout__list__list-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  padding-left: 15px;
+  border-bottom: 1.5px solid #83ccd2;
+}
+.checkout__list__info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.checkout__list__items {
+  width: 100%;
+  line-height: 25px;
+}
+
+.form-menu {
+  width: 100%;
+  min-height: 300px;
+  padding-bottom: 30px;
+}
+.form-menu__title {
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+  border-bottom: 2.5px solid #83ccd2;
+}
+.form-menu .form-wrapper {
+  width: 80%;
+  min-height: 300px;
+  margin: auto;
+}
+.form-menu__label {
+  position: relative;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.form-menu__input {
+  margin-bottom: 0;
+}
+.form-menu .star {
+  position: absolute;
+  top: -3%;
+  left: -12px;
+}
+
+.payment__title {
+  border: 0;
+  border-top: 2px solid #83ccd2;
+  padding: 0;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  margin-top: 60px;
+}
+.payment__cash-able {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+.payment__cash-able img {
+  width: 80px;
+  vertical-align: bottom;
+}
+.payment__cash-label {
+  font-size: 1.3rem;
+}
+.payment__credit {
+  width: 90%;
+  margin: auto;
+  border: 3.5px solid #d9a62e;
+  border-radius: 10px;
+}
+.payment__cash-check {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #8c6450;
+  padding: 15px;
+  border: 3.5px solid #d9a62e;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 90%;
+}
+.payment__cash-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #d9a62e;
+}
+.payment__alter {
+  color: #165e83;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.payment__input-area {
+  width: 90%;
+  margin: auto;
+}
+
+.button-div {
+  width: 60%;
+  margin: auto;
+}
+
+.credit-check {
+  width: 100%;
+  border: 0;
+}
+
+.red {
+  color: red;
+}
+
+.border-bottom-0 {
+  border-bottom: 0;
+}
+
+.country {
+  width: 29%;
+}
+
+.address {
+  width: 69%;
+}
+
+.last {
+  padding-bottom: 60px;
+}
+
+@media (max-width: 960px) {
+  .payment__cash-pic {
+    text-align: center;
+    width: 30%;
+  }
+}
+@media (max-width: 576px) {
+  .section-title {
+    padding: 10px 20px;
+  }
+  .checkout__list {
+    flex-wrap: wrap;
+  }
+  .checkout__list__row {
+    flex-wrap: wrap;
+  }
+  .checkout__list__title-container {
+    width: 100%;
+    padding: 30px;
+    border: 0;
+    border-bottom: 1px solid #83ccd2;
+  }
+  .checkout__list__list-container {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-bottom: 3px solid #83ccd2;
+  }
+  .form-menu__input-box {
+    margin-bottom: 0;
+  }
+  .form-menu__input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .border-0 {
+    border: 0;
+  }
+  .payment__title {
+    margin-top: 20px;
+  }
+  .payment__title {
+    margin-top: 20px;
+  }
+  .payment__cash-checkbox {
+    text-align: center;
+    order: 2;
+    width: 100%;
+  }
+  .payment__cash-label {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .payment__credit .form-menu__input-box {
+    width: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .payment__cash-pic {
+    text-align: center;
+  }
+}/*# sourceMappingURL=order_checkout.css.map */

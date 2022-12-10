@@ -31,13 +31,14 @@ header {
 
 main {
   background-color: $secondary-white-blue;
-  min-height: 100vh;
+}
+
+.flex-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
-
-
 
 @media (min-width: 840px) {
   .welcome {
@@ -93,12 +94,5 @@ main {
       font-size: 1.6rem;
       @include welcome-title-position(0%, 80%);
     }
-  }
-}
-
-
-@media (max-height: 850px) {
-  main{
-    padding-top: 150px;
   }
 }

@@ -1,0 +1,122 @@
+@import "../../../../colors.scss";
+
+.meal {
+  justify-content: space-around;
+  &__title {
+    color: $main-color;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 60%;
+    padding-bottom: 16px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid $secondary-lighter-blue;
+  }
+}
+
+.meal__menu {
+  width: 100%;
+  margin: auto;
+
+  &__type {
+    width: 250px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 300px;
+    background-color: antiquewhite;
+  }
+  &__price {
+    background-color: $secondary-choco-brown;
+    text-align: center;
+    color: $white;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-indent: 2px;
+    padding: 20px 0px;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 30px;
+  }
+}
+
+.number-selector {
+  color: $secondary-choco-brown;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid $secondary-choco-brown;
+  &__name {
+    color: $secondary-choco-brown;
+    letter-spacing: 10px;
+    text-indent: 10px;
+  }
+  &__count-group {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+
+// .submit-btn {
+//   width: 60%;
+// }
+
+#breakfast-img {
+  background: url(../../../../pages/order/pic/order_meal/breakfast.jpg);
+  background-size: cover;
+}
+
+#lunch-img {
+  background: url(../../../../pages/order/pic/order_meal/lunch.jpg) center;
+  background-size: cover;
+}
+
+#dinner-img {
+  background: url(../../../../pages/order/pic/order_meal/dinner.jpg) center;
+  background-size: cover;
+}
+
+@media (max-width: 960px) {
+  .meal__menu {
+    &__type {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+    &__type:last-child {
+      width: 100%;
+      margin-bottom: 0px;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .number-selector {
+    color: $secondary-choco-brown;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid $secondary-choco-brown;
+    &__name {
+      color: $secondary-choco-brown;
+      letter-spacing: 10px;
+      text-indent: 10px;
+    }
+    &__count-group {
+      background-color: transparent;
+      border: none;
+      border-radius: 0px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .button-div {
+    .form-menu__submit {
+      width: 70%;
+      margin: auto;
+      margin: 30px auto;
+    }
+  }
+}

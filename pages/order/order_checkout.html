@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" id="body-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>雫ノ泉 京都｜和風ホテル【公式】</title>
+    <link rel="stylesheet" href="../../scss/pages/order/order.css" />
+    <link
+      rel="stylesheet"
+      href="../../scss/pages/order/order_checkout/order_checkout.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="../../index.html">
+          <img id="logo" src="../../NavFooterPic/logo-dark.png" alt="Logo" />
+        </a>
+      </div>
+      <nav class="pc-nav">
+        <ul class="nav-item">
+          <li><a href="../history/history.html">歷史</a></li>
+          <li><a href="../cuisine/cuisine.html">佳餚美饌</a></li>
+          <li><a href="../rooms/rooms.html">房型</a></li>
+          <li><a href="../spring/spring.html">溫泉</a></li>
+          <li><a href="../spa/spa.html">SPA</a></li>
+          <li><a href="../access/access.html">觀光交通</a></li>
+          <li><a href="../booking/booking.html">訂房專區</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-nav-toggle" class="hamburger">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+    </header>
+
+    <div class="mobile-nav">
+      <h2 class="mobile-nav__menu">MENU</h2>
+      <ul class="mobile-nav__navbar">
+        <li class="mobile-nav__nav-item">
+          <a href="../history/history.html">歷史</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="../cuisine/cuisine.html">佳餚美饌</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="../rooms/rooms.html">房型</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="../spring/spring.html">溫泉</a>
+        </li>
+        <li class="mobile-nav__nav-item"><a href="../spa/spa.html">SPA</a></li>
+        <li class="mobile-nav__nav-item">
+          <a href="../access/access.html">觀光交通</a>
+        </li>
+        <li class="mobile-nav__nav-item"><a href="">訂房專區</a></li>
+        <!-- <li class="mobile-nav__nav-item"><a href="#">常見問題</a></li>
+        <li class="mobile-nav__nav-item"><a href="#">電郵詢問</a></li>
+        <li class="mobile-nav__nav-item"><a href="#">隱私權政策</a></li> -->
+        <li class="mobile-nav__nav-item">
+          <a href="#" id="mobile-nav-previous">回上頁</a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="progress-bar">
+        <div class="progress-bar__box-group flex flex-around">
+          <div class="progress-bar__box">
+            <div class="progress-bar__check"></div>
+            <p class="progress-bar__text">選擇房間</p>
+            <p class="progress-bar__mark">&check;</p>
+          </div>
+          <div class="progress-bar__box">
+            <div class="progress-bar__check"></div>
+            <p class="progress-bar__text">加購餐點</p>
+            <p class="progress-bar__mark">&check;</p>
+          </div>
+          <div class="progress-bar__box">
+            <div class="progress-bar__check"></div>
+            <p class="progress-bar__text">確認付款</p>
+            <p class="progress-bar__mark">&check;</p>
+          </div>
+          <div class="progress-bar__box gray">
+            <div class="progress-bar__check"></div>
+            <p class="progress-bar__text abosolute-two-word text-gray">完成</p>
+            <p class="progress-bar__mark none">&check;</p>
+          </div>
+        </div>
+
+        <div class="progress-bar__line"></div>
+      </div>
+      <div class="wrapper">
+        <div
+          class="section-title greeting flex align-item-center flex-end rounded-radius-top rounded-radius-bottom main-color-shadow"
+        >
+          <p class="greeting__hello">張錫津先生您好</p>
+          <p class="greeting__logout">
+            <a href="../../index.html" class="greeting__href" id="logout-button"
+              >登出</a
+            >
+          </p>
+        </div>
+        <div
+          class="section-title checkout flex align-item-center flex-end rounded-radius-top rounded-radius-bottom main-color-shadow mb-60"
+        >
+          <div class="w-100">
+            <div class="checkout__title m-auto">確認訂房資訊</div>
+          </div>
+
+          <div class="checkout__list">
+            <div class="checkout__list__row">
+              <div class="checkout__list__title-container">
+                <p class="checkout__list__title">住宿日期</p>
+              </div>
+              <div class="checkout__list__list-container">
+                <div class="checkout__list__info">
+                  <p class="checkout__list__items" id="date-start">
+                    <!-- 入住日期：2022/12/12 15:00 -->
+                  </p>
+                  <p class="checkout__list__items" id="date-end">
+                    <!-- 入住日期：2022/12/12 15:00 -->
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__list__row">
+              <div class="checkout__list__title-container">
+                <p class="checkout__list__title">住宿人數</p>
+              </div>
+              <div class="checkout__list__list-container">
+                <div class="checkout__list__info">
+                  <p class="checkout__list__items" id="adult-number">
+                    成人 1 位
+                  </p>
+                  <p class="checkout__list__items" id="child-number">
+                    成人 1 位
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__list__row">
+              <div class="checkout__list__title-container">
+                <p class="checkout__list__title">房間資訊</p>
+              </div>
+              <div class="checkout__list__list-container">
+                <div class="checkout__list__info">
+                  <p class="checkout__list__items" id="leaf"></p>
+                  <p class="checkout__list__items" id="tree"></p>
+                  <p class="checkout__list__items" id="branch"></p>
+                  <p class="checkout__list__items" id="prime"></p>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__list__row">
+              <div class="checkout__list__title-container">
+                <p class="checkout__list__title">加購項目</p>
+              </div>
+              <div class="checkout__list__list-container">
+                <div class="checkout__list__info">
+                  <p class="checkout__list__items" id="breakfast"></p>
+                  <p class="checkout__list__items" id="lunch"></p>
+                  <p class="checkout__list__items" id="dinner"></p>
+                  <p class="checkout__list__items" id="meal-none"></p>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__list__row">
+              <div class="checkout__list__title-container border-bottom-0">
+                <p class="checkout__list__title">總計</p>
+              </div>
+              <div
+                class="checkout__list__list-container border-bottom-0 border-0"
+              >
+                <div class="checkout__list__info">
+                  <p class="checkout__list__items red">
+                    ￥<span id="total-price"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form action="../order/order_complete.html" class="form-menu mb-60">
+          <p class="form-menu__title">聯絡資訊</p>
+          <div class="form-wrapper">
+            <div class="form-menu__input-box flex flex-between">
+              <label class="form-menu__label w-100" for="last-name"
+                ><span class="star red">*</span>姓名</label
+              >
+              <input
+                class="form-menu__input w-49"
+                type="text"
+                required="required"
+                name="last-name"
+                id="last-name"
+                placeholder="請輸入姓氏"
+              />
+              <input
+                class="form-menu__input w-49"
+                type="text"
+                required="required"
+                name="first-name"
+                id="first-name"
+                placeholder="請輸入名字"
+              />
+            </div>
+            <div class="form-menu__input-box flex flex-between">
+              <label class="form-menu__label w-100" for="mobile-number"
+                ><span class="star red">*</span>行動電話</label
+              >
+              <input
+                class="form-menu__input w-100"
+                type="tel"
+                required="required"
+                name="mobile-number"
+                id="mobile-number"
+                placeholder="請輸入行動電話號碼"
+              />
+            </div>
+            <div class="form-menu__input-box flex flex-between">
+              <label class="form-menu__label w-100" for="phone">電話</label>
+              <input
+                class="form-menu__input w-100"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="請輸入電話號碼"
+              />
+            </div>
+            <div class="form-menu__input-box flex flex-between">
+              <label class="form-menu__label w-100" for="country"
+                ><span class="star red">*</span>國家與地址</label
+              >
+              <input
+                class="form-menu__input country"
+                type="text"
+                name="country"
+                required="required"
+                id="country"
+                placeholder="請輸入國家"
+              />
+              <input
+                class="form-menu__input address"
+                type="text"
+                name="address"
+                required="required"
+                id="address"
+                placeholder="請輸入地址"
+              />
+            </div>
+          </div>
+          <p class="form-menu__title payment__title">付款方式</p>
+          <div class="payment">
+            <div class="payment__cash-check">
+              <input
+                type="checkbox"
+                id="cash"
+                name="cash"
+                class="payment__cash-checkbox"
+                checked
+              />
+              <label for="cash" class="payment__cash-label"
+                >現金支付(限居日本者)</label
+              >
+            </div>
+            <p class="payment__alter">您也可選用</p>
+
+            <div class="payment__credit">
+              <div
+                class="payment__cash-check credit-check"
+                id="credit-checkbox"
+              >
+                <input
+                  type="checkbox"
+                  id="credit"
+                  name="credit"
+                  class="payment__cash-checkbox"
+                />
+                <label for="credit" class="payment__cash-label"
+                  >信用卡付款</label
+                >
+              </div>
+              <div class="payment__cash-able">
+                <div class="payment__cash-pic">
+                  <img src="../../pages/order/pic/credit/Visa.svg" alt="" />
+                </div>
+                <div class="payment__cash-pic">
+                  <img src="../../pages/order/pic/credit/JCB.svg" alt="" />
+                </div>
+                <div class="payment__cash-pic">
+                  <img
+                    src="../../pages/order/pic/credit/Dinners_Club.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="payment__cash-pic">
+                  <img src="../../pages/order/pic/credit/Amex.svg" alt="" />
+                </div>
+                <div class="payment__cash-pic">
+                  <img src="../../pages/order/pic/credit/Discover.svg" alt="" />
+                </div>
+                <div class="payment__cash-pic">
+                  <img
+                    src="../../pages/order/pic/credit/Mastercard.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="payment__input-area flex flex-between">
+                <div class="form-menu__input-box flex flex-between w-100">
+                  <label class="form-menu__label w-100" for="credit-number"
+                    ><span class="star red">*</span>卡號</label
+                  >
+                  <input
+                    class="form-menu__input w-100"
+                    type="text"
+                    required="required"
+                    name="credit-number"
+                    id="credit-number"
+                    placeholder="請輸入卡號(16碼)"
+                  />
+                </div>
+                <div class="form-menu__input-box flex flex-between w-48">
+                  <label class="form-menu__label w-100" for="credit-expired"
+                    ><span class="star red">*</span>到期日</label
+                  >
+                  <input
+                    class="form-menu__input w-100"
+                    type="text"
+                    required="required"
+                    name="credit-expired"
+                    id="credit-expired"
+                    placeholder="MM/YY(四位數字)"
+                  />
+                </div>
+                <div class="form-menu__input-box flex flex-between w-48">
+                  <label class="form-menu__label w-100" for="credit-cvv"
+                    ><span class="star red">*</span>CVV</label
+                  >
+                  <input
+                    class="form-menu__input w-100"
+                    type="text"
+                    required="required"
+                    name="credit-cvv"
+                    id="credit-cvv"
+                    placeholder="信用卡背面末三碼或四碼"
+                  />
+                </div>
+                <div class="form-menu__input-box flex flex-between w-100">
+                  <label class="form-menu__label w-100" for="credit-owner"
+                    ><span class="star red">*</span>持卡人姓名</label
+                  >
+                  <input
+                    class="form-menu__input w-100"
+                    type="text"
+                    required="required"
+                    name="credit-owner"
+                    id="credit-owner"
+                    placeholder="請輸入持卡人姓名"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="button-div">
+              <button
+                class="form-menu__submit text-center block text-500 mt-30"
+                type="submit"
+                id="submit-button"
+              >
+                完成訂房
+              </button>
+            </div>
+            <div class="button-div">
+              <a
+                class="text-center block return"
+                href="javascript: history.go(-1)"
+                >返回前頁</a
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <div class="footer-info-left">
+          <div class="footer-info-left__logo">
+            <img src="../../NavFooterPic/footer.jpg" alt="footer-logo" />
+          </div>
+
+          <div class="footer-info-left__hotel__info">
+            <p class="hotel-name hotel-info">雫ノ泉&ensp;京都</p>
+          </div>
+        </div>
+        <div class="footer-info-right">
+          <div class="ul-flex">
+            <p class="hotel-address hotel-info">
+              〒620-0967 京都府福知山市畑中2番2号
+            </p>
+            <div class="phone">
+              <img src="../../NavFooterPic/phone-call.svg" alt="" />
+              <p class="hotel-number hotel-info">0570-8754-56</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">&copy;&ensp;雫ノ泉&ensp; SHIZUKU NO ITSUMI</p>
+    </footer>
+
+    <script src="../../js/nav.js"></script>
+    <script src="./js/order_checkout.js"></script>
+    <script src="./order.js"></script>
+  </body>
+</html>

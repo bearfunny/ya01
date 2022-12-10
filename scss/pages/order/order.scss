@@ -1,0 +1,603 @@
+@import "../../NavFooter/nav.scss";
+@import "../../NavFooter/footer.scss";
+@import "../../components/components.scss";
+@import "../../utili/utili.scss";
+@import "../../media/media.scss";
+
+body {
+  background-color: $secondary-white-blue;
+}
+
+header {
+  background-color: $white;
+  box-shadow: 10px 0px 100px 1px $secondary-lighter-blue;
+  .nav-item {
+    a {
+      color: $main-color;
+    }
+  }
+}
+
+.hamburger {
+  .bar {
+    background-color: $main-color;
+  }
+}
+
+// .login-wrapper {
+//   position: relative;
+
+//   width: 100vw;
+//   min-height: calc(100vh - 60px);
+//   // border-bottom: 1px solid $white;
+//   background-color: $secondary-white-blue;
+// }
+
+main {
+  background-color: $secondary-white-blue;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100px;
+  padding-top: 80px;
+  margin-bottom: 60px;
+  position: relative;
+
+  &__line::after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    border: 1px solid $main-color;
+    background-color: $main-color;
+    margin: auto;
+    display: block;
+    text-align: right;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__box-group {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: -1%;
+    left: 0;
+    z-index: 2;
+  }
+
+  &__box {
+    position: relative;
+    top: 40%;
+    width: 30px;
+    height: 30px;
+    background-color: $main-color;
+    border-radius: 3px;
+  }
+
+  &__text {
+    position: absolute;
+    color: $main-color;
+    width: 70px;
+    top: 120%;
+    left: -65%;
+  }
+
+  &__mark {
+    position: absolute;
+    font-size: 20px;
+    font-weight: 700;
+    color: $white;
+    top: 0%;
+    left: 25%;
+  }
+}
+
+.abosolute-two-word {
+  left: -2.5%;
+}
+
+.wrapper {
+  // display: flex;
+  // justify-content: center;
+  // align-items: baseline;
+  width: 900px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.section-title {
+  background-color: $white;
+  padding: 20px 50px;
+  font-weight: 700;
+}
+
+.greeting {
+  margin-bottom: 50px;
+  &__hello {
+    flex: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $main-color;
+    text-align: center;
+  }
+  &__logout {
+    font-size: 1.2rem;
+  }
+  &__href {
+    color: $main-color;
+  }
+}
+
+.room {
+  &__title {
+    color: $main-color;
+    font-size: 1.5rem;
+    text-align: center;
+    flex: 1;
+  }
+
+  &__sub-title {
+    color: $main-color;
+    font-size: 1.2rem;
+    // text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__date {
+    width: 70%;
+    margin: auto;
+  }
+
+  &__date-intro {
+    color: $white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    background-color: $main-color;
+  }
+
+  &__date-input {
+    text-align: center;
+    display: inline-block;
+    background-color: $white;
+    font-size: 1.3rem;
+    color: $main-color;
+    // justify-content: space-around;
+    width: calc(100% - 30%);
+    border-radius: 0 10px 10px 0;
+    border: 1px solid $secondary-dark-blue;
+    // border-left: 56px;
+    position: relative;
+    padding: 0;
+    appearance: none;
+    // -moz-appearance: none;
+  }
+
+  &__date-input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 300%;
+    height: 300%;
+    cursor: pointer;
+  }
+
+  &__date-input::-webkit-datetime-edit-day-field:focus,
+  &__date-input::-webkit-datetime-edit-month-field:focus,
+  &__date-input::-webkit-datetime-edit-year-field:focus {
+    background-color: white;
+    color: $main-color;
+  }
+
+  &__date-input:focus {
+    outline: none;
+  }
+
+  &__people {
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    .number-selector {
+      width: 45%;
+    }
+  }
+
+  &__people-intro {
+    color: $white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    width: 30%;
+    background-color: $main-color;
+  }
+
+  a {
+    color: $main-color;
+  }
+
+  img {
+    width: 25px;
+    vertical-align: middle;
+  }
+}
+
+.number-selector {
+  background-color: $main-color;
+  display: flex;
+  align-items: center;
+  border-radius: 10px 12px 12px 10px;
+  &__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    height: 50px;
+    width: 50%;
+    text-align: center;
+    // background-color: rgb(68, 162, 243);
+  }
+
+  &__count-group {
+    background-color: $white;
+    border: 1px solid $secondary-dark-blue;
+    border-left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+  }
+
+  &__count {
+    text-align: center;
+    // background-color: rgb(220, 220, 116);
+    display: flex;
+    font-size: 1.5rem;
+    height: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    &__minus {
+      width: 25%;
+      cursor: pointer;
+    }
+    &__plus {
+      width: 25%;
+      cursor: pointer;
+    }
+    &__amount {
+      text-align: center;
+      font-size: 1.3rem;
+      outline: none;
+      border: 0;
+      width: 50%;
+    }
+    &__amount::-webkit-inner-spin-button {
+      display: none;
+    }
+  }
+}
+
+.choose {
+  background-color: $white;
+  padding: 30px 20px 20px;
+  padding-bottom: 10px;
+
+  &__title {
+    color: $main-color;
+    font-size: 1.5rem;
+    text-align: center;
+    flex: 1;
+  }
+
+  &__sub-title {
+    color: $main-color;
+    font-size: 1.2rem;
+    // text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__room-group {
+    justify-content: space-between;
+    // background-color: #4e230b;
+    // border: 1px solid $secondary-lighter-blue;
+    border-radius: 10px;
+  }
+
+  &__room-img {
+    width: 300px;
+    height: 450px;
+    background-color: darkblue;
+    border-radius: 10px 0 0 10px;
+  }
+
+  &__room-info {
+    width: calc(100% - (300px));
+    padding: 30px 50px;
+    padding-bottom: 0;
+  }
+
+  &__room-title {
+    width: 100%;
+    text-align: end;
+    color: $main-color;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $secondary-lighter-blue;
+    margin-bottom: 15px;
+  }
+  &__room-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  &__room-items {
+    width: 100%;
+    display: flex;
+    color: $main-color;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  &__room-items::after {
+    content: "";
+    border: 3px solid $secondary-white-blue;
+    background-color: $secondary-white-blue;
+    border-radius: 20px;
+    margin: auto;
+    display: inline;
+    width: 40%;
+  }
+
+  &__room-caution {
+    color: $main-color;
+    background-color: $secondary-white-blue;
+    width: 100%;
+    padding: 5px;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+
+  .number-selector {
+    width: 100%;
+    &__name {
+      width: 30%;
+    }
+    &__count-group {
+      width: 70%;
+    }
+  }
+}
+
+.return {
+  color: $main-color;
+  font-size: 1.2rem;
+}
+
+.main-color-shadow {
+  box-shadow: 1px 1px 8px 1px #83ccd2;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.gray {
+  background-color: gray;
+}
+
+#room-pic-one {
+  background: url(../../../pages/order/pic/room1.jpg) center center;
+  background-position-x: -630px;
+}
+
+#room-pic-two {
+  background: url(../../../pages/order/pic/room2.jpg) center center;
+}
+
+#room-pic-three {
+  background: url(../../../pages/order/pic/room3.jpg) center center;
+}
+
+#room-pic-four {
+  background: url(../../../pages/order/pic/room4.jpg) center center;
+  background-position-x: -100px;
+}
+
+// .mb-10 {
+//   margin-bottom: 10px;
+// }
+
+@media (min-width: 840px) {
+  .welcome {
+    &__title {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(30%, 80%);
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(25%, 80%);
+    }
+  }
+
+  @include section-button-flex(33.33%, 70%, 10px);
+}
+
+@media (max-width: 960px) {
+  .wrapper {
+    width: 550px;
+  }
+
+  .room {
+    &__people {
+      .number-selector {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .choose {
+    &__room-img {
+      width: 100%;
+      min-height: 0px;
+      height: 350px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    &__room-title {
+      text-align: center;
+    }
+    &__room-info {
+      width: 100%;
+    }
+
+    &__room-items {
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
+    &__room-items::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(30%, 80%);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .welcome {
+    &__title {
+      font-size: 1.8rem;
+      @include welcome-title-position(20%, 80%);
+    }
+  }
+
+  .wrapper {
+    width: 400px;
+  }
+  .room {
+    &__date {
+      width: 100%;
+    }
+
+    &__date-intro {
+      font-size: 1.2rem;
+      width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+    &__date-input {
+      font-size: 1.2rem;
+      width: 100%;
+      height: 50px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    &__people {
+      width: 100%;
+    }
+  }
+  .number-selector {
+    flex-wrap: wrap;
+    &__name {
+      width: 100%;
+    }
+    &__count-group {
+      width: 100%;
+      height: auto;
+      border: 1px solid $secondary-dark-blue;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  .choose {
+    .number-selector {
+      font-size: 1rem;
+      &__name {
+        width: 100%;
+      }
+      &__count-group {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+    width: 330px;
+  }
+
+  .greeting {
+    &__hello {
+      width: 100%;
+      font-size: 1.5rem;
+
+      margin-bottom: 10px;
+    }
+    &__logout {
+      width: 100%;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
+
+  .room {
+    &__title {
+      font-size: 1.3rem;
+    }
+  }
+
+  .choose {
+    &__room-items {
+      text-align: center;
+      justify-content: baseline;
+    }
+    &__room-caution {
+      width: 100%;
+    }
+    &__img {
+      width: 30%;
+    }
+    &__caution-text {
+      width: 60%;
+      text-align: end;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .welcome {
+    &__title {
+      font-size: 1.6rem;
+      @include welcome-title-position(0%, 80%);
+    }
+  }
+}

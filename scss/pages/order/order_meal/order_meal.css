@@ -1,0 +1,108 @@
+.meal {
+  justify-content: space-around;
+}
+.meal__title {
+  color: #165e83;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 60%;
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #83ccd2;
+}
+
+.meal__menu {
+  width: 100%;
+  margin: auto;
+}
+.meal__menu__type {
+  width: 250px;
+}
+.meal__menu__img {
+  width: 100%;
+  height: 300px;
+  background-color: antiquewhite;
+}
+.meal__menu__price {
+  background-color: #8c6450;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-indent: 2px;
+  padding: 20px 0px;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 30px;
+}
+
+.number-selector {
+  color: #8c6450;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #8c6450;
+}
+.number-selector__name {
+  color: #8c6450;
+  letter-spacing: 10px;
+  text-indent: 10px;
+}
+.number-selector__count-group {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  border-radius: 0px;
+}
+
+#breakfast-img {
+  background: url(../../../../pages/order/pic/order_meal/breakfast.jpg);
+  background-size: cover;
+}
+
+#lunch-img {
+  background: url(../../../../pages/order/pic/order_meal/lunch.jpg) center;
+  background-size: cover;
+}
+
+#dinner-img {
+  background: url(../../../../pages/order/pic/order_meal/dinner.jpg) center;
+  background-size: cover;
+}
+
+@media (max-width: 960px) {
+  .meal__menu__type {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .meal__menu__type:last-child {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .meal__menu__img {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .number-selector {
+    color: #8c6450;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #8c6450;
+  }
+  .number-selector__name {
+    color: #8c6450;
+    letter-spacing: 10px;
+    text-indent: 10px;
+  }
+  .number-selector__count-group {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+  }
+}
+@media (max-width: 450px) {
+  .button-div .form-menu__submit {
+    width: 70%;
+    margin: auto;
+    margin: 30px auto;
+  }
+}/*# sourceMappingURL=order_meal.css.map */

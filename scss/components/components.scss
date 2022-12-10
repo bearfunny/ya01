@@ -70,9 +70,13 @@
   }
 }
 
+.form-menu-pt {
+  padding-top: 150px;
+}
+
 .form-menu {
   width: 500px;
-  // height: 600px;
+  // height: 100%;
 
   background-color: $white;
 
@@ -89,6 +93,17 @@
     font-size: 23px;
     text-align: center;
     margin-top: 25px;
+  }
+
+  // 標記
+  &__paragraph {
+    color: $main-color;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+    font-weight: 700;
   }
 
   &__api {
@@ -165,20 +180,20 @@
     cursor: pointer;
   }
 
-  &__checkbox{
+  &__checkbox {
     color: $main-color;
     accent-color: $secondary-lighter-blue;
     background-color: $white;
     font-weight: 700;
+    margin-bottom: 15px;
 
-    &__input{
+    &__input {
       width: 20px;
       height: 20px;
       border-color: $secondary-lighter-blue;
       border-radius: 0;
       border: 2px solid $secondary-lighter-blue;
       outline: none;
-      
     }
   }
 
@@ -207,18 +222,15 @@
   }
 }
 
-
 @media (max-width: 500px) {
-  .form-menu{
+  .form-menu {
     width: 90%;
   }
 }
 
-
 @mixin welcome-setting($picutre, $opacity) {
   content: "";
-  background: linear-gradient(transparent 70%, $white),
-    url($picutre) no-repeat center center/ cover;
+  background: linear-gradient(transparent 70%, $white), url($picutre) no-repeat center center/ cover;
   // background-attachment: fixed;
   opacity: $opacity;
   top: 0;

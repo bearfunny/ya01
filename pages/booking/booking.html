@@ -62,41 +62,58 @@
     </div>
 
     <main>
-      <form class="form-menu" action="javascript:void(0)">
-        <div class="form-menu__wrapper">
-          <h3 class="form-menu__title">會員登入</h3>
-          <a href="javascript:void(0)">
-            <p class="form-menu__api">
-              <span class="form-menu__pic-span"
-                ><img
-                  class="form-menu__pic"
-                  src="./pic/google.svg"
-                  alt="" /></span
-              >使用Google登入
-            </p>
-          </a>
-          <p class="form-menu__line"></p>
+      <div class="flex-wrapper">
+        <form class="form-menu" action="javascript:void(0)">
+          <div class="form-menu__wrapper">
+            <h3 class="form-menu__title">會員登入</h3>
+            <a href="../order/order_room.html">
+              <p class="form-menu__api">
+                <span class="form-menu__pic-span"
+                  ><img
+                    class="form-menu__pic"
+                    src="./pic/google.svg"
+                    alt="" /></span
+                > 使用Google登入
+              </p>
+            </a>
+            <p class="form-menu__line"></p>
 
-          <div class="form-menu__input-box">
-            <label class="form-menu__label" for="email">電子信箱</label>
-            <input class="form-menu__input" type="email" required="required" name="" id="" />
-          </div>
-          <div class="form-menu__input-box">
-            <label class="form-menu__label" for="password">密碼</label>
-            <input class="form-menu__input" type="password" required="required" name="" id="" />
-          </div>
-          <button class="form-menu__submit" type="submit">登入</button>
+            <div class="form-menu__input-box">
+              <label class="form-menu__label" for="email">電子信箱</label>
+              <input
+                class="form-menu__input"
+                type="email"
+                required="required"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="form-menu__input-box">
+              <label class="form-menu__label" for="password">密碼</label>
+              <input
+                class="form-menu__input"
+                type="password"
+                required="required"
+                name="password"
+                id="password"
+                autocomplete="on"
+              />
+            </div>
+            <button class="form-menu__submit" type="submit" id="login-button">
+              登入
+            </button>
 
-          <div class="form-menu__helper">
-            <small class="form-menu__helper__icon"
-              ><a href="">註冊會員</a></small
-            >
-            <small class="form-menu__helper__icon"
-              ><a href="">忘記密碼？</a></small
-            >
+            <div class="form-menu__helper">
+              <small class="form-menu__helper__icon"
+                ><a href="../register/register.html">註冊會員</a></small
+              >
+              <small class="form-menu__helper__icon"
+                ><a href="../password/password.html">忘記密碼？</a></small
+              >
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </main>
 
     <footer>
