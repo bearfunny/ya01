@@ -17,6 +17,41 @@
   }
 }
 
+main {
+  position: relative;
+
+  .acBG img {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    top: 15%;
+    right: -15%;
+    opacity: 40%;
+    z-index: -1;
+    transform: scaleX(-1);
+  }
+
+  .acBG2 img {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    top: 55%;
+    right: 70%;
+    opacity: 40%;
+    z-index: -1;
+  }
+  .acBG3 img {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    top: 75%;
+    right: -15%;
+    opacity: 40%;
+    z-index: -1;
+    transform: scaleX(-1);
+  }
+}
+
 // 最上面的圖片與旅館資訊介紹
 .access-detail-group {
   display: flex;
@@ -406,12 +441,30 @@
 }
 
 @media (max-width: 1500px) {
+  main {
+    .acBG2 img {
+      top: 45%;
+    }
+    .acBG3 img {
+      top: 68%;
+    }
+  }
+
   .card-group {
     width: 40%;
   }
 }
 
 @media (max-width: 1280px) {
+  main {
+    .acBG img {
+      right: -30%;
+    }
+    .acBG3 img {
+      top: 65%;
+    }
+  }
+
   .welcome {
     &__title {
       font-size: 1.8rem;
@@ -421,6 +474,16 @@
 }
 
 @media (max-width: 998px) {
+  main {
+    .acBG img {
+      top: 20%;
+    }
+    .acBG3 img {
+      top: 70%;
+      right: -30%;
+    }
+  }
+
   .welcome {
     &__title {
       font-size: 1.8rem;
@@ -469,6 +532,7 @@
   }
 
   .card-group {
+
     .card-group__img1,
     .card-group__img2,
     .card-group__img3,
@@ -485,6 +549,21 @@
 }
 
 @media (max-width: 840px) {
+  main {
+    .acBG img {
+      top: 14%;
+      right: -40%;
+      width: 500px;
+    }
+
+    .acBG2 img {
+      top: 60%;
+    }
+    .acBG3 img {
+      top: 78%;
+    }
+  }
+
   .welcome {
     &__title {
       font-size: 1.8rem;
@@ -517,7 +596,8 @@
         margin-bottom: 8px;
         border-radius: 10px;
         line-height: 60px;
-        a{
+
+        a {
           height: 60px;
         }
       }
@@ -540,16 +620,50 @@
 }
 
 @media (max-width: 780px) {
+  main {
+    .acBG2 img {
+      top: 50%;
+    }
+    .acBG3 img {
+      top: 66%;
+      right: -40%;
+    }
+  }
   .card-group {
     width: 80%;
   }
 }
 
 @media (max-width: 575px) {
+  main {
+    .acBG img {
+      top: 14%;
+      right: -60%;
+      width: 500px;
+    }
+    .acBG2 img {
+      top: 43%;
+    }
+    .acBG3 img {
+      top: 61%;
+      right: -90%;
+    }
+  }
+
   .welcome {
     &__title {
       font-size: 1.8rem;
       @include welcome-title-position(20%, 70%);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    .acBG img {
+      top: 15%;
+      right: -60%;
+      width: 400px;
     }
   }
 }

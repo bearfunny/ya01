@@ -16,7 +16,46 @@
     @include welcome-title-position(38%, 75%);
   }
 }
-
+main{
+  position: relative;
+  .roomBG img {
+    position: absolute;
+    width: 1200px;
+    height: auto;
+    top: 12%;
+    right: -35%;
+    opacity: 20%;
+    z-index: -1;
+  }
+  .roomBG2 img {
+    position: absolute;
+    width: 1200px;
+    height: auto;
+    top: 70%;
+    right: 60%;
+    opacity: 20%;
+    z-index: -1;
+    transform: scaleX(-1);
+  }
+  .roomBG3 img {
+    position: absolute;
+    width: 246px;
+    height: auto;
+    top: 36%;
+    right: 80%;
+    opacity: 60%;
+    z-index: -1;
+  }
+  .roomBG4 img {
+    position: absolute;
+    width: 246px;
+    height: auto;
+    top: 60%;
+    right: 8%;
+    opacity: 60%;
+    z-index: -1;
+  }
+}
 // 點選向下滑動選單
 
 .scroll-background {
@@ -211,6 +250,12 @@
 }
 
 @media (max-width: 1560px) {
+  main{
+    .roomBG4 img {
+      top: 58%;
+      right: -5%;
+    }
+  }
   .hotel-intro {
     width: 75%;
     height: 900px;
@@ -239,6 +284,12 @@
 }
 
 @media (max-width: 1360px) {
+  main{
+    .roomBG img {
+      height: auto;
+      right: -50%;
+    }
+  }
   .hotel-intro {
     width: 75%;
     gap: 0px;
@@ -257,6 +308,12 @@
 }
 
 @media (max-width: 1200px) {
+  main{
+    .roomBG img {
+      height: auto;
+      right: -60%;
+    }
+  }
   .hotel-intro {
     width: 85%;
   }
@@ -324,6 +381,12 @@
 }
 
 @media (max-width: 850px) {
+  main{
+    .roomBG img {
+      height: auto;
+      right: -90%;
+    }
+  }
   .hotel-modal-pop {
     .hotel-modal-detail {
       width: 85%;
@@ -341,26 +404,31 @@
   }
 }
 @media (max-width: 806px){
+  main{
+    .roomBG img {
+      width: 1100px;
+      height: auto;
+      right: -90%;
+    }
+  }
   .hotel-intro .hotel-modal{
     margin-top: 52px;
   }
 }
+
 @media (max-width: 650px) {
+  main{
+    .roomBG img {
+      width: 1000px;
+      right: -110%;
+    }
+  }
   .hotel-modal-pop {
     .hotel-modal-detail {
       border: none;
-      &__utili {
-        border: none;
-      }
-    }
-  }
-}
-
-@media (max-width: 650px) {
-  .hotel-modal-pop {
-    .hotel-modal-detail {
       width: 80%;
       &__utili {
+        border: none;
         border: 1px solid #8c6450;
         border-bottom: none;
         font-size: 24px;
@@ -380,6 +448,22 @@
 }
 
 @media (max-width: 575px) {
+  main{
+    .roomBG img {
+      top: 20%;
+      right: -130%;
+    }
+    .roomBG2 img {
+      right: 30%;
+    }
+    .roomBG3 img {
+      top: 45%;
+    }
+    .roomBG4 img {
+      top: 65%;
+      right: -10%;
+    }
+  }
   .welcome {
     &__title {
       font-size: 1.8rem;

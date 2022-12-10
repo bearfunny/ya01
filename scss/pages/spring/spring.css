@@ -597,6 +597,19 @@ footer .copyright {
   letter-spacing: 2px;
 }
 
+main {
+  position: relative;
+}
+main .springBG img {
+  position: absolute;
+  width: 246px;
+  height: auto;
+  top: 15%;
+  right: 5%;
+  opacity: 60%;
+  z-index: -1;
+}
+
 .spring {
   width: 85%;
   margin: auto;
@@ -718,6 +731,10 @@ footer .copyright {
   }
 }
 @media (max-width: 998px) {
+  main .springBG img {
+    top: 18%;
+    right: -10%;
+  }
   .welcome__title {
     font-size: 1.8rem;
     left: 25%;
@@ -764,6 +781,10 @@ footer .copyright {
   }
 }
 @media (max-width: 575px) {
+  main .springBG img {
+    top: 20%;
+    right: -30%;
+  }
   .welcome__title {
     font-size: 1.8rem;
     left: 15%;

@@ -718,19 +718,19 @@ main .indexBG3 img {
   width: 714px;
   height: auto;
   top: 40%;
-  right: 80%;
+  right: -20%;
   opacity: 60%;
   z-index: -1;
+  transform: scaleX(-1);
 }
 main .indexBG4 img {
   position: absolute;
   width: 714px;
   height: auto;
   top: 87%;
-  right: -20%;
+  right: 80%;
   opacity: 60%;
   z-index: -1;
-  transform: scaleX(-1);
 }
 
 .intro {
@@ -950,7 +950,8 @@ main .indexBG4 img {
   }
 }
 @media (max-width: 1400px) {
-  main .indexBG4 img {
+  main .indexBG3 img {
+    top: 37%;
     right: -30%;
   }
   .intro__title {
@@ -1011,10 +1012,11 @@ main .indexBG4 img {
 @media (max-width: 992px) {
   main .indexBG3 img {
     top: 38%;
+    right: -50%;
+    width: 80%;
   }
   main .indexBG4 img {
     top: 85%;
-    right: -50%;
     width: 80%;
   }
   .intro .intro-section {
@@ -1155,9 +1157,12 @@ main .indexBG4 img {
   }
 }
 @media (max-width: 576px) {
+  main .indexBG3 {
+    width: 70%;
+    right: -50%;
+  }
   main .indexBG4 img {
     top: 85%;
-    right: -50%;
     width: 70%;
   }
   .intro__title {

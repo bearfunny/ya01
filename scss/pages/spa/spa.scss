@@ -16,7 +16,18 @@
     @include welcome-title-position(38%, 75%);
   }
 }
-
+main{
+  position: relative;
+  .spaBG img {
+    position: absolute;
+    width: 1200px;
+    height: auto;
+    top: 75%;
+    right: -35%;
+    opacity: 20%;
+    z-index: -1;
+  }
+}
 .spa-pic {
   width: 85%;
   margin: auto;
@@ -198,6 +209,12 @@
 }
 
 @media (max-width: 1460px) {
+  main{
+    .spaBG img {
+      top: 75%;
+      right: -50%;
+    }
+  }
   .sales-card {
     border-radius: 15px 0 15px 15px;
 
@@ -253,6 +270,12 @@
 }
 
 @media (max-width: 1200px) {
+  main{
+    .spaBG img {
+      top: 65%;
+      right: -75%;
+    }
+  }
   .sales-card {
     width: 75%;
     margin: auto;
@@ -299,6 +322,11 @@
 }
 
 @media (max-width: 998px) {
+  main{
+    .spaBG img {
+      top: 60%;
+    }
+  }
   .welcome {
     &__title {
       font-size: 1.8rem;
@@ -404,6 +432,11 @@
 }
 
 @media (max-width: 575px) {
+  main{
+    .spaBG img {
+      display: none;
+    }
+  }
   .welcome {
     &__title {
       font-size: 1.8rem;
