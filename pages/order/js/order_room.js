@@ -106,9 +106,12 @@ dateStart.addEventListener("change", (event) => {
 });
 
 dateStart.addEventListener("change", (event) => {
+  //入住日期	
+  let start = Date.parse(dateStart.value);	
+  // 退房日期	
+  let end = Date.parse(dateEnd.value);
 
-
-  if (dateMax < dateMin) {
+  if (end < start) {
     dateEnd.value = dateStart.value;
   }
 

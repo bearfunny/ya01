@@ -309,15 +309,17 @@ main {
 
   &__room-img {
     width: 300px;
-    height: 450px;
+    height: 470px;
     background-color: darkblue;
     border-radius: 10px 0 0 10px;
   }
 
   &__room-info {
+    border: 1px solid $secondary-lighter-blue;
+    border-radius: 0 10px 10px 0;
     width: calc(100% - (300px));
     padding: 30px 50px;
-    padding-bottom: 0;
+    padding-bottom: 19px;
   }
 
   &__room-title {
@@ -378,6 +380,7 @@ main {
 .return {
   color: $main-color;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .main-color-shadow {
@@ -470,6 +473,7 @@ main {
       text-align: center;
     }
     &__room-info {
+      border-radius: 0 0 10px 10px;
       width: 100%;
     }
 
