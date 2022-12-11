@@ -120,6 +120,8 @@
 .payment__cash-check {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
+  font-weight: 700;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -132,13 +134,14 @@
   width: 90%;
 }
 .payment__cash-checkbox {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   accent-color: #d9a62e;
 }
 .payment__alter {
   color: #165e83;
   font-size: 1.2rem;
+  font-weight: 700;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -221,15 +224,6 @@
   }
   .payment__title {
     margin-top: 20px;
-  }
-  .payment__cash-checkbox {
-    text-align: center;
-    order: 2;
-    width: 100%;
-  }
-  .payment__cash-label {
-    width: 100%;
-    margin-bottom: 15px;
   }
   .payment__credit .form-menu__input-box {
     width: 100%;

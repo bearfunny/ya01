@@ -1009,6 +1009,7 @@ main .acBG3 img {
 }
 .sight__card-group {
   min-height: 100px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -1069,6 +1070,7 @@ main .acBG3 img {
   margin-bottom: 30px;
   font-size: 18px;
   line-height: 30px;
+  min-height: 150px;
 }
 .card-group__time {
   text-align: left;
@@ -1077,6 +1079,11 @@ main .acBG3 img {
   border-bottom: 1px solid #165e83;
 }
 
+@media (max-width: 848px) {
+  .card-group__detail {
+    min-height: 180px;
+  }
+}
 @media (min-width: 840px) {
   .welcome__title br {
     display: none;
@@ -1226,6 +1233,10 @@ main .acBG3 img {
   }
   .card-group {
     width: 80%;
+    height: 100%;
+  }
+  .card-group__detail {
+    min-height: 100%;
   }
 }
 @media (max-width: 575px) {

@@ -10,9 +10,18 @@ let dinner = document.querySelector("#dinner");
 let totaLPeopleNum = Number(sessionStorage["adult-number"])+Number(sessionStorage["child-number"])
 
 // Default Meal Number
-sessionStorage.setItem("breakfast", breakfast.value);
-sessionStorage.setItem("lunch", lunch.value);
-sessionStorage.setItem("dinner", dinner.value);
+
+
+
+if (sessionStorage.getItem("breakfast") == null) {
+  sessionStorage.setItem("breakfast", breakfast.value);
+}
+if (sessionStorage.getItem("lunch") == null) {
+  sessionStorage.setItem("lunch", lunch.value);
+}
+if (sessionStorage.getItem("dinner") == null) {
+  sessionStorage.setItem("dinner", dinner.value);
+}
 
 // Minus Button
 for (let i = 0; i < minusIcon.length; i++) {

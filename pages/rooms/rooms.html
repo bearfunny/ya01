@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>雫ノ泉 京都｜和風ホテル【公式】</title>
+    <link rel="icon" type="image/x-icon" href="../index/pic/logoICO.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../../scss/pages/rooms/rooms.css" />
   </head>
   <body>
@@ -90,18 +92,18 @@
         </p>
       </div>
 
-      <div class="hotel-intro" id="room-one">
+      <div class="hotel-intro" id="room-one" data-aos="fade-in">
         <div
           class="hotel-img"
           style="background-image: url(../rooms/pic/room1.jpg)"
         ></div>
-        <div class="hotel-detail">
+        <div class="hotel-detail" data-aos="fade-right" data-aos-delay="500">
           <h3 class="hotel-name">葉之蔭簡約套房</h3>
           <p class="hotel-paragraph">
             簡約套房位於客房棟1樓，窗外是日光美麗的自然風光。所有客房配天然溫泉浴池，室內裝潢各具特色，有雙床及大床兩種床型客房。最多入住2名賓客。
           </p>
         </div>
-        <div class="hotel-modal">
+        <div class="hotel-modal" data-aos="fade-left" data-aos-delay="500">
           <div class="hotel-modal-paragraph-group">
             <div class="hotel-modal-paragraph">
               <p class="hotel-modal-subject">房型坪數：</p>
@@ -118,18 +120,18 @@
         </div>
       </div>
 
-      <div class="hotel-intro" id="room-two">
+      <div class="hotel-intro" id="room-two" data-aos="fade-in">
         <div
           class="hotel-img"
           style="background-image: url(../rooms/pic/room2.jpg)"
         ></div>
-        <div class="hotel-detail">
+        <div class="hotel-detail" data-aos="fade-right" data-aos-delay="500">
           <h3 class="hotel-name">木之花舒適套房</h3>
           <p class="hotel-paragraph">
             舒適套房位於客房棟2樓，窗外是日光美麗的自然風光。所有客房配天然溫泉浴池，室內裝潢各具特色，有雙床及大床兩種床型客房。最多入住2名賓客。
           </p>
         </div>
-        <div class="hotel-modal">
+        <div class="hotel-modal" data-aos="fade-left" data-aos-delay="500">
           <div class="hotel-modal-paragraph-group">
             <div class="hotel-modal-paragraph">
               <p class="hotel-modal-subject">房型坪數：</p>
@@ -146,18 +148,18 @@
         </div>
       </div>
 
-      <div class="hotel-intro" id="room-three">
+      <div class="hotel-intro" id="room-three" data-aos="fade-in">
         <div
           class="hotel-img"
           style="background-image: url(../rooms/pic/room3.jpg)"
         ></div>
-        <div class="hotel-detail">
+        <div class="hotel-detail" data-aos="fade-right" data-aos-delay="500">
           <h3 class="hotel-name">梢之景悅享套房</h3>
           <p class="hotel-paragraph">
             悅享套房擁有寬敞舒適的休息空間，窗外是日光美麗的自然風光。所有客房配天然溫泉浴池，室內裝潢各具特色。最多入住4名賓客。
           </p>
         </div>
-        <div class="hotel-modal">
+        <div class="hotel-modal" data-aos="fade-left" data-aos-delay="500">
           <div class="hotel-modal-paragraph-group">
             <div class="hotel-modal-paragraph">
               <p class="hotel-modal-subject">房型坪數：</p>
@@ -176,18 +178,18 @@
         </div>
       </div>
 
-      <div class="hotel-intro" id="room-four">
+      <div class="hotel-intro" id="room-four" data-aos="fade-in">
         <div
           class="hotel-img"
           style="background-image: url(../rooms/pic/room4.jpg)"
         ></div>
-        <div class="hotel-detail">
+        <div class="hotel-detail" data-aos="fade-right" data-aos-delay="500">
           <h3 class="hotel-name">常盤木尊貴套房</h3>
           <p class="hotel-paragraph">
             尊貴套房擁有十分寬敞舒適的空間，窗外是日光美麗的自然風光。所有客房配天然溫泉浴池，室內裝潢各具特色。最多入住4名賓客。
           </p>
         </div>
-        <div class="hotel-modal">
+        <div class="hotel-modal" data-aos="fade-left" data-aos-delay="500">
           <div class="hotel-modal-paragraph-group">
             <div class="hotel-modal-paragraph">
               <p class="hotel-modal-subject">房型坪數：</p>
@@ -533,5 +535,13 @@
     </footer>
     <script src="./rooms.js"></script>
     <script src="../../js/nav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>

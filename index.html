@@ -1,322 +1,380 @@
 <!DOCTYPE html>
 <html lang="en" id="body-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>雫ノ泉 京都｜和風ホテル【公式】</title>
+    <link rel="icon" type="image/x-icon" href="./pages/index/pic/logoICO.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./scss/pages/index/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>雫ノ泉 京都｜和風ホテル【公式】</title>
-  <link rel="stylesheet" href="./scss/pages/index/index.css" />
-</head>
+  <body id="body-page">
+    <header>
+      <div class="header-logo">
+        <a href="">
+          <img id="logo" src="./NavFooterPic/logo.jpg" alt="Logo" />
+        </a>
+      </div>
+      <nav class="pc-nav">
+        <ul class="nav-item">
+          <li><a href="./pages/history/history.html">歷史</a></li>
+          <li><a href="./pages/cuisine/cuisine.html">佳餚美饌</a></li>
+          <li><a href="./pages/rooms/rooms.html">房型</a></li>
+          <li><a href="./pages/spring/spring.html">溫泉</a></li>
+          <li><a href="./pages/spa/spa.html">SPA</a></li>
+          <li><a href="./pages/access/access.html">觀光交通</a></li>
+          <li><a href="./pages/booking/booking.html">訂房專區</a></li>
+        </ul>
+      </nav>
+      <div id="mobile-nav-toggle" class="hamburger">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
+    </header>
 
-<body id="body-page">
-  <header>
-    <div class="header-logo">
-      <a href="">
-        <img id="logo" src="./NavFooterPic/logo.jpg" alt="Logo" />
-      </a>
-    </div>
-    <nav class="pc-nav">
-      <ul class="nav-item">
-        <li><a href="./pages/history/history.html">歷史</a></li>
-        <li><a href="./pages/cuisine/cuisine.html">佳餚美饌</a></li>
-        <li><a href="./pages/rooms/rooms.html">房型</a></li>
-        <li><a href="./pages/spring/spring.html">溫泉</a></li>
-        <li><a href="./pages/spa/spa.html">SPA</a></li>
-        <li><a href="./pages/access/access.html">觀光交通</a></li>
-        <li><a href="./pages/booking/booking.html">訂房專區</a></li>
-      </ul>
-    </nav>
-    <div id="mobile-nav-toggle" class="hamburger">
-      <div class="bar bar1"></div>
-      <div class="bar bar2"></div>
-      <div class="bar bar3"></div>
-    </div>
-  </header>
-
-  <div class="mobile-nav">
-    <h2 class="mobile-nav__menu">MENU</h2>
-    <ul class="mobile-nav__navbar">
-      <li class="mobile-nav__nav-item">
-        <a href="./pages/history/history.html">歷史</a>
-      </li>
-      <li class="mobile-nav__nav-item">
-        <a href="./pages/cuisine/cuisine.html">佳餚美饌</a>
-      </li>
-      <li class="mobile-nav__nav-item">
-        <a href="./pages/rooms/rooms.html">房型</a>
-      </li>
-      <li class="mobile-nav__nav-item">
-        <a href="./pages/spring/spring.html">溫泉</a>
-      </li>
-      <li class="mobile-nav__nav-item">
-        <a href="./pages/spa/spa.html">SPA</a>
-      </li>
-      <li class="mobile-nav__nav-item">
-        <a href="./pages/access/access.html">觀光交通</a>
-      </li>
-      <li class="mobile-nav__nav-item">
-        <a href="./pages/booking/booking.html">訂房專區</a>
-      </li>
-      <!-- <li class="mobile-nav__nav-item"><a href="#">常見問題</a></li>
+    <div class="mobile-nav">
+      <h2 class="mobile-nav__menu">MENU</h2>
+      <ul class="mobile-nav__navbar">
+        <li class="mobile-nav__nav-item">
+          <a href="./pages/history/history.html">歷史</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="./pages/cuisine/cuisine.html">佳餚美饌</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="./pages/rooms/rooms.html">房型</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="./pages/spring/spring.html">溫泉</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="./pages/spa/spa.html">SPA</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="./pages/access/access.html">觀光交通</a>
+        </li>
+        <li class="mobile-nav__nav-item">
+          <a href="./pages/booking/booking.html">訂房專區</a>
+        </li>
+        <!-- <li class="mobile-nav__nav-item"><a href="#">常見問題</a></li>
         <li class="mobile-nav__nav-item"><a href="#">電郵詢問</a></li>
         <li class="mobile-nav__nav-item"><a href="#">隱私權政策</a></li> -->
-      <li class="mobile-nav__nav-item">
-        <a href="#" id="mobile-nav-previous">回上頁</a>
-      </li>
-    </ul>
-  </div>
+        <li class="mobile-nav__nav-item">
+          <a href="#" id="mobile-nav-previous">回上頁</a>
+        </li>
+      </ul>
+    </div>
 
-  <main>
-    <div class="welcome">
-      <h3 class="welcome__title">
-        <p>
-          距今五百年 &nbsp;<br /><span>傳說甘露所湧出之泉水源自於此</span>
-        </p>
-      </h3>
-      <div class="welcome__pic"></div>
-    </div>
-    <div class="foreword">
-      <p class="foreword__paragraph">
-        本館鄰近南禪寺，坐落於歷史遺跡琵琶湖疏水道沿岸周圍，與名勝庭園無鄰菴相鄰。
-      </p>
-      <p class="foreword__paragraph">
-        在本館打造的靜謐空間中，充滿了京都的感性美和閒情雅興。
-      </p>
-      <p class="foreword__paragraph">
-        京都的的秀美風土，療癒人們的身心，為明天孕育活力。
-      </p>
-      <p class="foreword__paragraph">
-        本館如一而風情各異。為您帶來只屬於此地的特別時光。
-      </p>
-      <p class="foreword__paragraph">
-        「流光溢彩 文雅飄香 華麗幽雅的京都旅宿」
-      </p>
-      <p class="foreword__paragraph">敬請下榻</p>
-      <div class="button-div">
-        <a href="./pages/history/history.html" class="page-button">雫ノ泉的傳說</a>
-      </div>
-    </div>
-    <div class="intro">
-      <p class="intro__title">客房介紹</p>
-      <div class="intro-section">
-        <div class="intro-section__picture">
-          <div class="intro-section__picture__picture-one picture" id="room-one"></div>
-          <div class="intro-section__picture__picture-two picture" id="room-two"></div>
-        </div>
-        <div class="intro-section__text-intro">
-          <!-- <p>清新草木 艷麗漆色 雅緻窗格</p> -->
-          <h3>清新草木 艷麗漆色 雅緻窗格</h3>
+    <main>
+      <div class="welcome">
+        <h3 class="welcome__title">
           <p>
-            本館共有40間客房，所有客房皆設有檜木浴池和天然溫泉。
-            沉靜的客房中流淌出淡雅的光芒，洋溢著櫻花與白檀的芬芳，窗欞綠意、精緻插花、
-            諧趣水池、鐵壺與京都的煎茶，將室內空間與京都的四季和歷史相連結。
-            透過這裡的水文、風土、工藝，品味古雅的日本傳統美學，
-            讓思緒徜徉在京都的悠久的歷史之中。
+            距今五百年 &nbsp;<br /><span>傳說甘露所湧出之泉水源自於此</span>
           </p>
+        </h3>
+        <div class="welcome__pic"></div>
+      </div>
+      <div class="foreword">
+        <p class="foreword__paragraph">
+          本館鄰近南禪寺，坐落於歷史遺跡琵琶湖疏水道沿岸周圍，與名勝庭園無鄰菴相鄰。
+        </p>
+        <p class="foreword__paragraph">
+          在本館打造的靜謐空間中，充滿了京都的感性美和閒情雅興。
+        </p>
+        <p class="foreword__paragraph">
+          京都的的秀美風土，療癒人們的身心，為明天孕育活力。
+        </p>
+        <p class="foreword__paragraph">
+          本館如一而風情各異。為您帶來只屬於此地的特別時光。
+        </p>
+        <p class="foreword__paragraph">
+          「流光溢彩 文雅飄香 華麗幽雅的京都旅宿」
+        </p>
+        <p class="foreword__paragraph">敬請下榻</p>
+        <div class="button-div">
+          <a href="./pages/history/history.html" class="page-button"
+            >雫ノ泉的傳說</a
+          >
+        </div>
+      </div>
+      <div class="intro">
+        <p class="intro__title" data-aos="fade-in">客房介紹</p>
+        <div class="intro-section">
+          <div class="intro-section__picture" data-aos="fade-down">
+            <div
+              class="intro-section__picture__picture-one picture"
+              id="room-one"
+            ></div>
+            <div
+              class="intro-section__picture__picture-two picture"
+              id="room-two"
+            ></div>
+          </div>
+          <div class="intro-section__text-intro" data-aos="fade-up">
+            <!-- <p>清新草木 艷麗漆色 雅緻窗格</p> -->
+            <h3>清新草木 艷麗漆色 雅緻窗格</h3>
+            <p>
+              本館共有40間客房，所有客房皆設有檜木浴池和天然溫泉。
+              沉靜的客房中流淌出淡雅的光芒，洋溢著櫻花與白檀的芬芳，窗欞綠意、精緻插花、
+              諧趣水池、鐵壺與京都的煎茶，將室內空間與京都的四季和歷史相連結。
+              透過這裡的水文、風土、工藝，品味古雅的日本傳統美學，
+              讓思緒徜徉在京都的悠久的歷史之中。
+            </p>
 
-          <div class="button-div">
-            <a href="./pages/rooms/rooms.html" class="page-button">詳細資訊</a>
+            <div class="button-div">
+              <a href="./pages/rooms/rooms.html" class="page-button"
+                >詳細資訊</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="intro">
-      <p class="intro__title">佳餚美饌</p>
-      <div class="intro-section">
-        <div class="intro-section__picture">
-          <div class="intro-section__picture__picture-one picture" id="food-one"></div>
-          <div class="intro-section__picture__picture-two picture" id="food-two"></div>
-        </div>
-        <div class="intro-section__text-intro">
-          <h3>養身暖心的日本料理</h3>
-          <p>
-            本館的料理人善於運用當地當季食材的特色，
-            呈現細膩而有力量的原創料理。 餐廳庵都將日本料理與京都結合，
-            從嶄新的角度發現這片土地獨特的風味。 本館期盼，每位賓客都能在這裡
-            感受京都四季與文化的美好時光。
-            為了創造如此珍貴的「時光」，我們奉上最衷心的款待。
-          </p>
-          <!-- <p>
+      <div class="intro">
+        <p class="intro__title" data-aos="fade-in">佳餚美饌</p>
+        <div class="intro-section">
+          <div class="intro-section__picture" data-aos="fade-down-left">
+            <div
+              class="intro-section__picture__picture-one picture"
+              id="food-one"
+            ></div>
+            <div
+              class="intro-section__picture__picture-two picture"
+              id="food-two"
+            ></div>
+          </div>
+          <div class="intro-section__text-intro" data-aos="fade-up-right">
+            <h3>養身暖心的日本料理</h3>
+            <p>
+              本館的料理人善於運用當地當季食材的特色，
+              呈現細膩而有力量的原創料理。 餐廳庵都將日本料理與京都結合，
+              從嶄新的角度發現這片土地獨特的風味。 本館期盼，每位賓客都能在這裡
+              感受京都四季與文化的美好時光。
+              為了創造如此珍貴的「時光」，我們奉上最衷心的款待。
+            </p>
+            <!-- <p>
               明跳沒食辛幫把丁呀別種住休童條飛四更，幾兔色登歡金欠禾天太四中想但民友星兩飯乾
             </p>
             <p>
               明跳沒食辛幫把丁呀別種住休童條飛四更，幾兔色登歡金欠禾天太四中想但民友星兩飯乾
             </p> -->
-          <div class="button-div">
-            <a href="./pages/cuisine/cuisine.html" class="page-button">詳細資訊</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="intro">
-      <p class="intro__title">溫泉</p>
-      <div class="intro-section">
-        <div class="intro-section__picture">
-          <div class="intro-section__picture__picture-one picture" id="spring-one"></div>
-          <div class="intro-section__picture__picture-two picture" id="spring-two"></div>
-        </div>
-        <div class="intro-section__text-intro">
-          <h3>洋溢檜木芳香的溫泉</h3>
-          <p>
-            在京都市內暢泡溫泉可謂是別樣的奢侈享受。
-            本館的所有房型皆引入了泉質柔和的天然溫泉，足不出戶就能泡湯療愈身心疲憊。
-            浴池有方形和圓形兩種形狀，材質為日本高品質的吉野檜木，散發出純天然的檜木清香。
-            無論晚上還是清晨，賓客都能度過一段不受任何人打攪的氤氳時光。
-          </p>
-          <div class="button-div">
-            <a href="./pages/spring/spring.html" class="page-button">詳細資訊</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="intro">
-      <p class="intro__title">SPA</p>
-      <div class="intro-section">
-        <div class="intro-section__picture">
-          <div class="intro-section__picture__picture-one picture" id="spa-one"></div>
-          <div class="intro-section__picture__picture-two picture" id="spa-two"></div>
-        </div>
-        <div class="intro-section__text-intro">
-          <h3>深度療愈SPA</h3>
-          <p>
-            感受來自大地的力量，療癒身心，重新煥發活力。
-            本館內SPA，提供發酵溫熱木浴以及全身保養療程。
-            讓您的身體由內而暖，度過一段深度療愈和放鬆的時光。
-          </p>
-
-          <div class="button-div">
-            <a href="./pages/spa/spa.html" class="page-button">詳細資訊</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="marquee-section">
-      <p class="intro__title">活動體驗</p>
-      <div class="marquee-area">
-        <div class="marquee-round">
-          <div class="marquee-one">
-            <div class="marquee-block">
-              <img src="./pages/index/pic/marquee1.jpg" alt="" />
-            </div>
-            <div class="marquee-block">
-              <img src="./pages/index/pic/marquee2.jpg" alt="" />
-            </div>
-            <div class="marquee-block">
-              <img src="./pages/index/pic/marquee3.jpg" alt="" />
-            </div>
-          </div>
-          <div class="marquee-two">
-            <div class="marquee-block">
-              <img src="./pages/index/pic/marquee1.jpg" alt="" />
-            </div>
-            <div class="marquee-block">
-              <img src="./pages/index/pic/marquee2.jpg" alt="" />
-            </div>
-            <div class="marquee-block">
-              <img src="./pages/index/pic/marquee3.jpg" alt="" />
+            <div class="button-div">
+              <a href="./pages/cuisine/cuisine.html" class="page-button"
+                >詳細資訊</a
+              >
             </div>
           </div>
         </div>
       </div>
 
-      <div class="marquee-intro">
-        <h3>感受京都歷史的體驗</h3>
-        <p>
-          本館提供豐富的京都自然與文化體驗項目，深度感受千年古都的美麗風土。
-        </p>
-      </div>
-    </div>
-
-    <div class="intro">
-      <p class="intro__title">交通觀光</p>
-      <div class="intro-section">
-        <div class="intro-section__picture order-one">
-          <div class="intro-section__picture__picture-two picture picture-full" id="tour"></div>
-        </div>
-        <div class="intro-section__text-intro">
-          <p style="text-align:  center;">提供本館周遭交通工具資訊，與觀賞景點。</p>
-
-          <div class="button-div">
-            <a href="./pages/access/access.html" class="page-button">詳細資訊</a>
+      <div class="intro">
+        <p class="intro__title" data-aos="fade-in">溫泉</p>
+        <div class="intro-section">
+          <div class="intro-section__picture" data-aos="fade-down-right">
+            <div
+              class="intro-section__picture__picture-one picture"
+              id="spring-one"
+            ></div>
+            <div
+              class="intro-section__picture__picture-two picture"
+              id="spring-two"
+            ></div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="outdoors">
-      <p class="intro__title">如沐於涼泉</p>
-      <div class="outdoors-pic">
-        <div class="outdoors-left">
-          <div class="outdoors-group-one group-radius" style="overflow: hidden">
-            <div class="picture flex-picture" id="outdoors-one"></div>
-          </div>
-          <div class="outdoors-group-two picture">
-            <div class="outdoors-group-two-one group-radius" style="overflow: hidden">
-              <div class="picture flex-picture" id="outdoors-two"></div>
-            </div>
-            <div class="outdoors-group-two-two group-radius" style="overflow: hidden">
-              <div class="picture flex-picture" id="outdoors-three"></div>
-            </div>
-          </div>
-        </div>
-        <div class="outdoors-right">
-          <div class="outdoors-group-one group-radius" style="overflow: hidden">
-            <div class="picture flex-picture" id="outdoors-four"></div>
-          </div>
-          <div class="outdoors-group-two picture">
-            <div class="outdoors-group-two-one group-radius" style="overflow: hidden">
-              <div class="picture flex-picture" id="outdoors-five"></div>
-            </div>
-            <div class="outdoors-group-two-two group-radius" style="overflow: hidden">
-              <div class="picture flex-picture" id="outdoors-six"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <div class="indexBG">
-    <img src="./pages/index/pic/bg1.png" alt="">
-  </div>
-  <div class="indexBG2">
-    <img src="./pages/index/pic/bg1.png" alt="">
-  </div>
-  <div class="indexBG3">
-    <img src="./pages/index/pic/bg2.svg" alt="">
-  </div>
-  <div class="indexBG4">
-    <img src="./pages/index/pic/bg2.svg" alt="">
-  </div>
-  </main>
-
-  <footer>
-    <div class="footer-info">
-      <div class="footer-info-left">
-        <div class="footer-info-left__logo">
-          <img src="./NavFooterPic/footer.jpg" alt="" />
-        </div>
-
-        <div class="footer-info-left__hotel__info">
-          <p class="hotel-name hotel-info">雫ノ泉&ensp;京都</p>
-        </div>
-      </div>
-      <div class="footer-info-right">
-        <div class="ul-flex">
-          <p class="hotel-address hotel-info">
-            〒620-0967 京都府福知山市畑中2番2号
-          </p>
-          <div class="phone">
-            <img src="./NavFooterPic/phone-call.svg" alt="" />
-            <p class="hotel-number hotel-info">
-              0570-8754-56
+          <div class="intro-section__text-intro" data-aos="fade-up-left">
+            <h3>洋溢檜木芳香的溫泉</h3>
+            <p>
+              在京都市內暢泡溫泉可謂是別樣的奢侈享受。
+              本館的所有房型皆引入了泉質柔和的天然溫泉，足不出戶就能泡湯療愈身心疲憊。
+              浴池有方形和圓形兩種形狀，材質為日本高品質的吉野檜木，散發出純天然的檜木清香。
+              無論晚上還是清晨，賓客都能度過一段不受任何人打攪的氤氳時光。
             </p>
+            <div class="button-div">
+              <a href="./pages/spring/spring.html" class="page-button"
+                >詳細資訊</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro">
+        <p class="intro__title" data-aos="fade-in">SPA</p>
+        <div class="intro-section">
+          <div class="intro-section__picture" data-aos="fade-down">
+            <div
+              class="intro-section__picture__picture-one picture"
+              id="spa-one"
+            ></div>
+            <div
+              class="intro-section__picture__picture-two picture"
+              id="spa-two"
+            ></div>
+          </div>
+          <div class="intro-section__text-intro" data-aos="fade-up">
+            <h3>深度療愈SPA</h3>
+            <p>
+              感受來自大地的力量，療癒身心，重新煥發活力。
+              本館內SPA，提供發酵溫熱木浴以及全身保養療程。
+              讓您的身體由內而暖，度過一段深度療愈和放鬆的時光。
+            </p>
+
+            <div class="button-div">
+              <a href="./pages/spa/spa.html" class="page-button">詳細資訊</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee-section">
+        <p class="intro__title" data-aos="fade-in">活動體驗</p>
+        <div class="marquee-area" data-aos="fade-in">
+          <div class="marquee-round">
+            <div class="marquee-one">
+              <div class="marquee-block">
+                <img src="./pages/index/pic/marquee1.jpg" alt="" />
+              </div>
+              <div class="marquee-block">
+                <img src="./pages/index/pic/marquee2.jpg" alt="" />
+              </div>
+              <div class="marquee-block">
+                <img src="./pages/index/pic/marquee3.jpg" alt="" />
+              </div>
+            </div>
+            <div class="marquee-two">
+              <div class="marquee-block">
+                <img src="./pages/index/pic/marquee1.jpg" alt="" />
+              </div>
+              <div class="marquee-block">
+                <img src="./pages/index/pic/marquee2.jpg" alt="" />
+              </div>
+              <div class="marquee-block">
+                <img src="./pages/index/pic/marquee3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="marquee-intro" data-aos="fade-in">
+          <h3>感受京都歷史的體驗</h3>
+          <p>
+            本館提供豐富的京都自然與文化體驗項目，深度感受千年古都的美麗風土。
+          </p>
+        </div>
+      </div>
+
+      <div class="intro">
+        <p class="intro__title" data-aos="fade-in">交通觀光</p>
+        <div class="intro-section">
+          <div class="intro-section__picture order-one"  data-aos="fade-right">
+            <div
+              class="intro-section__picture__picture-two picture picture-full"
+              id="tour"
+            ></div>
+          </div>
+          <div class="intro-section__text-intro"  data-aos="fade-left">
+            <p style="text-align: center">
+              提供本館周遭交通工具資訊，與觀賞景點。
+            </p>
+
+            <div class="button-div">
+              <a href="./pages/access/access.html" class="page-button"
+                >詳細資訊</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="outdoors">
+        <p class="intro__title outdoor-margin-adjust" data-aos="fade-in">
+          如沐於涼泉
+        </p>
+        <div class="outdoors-pic">
+          <div class="outdoors-left" data-aos="fade-in">
+            <div
+              class="outdoors-group-one group-radius"
+              style="overflow: hidden"
+            >
+              <div class="picture flex-picture" id="outdoors-one" data-aos="fade-down" data-aos-delay="500"></div>
+            </div>
+            <div class="outdoors-group-two picture">
+              <div
+                class="outdoors-group-two-one group-radius"
+                style="overflow: hidden"
+              >
+                <div class="picture flex-picture" id="outdoors-two" data-aos="fade-right" data-aos-delay="500"></div>
+              </div>
+              <div
+                class="outdoors-group-two-two group-radius"
+                style="overflow: hidden"
+              >
+                <div class="picture flex-picture" id="outdoors-three" data-aos="fade-left" data-aos-delay="500"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outdoors-right" data-aos="fade-in">
+            <div
+              class="outdoors-group-one group-radius"
+              style="overflow: hidden"
+            >
+              <div class="picture flex-picture" id="outdoors-four" data-aos="fade-right" data-aos-delay="500"></div>
+            </div>
+            <div class="outdoors-group-two picture">
+              <div
+                class="outdoors-group-two-one group-radius"
+                style="overflow: hidden"
+              >
+                <div class="picture flex-picture" id="outdoors-five" data-aos="fade-down" data-aos-delay="500"></div>
+              </div>
+              <div
+                class="outdoors-group-two-two group-radius"
+                style="overflow: hidden"
+              >
+                <div class="picture flex-picture" id="outdoors-six" data-aos="fade-up" data-aos-delay="500"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indexBG">
+        <img src="./pages/index/pic/bg1.png" alt="" />
+      </div>
+      <div class="indexBG2">
+        <img src="./pages/index/pic/bg1.png" alt="" />
+      </div>
+      <div class="indexBG3">
+        <img src="./pages/index/pic/bg2.svg" alt="" />
+      </div>
+      <div class="indexBG4">
+        <img src="./pages/index/pic/bg2.svg" alt="" />
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <div class="footer-info-left">
+          <div class="footer-info-left__logo">
+            <img src="./NavFooterPic/footer.jpg" alt="" />
           </div>
 
-          <!-- <ul class="ul-menu">
+          <div class="footer-info-left__hotel__info">
+            <p class="hotel-name hotel-info">雫ノ泉&ensp;京都</p>
+          </div>
+        </div>
+        <div class="footer-info-right">
+          <div class="ul-flex">
+            <p class="hotel-address hotel-info">
+              〒620-0967 京都府福知山市畑中2番2号
+            </p>
+            <div class="phone">
+              <img src="./NavFooterPic/phone-call.svg" alt="" />
+              <p class="hotel-number hotel-info">0570-8754-56</p>
+            </div>
+
+            <!-- <ul class="ul-menu">
                 <li class="li-menu"><a href="#">歷史</a></li>
                 <li class="li-menu"><a href="#">佳餚美饌</a></li>
                 <li class="li-menu"><a href="#">房型</a></li>
@@ -334,12 +392,19 @@
                 <li class="li-menu"><a href="#">電郵詢問</a></li>
                 <li class="li-menu"><a href="#">隱私權政策</a></li>
               </ul> -->
+          </div>
         </div>
       </div>
-    </div>
-    <p class="copyright">&copy;&ensp;雫ノ泉&ensp; SHIZUKU NO ITSUMI</p>
-  </footer>
-  <script src="./js/nav.js"></script>
-</body>
-
+      <p class="copyright">&copy;&ensp;雫ノ泉&ensp; SHIZUKU NO ITSUMI</p>
+    </footer>
+    <script src="./js/nav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 1500,
+      });
+    </script>
+  </body>
 </html>

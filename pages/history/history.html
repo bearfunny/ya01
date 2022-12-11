@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>雫ノ泉 京都｜和風ホテル【公式】</title>
+    <link rel="icon" type="image/x-icon" href="../index/pic/logoICO.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../../scss/pages/history/history.css" />
   </head>
   <body>
@@ -86,8 +88,8 @@
         <h3 class="history__title">歷史</h3>
         <p class="history-line"></p>
         <div class="history__intro-wrapper">
-          <div class="history__intro" id="history-intro-one"></div>
-          <div class="history__intro" id="history-intro-two">
+          <div class="history__intro" id="history-intro-one" data-aos="fade-in" data-aos-delay="550"></div>
+          <div class="history__intro" id="history-intro-two" data-aos="fade-in">
             <div class="history-intro-text">
               <h4 class="history-intro-text__title">溫泉</h4>
               <p class="history-intro-text__detail">
@@ -98,7 +100,7 @@
               </p>
             </div>
           </div>
-          <div class="history__intro" id="history-intro-three">
+          <div class="history__intro" id="history-intro-three" data-aos="fade-in">
             <div class="history-intro-text">
               <h4 class="history-intro-text__title">建築</h4>
               <p class="history-intro-text__detail">
@@ -106,61 +108,61 @@
               </p>
             </div>
           </div>
-          <div class="history__intro" id="history-intro-four"></div>
+          <div class="history__intro" id="history-intro-four" data-aos="fade-in" data-aos-delay="500"></div>
         </div>
         <p class="history-line"></p>
       </div>
 
-      <div class="gallery">
+      <div class="gallery"   data-aos="fade-in">
         <h3 class="gallery__title">旅館照片</h3>
         <div class="gallery-card">
           <h3 class="gallery-card__title">庭景</h3>
           <div class="gallery-wrapper">
             <div class="gallery-card__content">
               <div class="gallery-card__content flex">
-                <div class="pics garden-one rounded"></div>
+                <div class="pics garden-one rounded" data-aos="fade-in" data-aos-delay="500"></div>
               </div>
               <div class="gallery-card__content flex flex-between">
-                <div class="pics garden-two rounded"></div>
-                <div class="pics garden-three rounded"></div>
+                <div class="pics garden-two rounded" data-aos="fade-in" data-aos-delay="500"></div>
+                <div class="pics garden-three rounded" data-aos="fade-in" data-aos-delay="500"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="gallery">
+      <div class="gallery" data-aos="fade-in">
         <div class="gallery-card">
           <h3 class="gallery-card__title">客房</h3>
           <div class="gallery-wrapper">
             <div class="gallery-card__content flex flex-between">
-              <div class="gallery-card__content flex w-49-5 full-width-rwd">
+              <div class="gallery-card__content flex w-49-5 full-width-rwd" data-aos="fade-in" data-aos-delay="500">
                 <div class="pics room-one rounded size-return"></div>
               </div>
               <div
                 class="gallery-card__content flex flex-around w-49-5 full-width-rwd"
               >
-                <div class="pics room-two rounded"></div>
-                <div class="pics room-three rounded"></div>
+                <div class="pics room-two rounded" data-aos="fade-in" data-aos-delay="500"></div>
+                <div class="pics room-three rounded" data-aos="fade-in" data-aos-delay="500"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="gallery">
+      <div class="gallery" data-aos="fade-in">
         <div class="gallery-card">
           <h3 class="gallery-card__title">料理</h3>
           <div class="gallery-wrapper">
             <div class="gallery-card__content flex">
-              <div class="gallery-card__content flex w-100 order-1">
+              <div class="gallery-card__content flex w-100 order-1" data-aos="fade-in" data-aos-delay="500">
                 <div class="pics food-one rounded"></div>
               </div>
               <div
                 class="gallery-card__content flex flex-between w-100 order-0"
               >
-                <div class="pics food-two rounded"></div>
-                <div class="pics food-three rounded"></div>
+                <div class="pics food-two rounded" data-aos="fade-in" data-aos-delay="500"></div>
+                <div class="pics food-three rounded" data-aos="fade-in" data-aos-delay="500"></div>
               </div>
             </div>
           </div>
@@ -218,5 +220,13 @@
 
     <script src="../../js/nav.js"></script>
     <script src="./history.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>

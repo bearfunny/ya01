@@ -350,6 +350,7 @@ main {
 
   &__card-group {
     min-height: 100px;
+    height: 100%;
     // background-color: antiquewhite;
     display: flex;
     flex-wrap: wrap;
@@ -420,6 +421,7 @@ main {
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
+    min-height: 150px;
   }
 
   &__time {
@@ -427,6 +429,14 @@ main {
     padding: 5px 0;
     border-top: 1px solid $main-color;
     border-bottom: 1px solid $main-color;
+  }
+}
+
+@media (max-width: 848px) {
+  .card-group{
+    &__detail{
+      min-height: 180px;
+    }
   }
 }
 
@@ -631,6 +641,10 @@ main {
   }
   .card-group {
     width: 80%;
+    height: 100%;
+    &__detail{
+      min-height: 100%;
+    }
   }
 }
 

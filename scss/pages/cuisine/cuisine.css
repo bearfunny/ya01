@@ -968,7 +968,7 @@ main .foodBG4 img {
   margin-bottom: 26px;
   display: block;
   text-align: right;
-  width: 120%;
+  width: 140%;
 }
 
 .meal-list .meal-intro-wrapper:nth-child(2) .meal-line {
@@ -1116,6 +1116,11 @@ main .foodBG4 img {
   }
   .meal-intro-wrapper {
     width: 90%;
+  }
+}
+@media (max-width: 1350px) {
+  #lunch-img {
+    right: -35%;
   }
 }
 @media (max-width: 1250px) {
@@ -1305,6 +1310,11 @@ main .foodBG4 img {
   }
   .meal-intro-box .meal-intro-img {
     height: 300px;
+  }
+}
+@media (max-width: 425px) {
+  .open-time__text .text-info .text-info-time {
+    font-size: 17px;
   }
 }
 @media (max-width: 420px) {

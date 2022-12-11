@@ -153,6 +153,8 @@
   &__cash-check {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+    font-weight: 700;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -167,8 +169,8 @@
   }
 
   &__cash-checkbox {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     accent-color: $secondary-dirt-brown;
     // appearance: none;
   }
@@ -176,6 +178,7 @@
   &__alter {
     color: $main-color;
     font-size: 1.2rem;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
   }
@@ -215,8 +218,6 @@
 .last {
   padding-bottom: 60px;
 }
-
-
 
 @media (max-width: 960px) {
   .payment {
@@ -275,16 +276,6 @@
   .payment {
     &__title {
       margin-top: 20px;
-    }
-
-    &__cash-checkbox {
-      text-align: center;
-      order: 2;
-      width: 100%;
-    }
-    &__cash-label {
-      width: 100%;
-      margin-bottom: 15px;
     }
 
     &__credit {

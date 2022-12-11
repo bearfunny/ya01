@@ -488,7 +488,7 @@ footer .copyright {
 }
 
 .flex-picture:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) !important;
 }
 
 #room-one {
@@ -1088,6 +1088,10 @@ main .indexBG4 img {
     margin: 30px 60px;
   }
 }
+.outdoor-margin-adjust {
+  margin-bottom: 36px;
+}
+
 @media (min-width: 1070px) {
   .welcome__title {
     font-size: 2rem;

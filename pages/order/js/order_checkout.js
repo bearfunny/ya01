@@ -107,6 +107,8 @@ const creditCheckbox = document.querySelector("#credit");
 // Credit Payment Full Div
 const PaymentDiv = document.querySelector(".payment__credit");
 
+// Total Day
+const totalDay = sessionStorage.getItem('total-day');
 
 
 for (let i = 0; i < creditGroupInput.length; i++) {
@@ -302,7 +304,7 @@ for (let i = 0; i < mealPriceList.length; i++) {
 dateStart.innerHTML = `入住時間：${sessionDateStart}　15:30`;
 dateEnd.innerHTML = `退房時間：${sessionDateEnd}　12:00`;
 
-totalPriceResult.innerHTML = totalPrice
+totalPriceResult.innerHTML =`${totalPrice*totalDay}　共${totalDay}日` ;
 
 adultResult.innerHTML = `成人 ${adultNumber} 位`;
 childResult.innerHTML = `兒童 ${childNumber} 位`;

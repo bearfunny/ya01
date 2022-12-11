@@ -223,7 +223,7 @@ main{
       margin-bottom: 26px;
       display: block;
       text-align: right;
-      width: 120%;
+      width: 140%;
     }
   }
 }
@@ -411,6 +411,11 @@ main{
 
   .meal-intro-wrapper {
     width: 90%;
+  }
+}
+@media (max-width: 1350px){
+  #lunch-img {
+    right: -35%;
   }
 }
 
@@ -628,6 +633,18 @@ main{
       height: 300px;
     }
   }
+}
+
+@media (max-width: 425px) {
+    .open-time{
+      &__text{
+        .text-info{
+          .text-info-time{
+            font-size: 17px;
+          }
+        }
+      }
+    }
 }
 
 @media (max-width: 420px) {
