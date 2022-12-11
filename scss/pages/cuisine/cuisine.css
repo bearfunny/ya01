@@ -1107,7 +1107,7 @@ main .foodBG4 img {
     width: 40%;
   }
   #lunch-img {
-    right: -25%;
+    right: -35%;
   }
 }
 @media (max-width: 1100px) {
